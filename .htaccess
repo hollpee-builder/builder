@@ -1,0 +1,42 @@
+RewriteEngine on
+RewriteRule !\.(js|css|txt|png|jpg|jpeg|gif|svg|otf|ico|rar|zip|hollpee|template|tar|mp4|webm|ttf|svg|woff|woff2)$ index.php
+
+RewriteRule ^user/[0-9]*/[0-9]*/code.txt$ /index.php
+RewriteRule ^user/[0-9]*/[0-9]*/show/(first_page_id.txt|page_[0-9]*.txt)$ /index.php
+RewriteRule ^user/0_delete/[0-9]*/code.txt$ /index.php
+RewriteRule ^user/0_delete/[0-9]*/show/(first_page_id.txt|page_[0-9]*.txt)$ /index.php
+RewriteRule ^user/[0-9]*/(user_data|user_info).txt$ /index.php
+RewriteRule ^user/[0-9]*/0_template/0_code/t[0-9]*.txt$ /index.php
+
+#php_flag display_errors on 
+#php_flag display_startup_errors on
+
+
+# Заголовок Cache-Control
+<IfModule mod_headers.c>
+	Header append Cache-Control "no-store, no-cache, must-revalidate"
+</IfModule>
+
+
+# Заголовок Expires (кеширование)
+<IfModule mod_expires.c>
+	ExpiresActive on
+	ExpiresByType image/jpeg "now"
+	ExpiresByType image/gif "now"
+	ExpiresByType image/png "now"
+	ExpiresByType text/php "now"
+	ExpiresByType text/html "now"
+	ExpiresByType text/css "now"
+	ExpiresByType text/js "now"
+</IfModule>
+
+
+
+
+
+
+
+
+
+
+
