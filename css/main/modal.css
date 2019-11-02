@@ -1,0 +1,496 @@
+/*********************************************************************************************/
+/*оповещение*****************************************************************************/
+.notification {
+	position: fixed;
+	top: 20px;
+	opacity: 0;
+	padding: 5px;
+	border-radius: 4px;
+	z-index: 99999;
+	background-color: rgb(53,53,53);
+	padding: 17px 15px 12px 48px;
+	color: rgb(230,230,230);
+}
+
+.notification[position="right"] {
+	left: 5%;
+}
+
+.notification[position="center"] {
+	left: 40%;
+}
+
+.notification[position="left"] {
+	right: 5%;
+}
+
+#notificationText {
+	font-size: 12px;
+	text-align: center;
+	font-family: Verdana;
+	color: rgb(240,240,240);
+}
+
+.notificationOk {
+	background-image: url(/img/checkmark2.png);
+	background-position: 11px 12px;
+	background-size: 21px;
+	border: 1px solid rgb(65,178,72);
+	padding-left: 45px;
+}
+
+.notificationError {
+	background-image: url(/img/error.png);
+	background-position: 2px 7px;
+	background-size: 40px; 
+	border: 1px solid rgb(240,29,49);
+}
+/***************************************************************************************************/
+/*подсказки************************************************************************************/
+.tipBlock {
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 99998;
+	border-radius: 3px;
+	background-color: rgb(0,0,0);
+	color: rgb(240,240,240);
+	text-align: center;
+	font-size: 12px;
+	font-family: Verdana;
+	opacity: 0;
+	background-color: rgb(0,98,199);
+}
+
+.tipText {
+	padding: 8px 10px 7px 10px;
+	color: rgb(240,240,240);
+	font-size: 12px;
+}
+
+.tipArrow {
+	position: absolute;
+	color: rgb(0,98,199);
+}
+
+.tipArrow[type="bottom"] {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 11px solid;
+	top: -10px;
+}
+
+.tipArrow[type="right"] {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 11px solid;
+	left: -10px;
+}
+
+.tipArrow[type="left"] {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 11px solid;
+	right: -10px;
+}
+
+.tipArrow[type="top"] {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 11px solid;
+	bottom: -10px;
+}
+/*общие настройки************************************************************************************/
+/*************************************************************************************************/
+/*затемнение**********************************************************************************/
+.blackout {
+	opacity: 0;
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 99997;
+	width: 100%;
+	height: 100%;
+	/*background-color: #000;*/
+	/*background-color: rgba(50,50,50,0.7);*/
+	background-color: rgba(0,0,0,0.4);
+}
+/*блок***************************************************************************************/
+.modalBlock {
+	position: fixed;
+	top: 0; left: 0;
+	/*z-index: 99998;*/
+	z-index: 99997;
+	background-color: rgb(255,255,255);
+	border-radius: 2px;
+	border: 1px solid rgb(204,204,204);
+	/*box-shadow: 0 0 0 1px rgba(0,0,0,0.4);*/
+	color: rgb(51,51,51);
+	font-family: Verdana;
+}
+
+.modalBlock input {
+	font-family: Verdana;
+}
+
+.modalBlockHead, .modalBlockFooter {
+	/*background-color: rgb(242,242,242);*/
+}
+
+/*заголовок*/
+.modalBlockHead {
+	outline: 0px solid #c00;
+	border-radius: 5px 5px 0 0;
+	height: 43px;
+	position: relative;
+	border-bottom: 1px solid rgb(220,220,220);
+}
+
+.modalBlockTitle {
+	font-size: 15px;
+	float: left;
+	padding: 15px 0 0 15px;
+}
+
+/**блок с кнопками header*************/
+.modalBlockHeadButtom {
+	padding: 7px 10px 0 0;
+}
+
+.modalHeadButtomItem {
+	outline: 0px solid;
+	float: right;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+.modalHeadResize {/*кнопка изменения размера*/	
+	width: 20px; 
+	height: 20px;
+	background-image: url(/img/modal/min-max.png);
+	background-repeat: no-repeat;
+	background-color: rgb(78,78,78);
+	/*box-shadow: inset 0 0px 10px 1px rgb(50,50,50);
+	*/
+	border: 1px solid rgb(49,49,49);
+	
+}
+
+.modalHeadResize[status="min"] {
+	background-position: 3px 4px;
+	background-size: 14px;
+}
+
+.modalHeadResize[status="max"] {
+	background-position: 3px -27px;
+	background-size: 15px;
+}
+
+
+.modalHeadClose { /*удалить модальное окно*/
+	margin-left: 10px;
+	width: 20px; 
+	height: 20px;
+	margin-top: 10px;
+	background-position: -266px -117px;
+}
+
+/**навигация*******/
+.modalNav {
+	background-color: rgb(234,234,234);
+	padding: 3px 4px 0 4px;
+	border-bottom: 1px solid rgb(191,191,191);
+}
+
+.modalNavItem {
+	float: left;
+	padding: 7px 15px 4px 15px;
+	font-size: 12px;
+	border-radius: 4px 4px 0 0;
+	cursor: pointer;
+	margin: 2px 5px 0 0;
+	background-color: rgb(250,250,250);
+	color: rgb(89,89,89);
+	border: 1px solid rgb(191,191,191);
+	border-bottom: none;
+}
+
+.modalNavItemAct {
+	background-color: rgb(248,248,248);
+	cursor: default;
+	color: inherit;
+	position: relative;
+	padding-bottom: 5px;
+	margin-bottom: -2px;
+}
+
+
+/*содержимое*************/
+.modalBlockCont {
+	position: relative;
+	padding: 15px;
+	overflow: auto;
+}
+
+.modalBlockCont input, .modalBlockCont textarea {
+	width: 100%;
+	padding: 7px 10px 5px 10px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	font-size: 15px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 3px;
+}
+
+.modalBlockCont input[type="checkbox"] {
+	width: auto;
+}
+
+.modalBlockItem {
+	border: 1px solid transparent;
+}
+
+
+.modalBlockItem:hover {
+	background-color: rgba(0,0,0,0.4);
+	border-color: rgb(140,140,140);
+}
+
+body .modalBlockItem[note="true"]:not(.hlp-no-this-class) {/*выбраный элемент*/
+	background-color: rgba(0,0,0,0.5);
+	border-color: transparent;
+	color: rgb(255,255,255);
+}
+
+/*footer*/
+
+/*загрузка*************************************************************************************/
+
+/****************************************************************************************/
+/***********************************************************************************/
+/**загрузка с надписью************************************************************************************/
+#modalLoading {
+	background-color: rgba(0,0,0,0.8);
+	color: rgb(200,200,200);
+	box-shadow: none;
+	border: none;
+	padding: 40px 0 28px 0; 
+}
+
+.modalLoadingImage {
+	margin: 0 auto;
+	display: block;
+	width: 180px;
+}
+
+.modalLoadingLabel {
+	text-align: center;
+	margin-top: 20px;
+	font-family: Verdana;
+	font-size: 13px;
+}
+
+#modalLoading .modalBlockCont {
+	padding-top: 0;
+	padding-bottom: 0;
+	overflow: visible;
+}
+/************************************************************************************************/
+/*подтверждение удаления**********************************************************************************************/
+#confirmationDelete .modalBlockCont {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/***************************************************************************************/
+/***************************************************************************************/
+/*кнопки ************************************************************************************/
+/*блок для кнопак*/
+.modalBlockFooter {
+	border-top: 1px solid rgb(220,220,220);
+	padding: 3px;
+}
+
+.modalBlockButtton {	
+	outline: 0px solid #c00;
+	padding: 10px 0 8px 0;
+	/*border-top: 1px solid rgb(204,204,204);*/
+	margin-right: -10px;
+	float: right;
+}
+/*************************************************************************************/
+/*кнопки на формах**********************************************************************/
+/*кнопки с редактора доработать*/
+
+.blockRedactionButton {
+	outline: 0px solid #000;
+	margin: 20px auto 0px auto;
+	color: rgb(255,255,249);
+}
+
+.blockRedactionButtonCancel, .blockRedactionButtonOk, .blockRedactionButtonDelete, .blockImgSectionItemOther, a.blockImgSectionItemOther {
+	padding: 7.5px 15px 7px 33px;
+	border-radius: 6px;
+	cursor: pointer;
+	color: rgba(255,255,255, 1);
+	font-family: Verdana;
+	height: 33px;
+} 
+
+.blockRedactionButtonCancel {
+	float: left;
+	/*border: 1px solid rgb(169,169,169);
+	background: rgba(172,172,172, 1) url(/img/cancel.png) 10px 8px no-repeat;
+	background-size: 21px;*/
+}
+
+.blockRedactionButtonOk {
+	background: rgba(165,190,64, 1) url(/img/tick.png) 10px 8px no-repeat;
+	background-size: 22px;
+	float: right;
+}
+
+
+.blockRedactionButtonDelete {
+	float: right;
+	background: rgba(233,111,98, 1) url(/img/tick.png) 10px 8px no-repeat;
+	background-size: 22px;
+}
+
+.blockImgSectionItemOther {
+	background: rgba(165,190,64, 1) url(/img/tick.png) 10px 7.5px no-repeat;
+	background-size: 22px;
+}
+
+/*кнопки*********************************************************************************************/
+
+.butBlock {
+	padding: 6px 17px 5px 17px;
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	color: rgb(242,255,230);
+}
+
+.butBlock:visited {
+	color: rgb(242,255,230);
+}
+
+.butBlock[status="false"] {
+	opacity: 0.6;
+	cursor: default;
+}
+
+
+.butBlock[no_active] {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.butBlock:hover {
+	opacity: 0.8;
+}
+/*********************************************************************************************/
+.butBuy {
+	background-color: rgb(254,133,0);
+	background: linear-gradient(to top, rgb(223,73,2), rgb(254,133,0));
+}
+
+
+.butOk {
+	/*background-color: rgb(52,154,47); */
+	/*background-color: rgb(60,184,53);*/
+	color: #fff;
+	background-color: #5c90d2;
+}
+
+.butAdd {
+	background-color: rgb(61,97,137); 
+	float: left;
+}
+
+.butCancel {
+	background: rgb(255,255,255);
+	border: 1px solid rgb(208,206,208);
+	color: rgb(90,90,90);
+	border-radius: 3px;
+}
+
+.butDelete {
+	/*background-color: rgb(255,115,113); */
+	/*background: linear-gradient(to top, rgb(157,3,0), rgb(255,115,113));*/
+	background: rgb(208,55,41);
+
+	background-color: #ff5050;
+}
+
+.butEdit {
+	background-color: rgb(184,88,90); 
+	background: linear-gradient(to top, rgb(59,119,59), rgb(92,184,92));
+}
+/***********************************************************************************************/
+.textInBut {
+	width: inherit;
+	height: inherit;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 13px;
+	text-align: center;
+	/*padding: 2px 0;*/
+	font-family: Verdana;
+
+	padding: 0;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background: none;
+}
+
+/*.butBuy .textInBut {
+	background: url(/img/leftNavAdmin/payment.png) 0px -2px no-repeat;
+	background-size: 28px; 
+	padding-left: 35px;
+}
+
+.butOk .textInBut {
+	background: url(/img/tick.png) -5px -1px no-repeat;
+	background-size: 28px; 
+	padding-left: 22px;
+}
+
+.butAdd .textInBut {
+	background: url(/img/add_white.png) -1px 1px no-repeat;
+	background-size: 18px; 
+	padding-left: 22px;
+}
+
+.butCancel .textInBut {
+	background: url(/img/cancel.png) -3px 0px no-repeat;
+	background-size: 24px; 
+	padding-left: 23px;
+}
+
+.butDelete .textInBut {
+	background: url(/img/tick.png) -5px -1px no-repeat;
+	background-size: 27px; 
+	padding-left: 23px;
+}
+
+.butEdit .textInBut {
+	background: url(/img/admin/edit_white.png) 1px 3px no-repeat;
+	background-size: 19px; 
+	padding-left: 27px;
+}*/
+/***************************************************************************************/
+/**************************************************************************************/
+/*стиль 1*/
+.modalBlock1 {
+	/*background-color: #ccc;
+	*/
+}
+
+
+/*****************************************************************************************/
+
+
+

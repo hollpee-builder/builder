@@ -1,0 +1,218 @@
+/*title*/
+.title-payment-status {
+	font-size: 17px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.title-payment-status-yes {
+	color: #2ecc71;
+}
+
+.title-payment-status-no {
+	color: #e74c3c;
+}
+
+/**/
+.sectionLeadDetail {
+	padding-bottom: 50px;
+}
+
+.block {
+	margin-bottom: 30px;
+	font-size: 15px;
+}
+
+.section .sectionContent {
+	padding-bottom: 20px;
+	font-size: 14px;
+	background-color: rgb(248,248,248);
+}
+
+.sectionLeadDetail .sectionContent {
+	
+}
+
+.listLectionLeadLeft {
+	width: 35%;
+	float: left;
+}
+
+.sectionNewStatus .block-content, .sectionListStatus .block-content {
+	height: 250px;
+	overflow: auto;
+}
+
+.listLectionLeadRight {
+	width: 63%;
+	float: right;
+}
+
+/*add new status*/
+.valueNewStatus, .valueNewStatusComment {
+	display: block;
+	width: 100%;
+}
+
+.valueNewStatus {
+	padding: 8px 7px 7px 7px;
+	background-color: transparent;
+	border: 1px solid rgb(220,220,220);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.valueNewStatusComment {
+	border: 1px solid rgb(220,220,220);
+	max-width: 100%;
+	min-height: 120px;
+	margin-top: 15px;
+	padding: 6px 10px;
+}
+
+.butAddNewStatus {
+	padding: 7px 10px 5px 10px;
+	margin-top: 20px;
+	float: right;
+	background-color: rgb(41,127,255);
+	color: rgb(255,255,255);
+	font-size: 13px;
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.butAddNewStatus:hover {
+	opacity: 0.85;
+}
+
+/*history status*/
+.tableListStatus {
+	width: 100%;
+	border-right: 1px solid rgb(200,200,200);
+}
+
+.sectionListStatus .td, .sectionListStatus .th {
+	text-align: center;
+	box-sizing: border-box;
+	padding: 10px 3px 7px 3px;
+	min-height: 38px;
+	border: 1px solid rgb(220,220,220);
+	border-right: none;
+	font-weight: normal;
+	overflow: hidden;
+	background-color: rgb(255,255,255);
+}
+
+.sectionListStatus .td {
+	border-top: none;
+}
+
+.sectionListStatus .th {
+	background-color: rgb(240,240,240);
+	padding-top: 6px;
+	padding-bottom: 5px;
+	min-height: auto;
+}
+
+.tdDate {
+	width: 35%;
+}
+
+.tdStatus {
+	width: 20%;
+}
+
+.tdComment {
+	width: 45%;
+}
+
+/*info*/
+.leadInfoItem {
+	margin-bottom: 10px;
+
+}
+
+.leadInfoKey {
+	float: left;
+	opacity: 0.8;
+	width: 30%;
+}	
+
+.leadInfoValue {
+	float: right;
+	width: 65%;
+	display: block;
+	white-space: nowrap;
+}
+
+a.leadInfoValue {
+	color: rgb(93,131,247);
+	text-decoration: underline;
+	overflow: hidden;
+}
+
+/*data*/
+.leadDataItem {
+	margin-bottom: 20px;
+}
+
+.leadDataKey {
+	float: left;
+	width: 20%;
+}
+
+.leadDataValue {
+	float: right;
+	width: 77%;
+}
+
+.valueLeadData {
+	display: block;
+	width: 441px;
+	max-width: 100%;
+	padding: 7px 10px 6px 10px;
+	border-radius: 3px;
+	border: 1px solid rgb(220,220,220);
+	font-size: 14px;
+}
+
+.leadDataItemAdded {
+	margin-top: 25px;
+	padding-top: 15px;
+	border-top: 1px solid rgb(220,220,220);
+}
+
+/***********************************************************************************/
+/*lead detail*/
+.sectionLeadStore {
+	
+}
+
+.leadStoreItemCell {
+	float: left;
+	padding: 8px 10px;
+}
+
+.leadStoreItemAmount {
+	background: rgb(220,220,220);
+	font-weight: bold;
+}
+
+.leadStoreItemCellName {
+	width: 40%;
+}
+
+.leadStoreItemCellPrice {
+	width: 15%;
+}
+
+.leadStoreItemCellCount {
+	width: 15%;
+}
+
+.leadStoreItemCellAmount {
+	width: 25%;
+}
+
+

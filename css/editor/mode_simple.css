@@ -1,0 +1,427 @@
+.modeSimple {
+
+}
+
+.modeSimple .section-content:not(.jhds98) {
+	border: none;
+}
+
+.modeSimple .guides,
+.modeSimple .addedBlockSection,
+.modeSimple .grid[class]:not([sf3df]),
+.modeSimple .menuGeometryWrap,
+/*.modeSimple .menuBorderWrap,*/
+/*.modeSimple .menuBoxShadowWrap,*/
+/*.modeSimple .menuTextShadowWrap,*/
+.modeSimple .redactorPageTopRight,
+/*.modeSimple .menuStyleListWrap,*/
+.modeSimple .butFastShowWrap,
+.modeSimple .menuOtherWrap,
+.modeSimple .scaleWrap,
+.modeSimple .blockSelectShowDevice .butShowTabH,
+.modeSimple .butAddElement,
+.modeSimple .menuSettingBlocking,
+.modeSimple .menuSettingAttr,
+/*.modeSimple .blockSelectShowDevice .butShowMobileH,*/
+/*.modeSimple .blockSelectShowDevice .butShowMobileV,*/
+.modeSimple .blockSelectShowDevice,
+.modeSimple .menuFixedVisibleWrap,
+.modeSimple .menuFixedItemClass,
+.modeSimple .listElementsNav,
+.modeSimple .listIconFooter,
+/*.modeSimple .rightMenuNavItem[type='struct'],*/
+/*.modeSimple .rightMenuNavItem[type='export'],*/
+.modeSimple .menuSettingGrid .menuStyleItem:not(.menuGridCountRow),
+.modeSimple .blockGridNoDesktopSize,
+.modeSimple .menuGridTabH,
+.modeSimple .menuGridMobileV,
+.modeSimple .menuGridMargin
+{
+	display: none;
+}
+
+/*basic type*/
+.modeSimple .selectStyleBasicElmType .option[data-no-change="true"] {
+	display: none;
+}
+
+.modeSimple .redactorPageEdit .contentItem {
+	padding-left: 4px;
+}
+
+.modeSimple .rightMenuLabel {
+	padding-bottom: 5px;
+}
+
+/*but hide*/
+.rightMenuListButShowHide {
+	display: none;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	width: 0;
+}
+
+.modeSimple .rightMenuListButShowHide {
+	display: block;
+} 
+
+.rightMenuButShowHide {
+	background-color: rgb(20,20,20);
+	border: 1px solid rgb(100,100,100);
+	border-right: none;
+	color: rgb(240,240,240);
+	text-align: center;
+	float: right;
+	font-size: 12px;
+	padding: 5px 8px 4px 8px;
+	cursor: pointer;
+	border-radius: 3px 0 0 3px;
+}
+
+.rightMenuButShowHide:hover {
+	opacity: 0.9;
+}
+
+.rightMenuButShow {
+	margin-right: 10px;
+}
+
+.rightMenu[data-show="true"] .rightMenuButShow {
+	display: none;
+}
+
+.rightMenuButHide {
+	display: none;
+	margin-right: 2px;
+	background-color: rgb(80,80,80);
+}
+
+.rightMenu[data-show="true"] .rightMenuButHide {
+	display: block;
+}
+
+/**/
+.menuLabelGridPosition[class] {
+	display: inline;
+}
+.modeSimple .menuLabelGridPosition {
+	display: none;
+}
+
+/*geometry*********/
+.modeSimple .menuGeometryWrap .inputUnitBlock,
+.modeSimple .menuGeometryWrap .menuGeometryPropertyExtended {
+	display: none;
+}
+
+.modeSimple .menuGeometryWrap .inputBlock input {
+	width: 42px;
+}
+
+/**/
+.modeSimple .elementsItemColumn {
+	display: none;
+}
+
+.elementsColumnModeSimple {
+	display: none;
+}
+
+.modeSimple .elementsColumnModeSimple {
+	display: block;
+}
+
+.modeSimple .elementsItemBlock {
+	border-right: 1px solid rgb(40,40,40);
+}
+
+/*верхняя панель*********************************************************************/
+.modeSimple .redactorPageTopCenter {
+	margin-right: 20px;
+}
+
+.modeSimple .topMenuButton span {
+	display: inline-block;
+	display: block;
+	float: right;
+	/*margin-top: 2px;*/
+	/*margin-top: -1px;*/
+	/*font-size: 12px;*/
+}
+
+.modeSimple .topMenuIconPlus {
+	padding-top: 1px;
+}
+
+.butSettingSimpleBlock {
+	display: none;
+}
+
+.modeSimple .topMenuBlock .butSettingSimpleBlock[class] {
+	display: block;
+	margin-left: 0;
+}
+
+/**/
+.topMenuButton span[data-type="lite"] {
+	display: none;
+}
+
+.modeSimple .topMenuButton span[data-type="pro"] {
+	display: none;
+}
+
+.modeSimple .topMenuButton span[data-type="lite"] {
+	display: block;
+}
+
+/********************************************************************************/
+
+
+.addedBlockModeSimple {
+	display: none;
+	position: absolute;
+	right: 0;
+}
+
+.butEditElement {
+	padding: 7px 10px 5px 10px;
+	background-color: rgb(50,50,50);
+	color: rgb(240,240,240);
+	border-radius: 3px;
+	font-size: 12px;
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
+	line-height: normal;
+	cursor: pointer;
+}
+
+.addedBlockModeSimple:not(.addedBlockPosBottom) {
+	top: -37px;
+}
+
+.modeSimple .addedBlockModeSimple {
+	display: block;
+}
+
+.modeSimple .addedBlockPosBottom {
+	bottom: -37px;
+}
+
+/*********************/
+
+.modeSimple .rightMenu {
+	background-color: rgb(51,51,51);
+	margin: 0;
+	position: absolute;
+	top: 35px;
+	right: 3px;
+	z-index: 99980;
+}
+
+.modeSimple .rightMenuWrap {
+	display: none;
+}
+
+.modeSimple .rightMenu[data-show="true"] .rightMenuWrap {
+	display: block;
+}
+
+.modeSimple .sectionCenter {
+	margin-right: 3px;
+}
+
+.modeSimple .redactorPageTopRight {
+	width: 144px;
+}
+
+.modeSimple .rightMenuNavItem {
+	/*padding-left: 13px;*/
+	/*padding-right: 13px;*/
+}
+
+.rightMenuNavItem span[data-mode="lite"] {
+	display: none;
+}
+
+.modeSimple .rightMenuNavItem span[data-mode="pro"] {
+	display: none;
+}
+
+.modeSimple .rightMenuNavItem span[data-mode="lite"] {
+	display: block;
+}
+
+/***********************************************************************************/
+
+.blockManModeSimple {
+	position: absolute;
+	display: none;
+	z-index: 99910;
+	height: 0;
+}
+
+.blockManModeSimple[data-show="true"] {
+	display: block;
+}
+
+.blockManModeSimpleContent {
+	height: 30px;
+	margin: -42px -1px 0 0;
+	float: right;
+	padding: 0 7px 0 7px;
+	width: 118px;
+	background-color: rgb(50,50,50);
+	border-radius: 3px;
+}
+
+.blockManModeSimpleContent[class~="addedBlockPosBottom"] {
+	/*margin-top: 4px;*/
+	margin-top: -29px;
+}
+
+.blockManModeSimple[data-type="section"] .blockManModeSimpleContent {
+	border-radius: 3px 0 0 0;
+	margin-right: 1px;
+}
+
+.blockManModeSimpleContent[data-edit="true"] {
+	width: 170px;
+}
+
+.butManSimpleBlock {
+	display: block;
+	float: left;
+	width: 19px;
+    margin: 6px 14px 0 0;
+	cursor: pointer;
+}
+
+.butSettingSimpleBlock {
+	margin-left: 14px;
+}
+
+.butNextSimpleBlock {
+	margin-right: 0;
+}
+
+.butSettingSimpleBlock, .butEditSimpleBlock {
+	float: right;
+	margin-right: 0;
+}
+
+.butManSimpleBlock[data-no-active="true"] {
+	cursor: default;
+	opacity: 0.5;
+}
+
+/*кнопки для секции**********************************************************************************/
+
+.redactorPageShow .sectionListButTemplate {
+	display: none;
+}
+
+.sectionListButTemplate {
+	z-index: 99991;
+	position: absolute;
+	bottom: 0;
+	right: 50%;
+	width: 0;
+	height: 30px;
+	overflow: visible;
+	display: none;
+}
+
+.sectionListButTemplateContent {
+	width: 226px;
+	margin: 3px 0 0 -113px;
+	max-width: none;
+}
+
+.sectionButAddTemplate {
+	display: none;
+}
+
+.sectionButReplace {
+	margin: 0 auto;
+	width: 80px;
+	background-color: rgb(50,50,50);
+}
+
+.modeSimple .butTemplateSection {
+	float: left;
+	display: block;
+	width: auto;
+}
+
+.modeSimple .sectionButReplace {
+	float: right;
+}
+
+.butTemplateSection {
+	/*width: 100px;*/
+	height: 27px;
+	padding: 6px 8px 0 8px;
+	text-align: center;
+	border-radius: 3px;
+	color: rgb(240,240,240);
+	font-size: 12px;
+	cursor: pointer;
+	font-family: Verdana;
+}
+
+.modeSimple .butTemplateSection {
+	background-color: rgb(46,113,184);
+	background-color: rgb(50,50,50);
+}	
+
+.butTemplateSection:hover {
+	opacity: 0.9;
+}
+
+
+.modeSimple .butAddTemplateSection {
+	/*display: none;*/
+}
+
+.contentItem[screen="mobile-l"] .sectionListButTemplate,
+.contentItem[screen="mobile-p"] .sectionListButTemplate {
+	display: none;
+}
+
+/**************************/
+/**************************/
+/*.sectionButReplace[class] {
+	display: none;
+}
+
+.sectionButAddTemplate[class] {
+	float: none;
+	margin: 0 auto;
+	width: 140px;
+}*/
+
+/*нижняя панель**********************************************************************************/
+
+.chosenEditorModeLabel {
+	display: none;
+	float: right;
+	color: rgb(180,180,180);
+	font-size: 12px;
+	padding-top: 6px;
+	margin-right: 10px
+}
+
+.editorModeBlock {
+	float: right;
+}
+
+.modeSimple .chosenEditorModeLabel {
+	display: block;
+}
+
+.modeSimple .editorModeBlock {
+	width: 305px;
+}

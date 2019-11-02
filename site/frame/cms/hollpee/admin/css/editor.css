@@ -1,0 +1,570 @@
+.h-modal-block-cont {
+	background: #fff;
+}
+
+.hlp-modal[class] *, .hlp-section[class] * {
+	transition: all 0s ease;
+}
+
+.clear {
+	clear: both;
+}
+
+.h-modal-block-cont input, .h-modal-block-cont textarea {
+	font-family: Verdana;
+}
+
+.h-modal-block-cont textarea {
+	min-height: 100px;
+}
+
+.h-modal-block-cont {
+	overflow: auto;
+}
+
+.h-file-name, .h-site-id, .h-page-id, .h-folder-file, 
+.h-buffer, .h-buffer-history, .h-list-customizer, 
+.h-property {
+	display: none;
+}
+
+#modalManagerModal .h-modal-block-cont,
+#modalSEO .h-modal-block-cont {
+	min-height: 200px;
+	max-height: 350px;
+}
+
+.modal-wrap[data-hlp-id="modalManagerModal"] {
+	z-index: 99980;
+}
+
+.modal-wrap {
+	padding-top: 50px;
+}
+
+.hlp-modal, .hlp-modal *, 
+.hlp-section, .hlp-section * {
+	transition: all 0s ease;
+}
+
+form:not(.hlp-not-this-class) input[data-hlp-type-hidden] {
+	background-color: rgb(60,60,60);
+	color: rgb(240,240,240);
+}
+
+body .hlp-tabs-item[class] {
+	display: block;
+}
+
+.hlp-slider-list-arrow {
+	display: none;
+}
+
+.h-modal-img-wrap img {
+	width: auto;
+}
+
+.hlp-section {
+	padding: 2px 0;
+}
+
+
+.hlp-embed[class] {
+	display: none;
+}
+
+.hlp-site[class] .hlp-hide[class] {
+	opacity: 1;
+}
+
+hlp_hlp_scr_hlp_hlp {
+	display: none;
+}
+
+
+.hlp-block[class], .hlp-wrap[class] {
+	position: relative;
+	display: block;
+	opacity: 1;
+}
+
+.hlp-slider-item[class] {
+	display: block;
+}
+
+
+/******************************************************************************************/
+body {
+	padding-top: 49px;
+}
+
+.file-item {
+	display: none;
+}
+
+.h-blackout-element {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+
+.h-blackout-element-icon {
+	margin: 25% auto 0 auto;
+    width: 44px;
+}
+
+.h-panel-editor {
+	position: fixed;
+	top: 0; 
+	left: 0;
+	z-index: 980;
+	width: 100%;
+	height: 50px;
+	background-color: rgb(45,45,45);
+}
+
+.h-panel-content {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.h-panel-logo {
+	display: block;
+	width: 145px;
+	margin-top: 10px;
+	float: left;
+}
+
+.panel-logo > img {
+	width: 100%;
+}
+
+.h-panel-list-but {
+	float: right;
+	position: relative;
+}
+
+.h-but-editor {
+	cursor: pointer; 
+	padding: 9px 18px 7px 18px;
+	float: right;
+	margin: 10px 0 0 10px;
+	background-color: rgb(65,65,65);
+	text-align: center;
+	color: rgb(230,230,230);
+	border-radius: 3px;
+	font-family: Verdana;
+	font-size: 13px;
+}
+
+.h-but-editor:hover {
+	background-color: rgb(75,75,75);
+}
+
+.h-save-status {
+	position: absolute;
+	top: 15px;
+	right: 4px;
+	width: 9px;
+	height: 9px;
+	border-radius: 50%;
+}
+
+.h-save-status[data-hlp-status="true"] {
+	background-color: rgb(52,208,0);
+}
+
+.h-save-status[data-hlp-status="false"] {
+	background-color: rgb(255,30,30);
+}
+
+.h-panel-history {
+	float: right;
+	margin-right: 15px;
+}
+
+.h-but-history {
+	display: block;
+	width: 32px;
+	margin-top: 9px;
+	float: right;
+	opacity: 0.5;
+	cursor: default;
+}
+
+
+.h-but-history[data-hlp-status="true"] {
+	opacity: 1;
+	cursor: pointer;
+}
+
+.h-but-history-back {
+	margin-right: 10px;
+}
+
+/**********************************************************************************************/
+
+.h-modal-property-item {
+	margin-bottom: 15px;
+}
+
+.h-modal-property-key {
+	float: left;
+	width: 33%;
+}
+
+.h-modal-property-value[class] {
+	display: block;
+	float: right;
+	width: 65%;
+	margin-top: 0;
+}
+
+input.h-modal-property-value[class] {
+	padding: 5px 10px 4px 10px;
+}	
+
+select.h-modal-property-value[class] {
+	padding: 5px 10px 4px 10px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 3px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.h-but-property {
+	float: left;
+	min-width: 51px;
+	margin-left: 10px;
+	padding: 6px 10px 5px 10px;
+	border-radius: 3px;
+	border: 1px solid rgb(200,200,200);
+	background-color: rgb(240,240,240);
+	font-size: 13px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.property-input-mask .h-but-property {
+	margin-left: 4px;
+    padding: 6px 2px 5px 2px;
+}
+
+.h-but-property:first-child {
+	margin-left: 0;
+}
+
+.h-but-property[data-hlp-chosen="true"] {
+	background-color: rgb(80,80,80);
+	color: rgb(240,240,240);
+}
+
+.h-but-property[data-hlp-chosen="true"]:hover {
+	cursor: default;
+}
+
+.h-link-type {
+	display: none;
+}
+/*************************************************************************************************/
+
+.h-element-over:not(.hlp-section) {
+	outline: 2px dashed rgb(11,35,255);
+	cursor: pointer;
+}
+
+.h-element-over[class~="hlp-section"] .hlp-section-content {
+	outline: 2px dashed rgb(11,35,255);
+	cursor: pointer;
+}
+
+.h-element-selected:not(.hlp-section) {
+	outline: 2px dashed rgb(231,22,18);
+	cursor: text;
+}
+
+.h-element-selected[class~="hlp-section"] .hlp-section-content {
+	outline: 2px dashed rgb(231,22,18);
+	cursor: text;
+}
+
+img.h-element-selected, .h-element-selected[class~="column"]  {
+	cursor: default;
+}
+
+/***************/
+
+.h-block-manager {
+	position: absolute;
+	width: 175px;
+	z-index: 99998;
+}
+
+.h-list-manager-but {
+	position: absolute;
+	top: -35px;
+	right: 0;
+	background-color: rgb(65,65,65);
+	padding: 5px 8px 4px 8px;
+	border-radius: 3px;
+}
+
+.h-but-manager {
+	float: left;
+	width: 20px;
+	margin-right: 14px;
+	cursor: pointer;
+}
+
+.h-but-manager-next, .h-but-manager-prev {
+	float: right;
+}
+
+.h-but-manager-next {
+	margin-right: 0;
+}
+
+.h-but-manager-prev {
+	margin-right: 10px;
+}
+
+.h-but-manager[data-hlp-no-active="true"] {
+	opacity: 0.6;
+	cursor: default;
+}
+
+/*seo*/
+
+.h-seo-item {
+	border-bottom: 1px solid rgb(220,220,220);
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+}
+
+.h-seo-item:last-child {
+	border-bottom: none;
+}
+
+.h-seo-img {
+	display: block;
+	float: left;
+	max-height: 125px;
+	width: 105px;
+	margin-top: 10px;
+	padding: 10px;
+	background-color: rgb(210,210,210);
+	border-radius: 3px;
+}
+
+#modalSEO .h-seo-img-title {
+	float: right;
+	width: 330px;
+	height: 100px;
+	border: 1px solid rgb(220,220,220);
+}
+
+/**видео фон***************************************************************************************/
+
+.map {
+	position: relative;
+}
+
+.map-blackout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 99980;
+}
+
+/**менеджер модыльных окон****************************************************************************************/
+.h-man-modal-item {
+	border-bottom: 1px solid rgb(220,220,220);
+	padding-bottom: 10px;
+	margin-bottom: 13px;
+}
+
+.h-man-modal-name {
+	float: left;
+	width: 310px;
+	padding-top: 4px;
+	text-align: left;
+}
+
+.h-man-modal-list-but {
+	float: right;
+	width: 100px;
+}
+
+.h-man-modal-but {
+	display: block;
+	float: right;
+	width: 22px;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.h-man-modal-but:first-child {
+	margin-right: 0;
+}
+
+.h-man-modal-but:hover {
+	opacity: 0.7;
+}
+
+.h-man-modal-but-edit {
+	margin-right: 17px;
+}
+
+/**для некоторых элементов***************************************************************************************/
+
+.map {
+	position: relative;
+}
+
+.map-blackout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 99980;
+}
+
+/**basic***************************************************************************************/
+
+
+.modal-block-item {
+	margin-bottom: 10px;
+}
+
+.modal-block-item:last-child {
+	margin-bottom: 0px;
+}
+
+.modal-block-label {
+	color: rgb(100,100,100);
+}
+
+/**store***************************************************************************************/
+
+.modal-block-item-store-title {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 7px 0px;
+	font-size: 17px;
+	border-top: 2px solid;
+}
+
+/*deliver*/
+.modalStoreBlockTitle {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+.modalStoreButDeliveryStatus {
+	float: left;
+	font-size: 14px;
+	background: rgb(70,70,70);
+	color: rgb(240,240,240);
+	width: 70px;
+	text-align: center;
+	padding: 6px 0 5px 0;
+	cursor: pointer;
+}
+
+.modalStoreButDeliveryStatus[data-chosen="true"] {
+	background: #5c90d2;
+	cursor: default;
+}
+
+.modalStoreButDeliveryStatus[data-type="no"] {
+	border-radius: 2px 0 0 2px;
+}
+
+.modalStoreButDeliveryStatus[data-type="yes"] {
+	border-radius: 0 2px 2px 0;
+}
+
+.modalStoreDeliveryList {
+	display: none;
+}
+
+.modalStoreDeliveryList[data-type="yes"] {
+	display: block;
+}
+
+.modalStoreDeliveryListItem {
+}
+
+input.modalStoreDeliveryItemCheckbox[class] {
+	margin-right: 10px;
+	margin-top: 17px;
+	float: left;
+	display: block;
+	cursor: pointer;
+}
+
+.modalStoreDeliveryItemName {
+	float: left;
+	width: 120px;
+	padding-top: 15px;
+}
+
+input.modalStoreDeliveryItemPrice[class] {
+	float: left;
+	width: 70px;
+}
+
+
+/*****************************************************************************************/
+/*clear default*/
+.h-block-clear-customizer {
+	background: rgb(230,230,230);
+	border-bottom: 1px solid rgb(220,220,220);
+	height: 40px;
+	padding: 1px 10px;
+	margin-bottom: 10px;
+}
+
+.h-block-clear-customizer-status {
+	float: left;
+	margin-top: 13px;
+	font-size: 14px;
+}
+
+.h-block-clear-customizer-but {
+	float: right;
+	padding: 5px 15px 5px 15px;
+	border-radius: 3px;
+	background: rgb(90,90,90);
+	color: rgb(240,240,240);
+	font-size: 13px;
+	margin-top: 7px;
+	cursor: pointer;
+}
+
+.h-block-clear-customizer-but:hover {
+	opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

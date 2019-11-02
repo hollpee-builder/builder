@@ -1,0 +1,311 @@
+* {
+	font-size: 14px;
+}
+
+.lead-top-block {
+	margin: 5px 0 25px 0;
+
+	background: rgb(240,240,240);
+	border: 1px solid rgb(230,230,230);
+	padding: 15px;
+	border-radius: 3px;
+}
+
+.lead-filter-block-page {
+	float: left;
+}
+
+.hlp-select-filter {
+	padding: 7px 10px 5px 10px;
+	border-radius: 3px;
+	min-width: 200px;
+	font-size: 15px;
+	cursor: pointer;
+	color: rgb(90,90,90);
+
+	background: rgb(247,247,247);
+	border: 1px solid rgb(230,230,230);
+}
+
+/*filter other*/
+.lead-filter-block {
+	float: right;
+}
+
+.search-type {
+	min-width: 130px;
+	float: left;
+}
+
+.search-value, .filter-but-search {
+	float: left;
+	display: block;
+	border-radius: 3px;
+}
+
+.filter-but-search {
+	float: right;
+	margin-left: 15px;
+}
+
+.search-value {
+	margin-right: 15px;
+}
+
+.search-value {
+	padding: 8px 10px 7px 10px;
+	background: rgb(247,247,247);
+	border: 1px solid rgb(230,230,230);
+	font-style: 16px;
+	width: 200px;
+}
+
+.filter-but-search {
+	padding: 9px 25px 8px 25px;
+	color: rgb(240,240,240);
+	background: rgb(120,120,120);
+	font-size: 13px;
+}
+
+/**************************************************************************************/
+
+.list-lead {
+	border: 1px solid rgb(230,230,230);
+	border-radius: 3px;
+	width: 100%;
+}
+
+.list-lead th, .list-lead td {
+	border-right: 1px solid rgb(230,230,230);
+	overflow: hidden;
+	padding: 11px 5px;
+}
+
+.list-lead th:last-child, .list-lead td:last-child {
+	border-right: none;
+}
+
+.list-lead th {
+	height: 25px;
+	color: rgb(240,240, 240);
+	font-weight: normal;
+	font-size: 14px;
+}
+
+.list-lead td {
+	height: 30px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.list-lead tr:first-child {
+	background-color: rgb(60,60,60);
+	border-radius: 9px;
+}
+
+.list-lead tr:nth-child(2n+3) {
+	background-color: rgb(240,240,240);
+}
+
+.lead-item {
+	cursor: pointer;
+}
+
+.lead-item[class][data-status="new"] {
+	background-color: rgba(122,195,117, 0.4);
+}
+
+.list-lead[class] .lead-item[data-status="new"]:hover {
+	background-color: rgba(122,195,117, 0.5);
+}
+
+.list-lead[class] .lead-item:not([data-status="new"]):hover {
+	background-color: rgb(230,230,230);
+}
+
+.lead-form-name {
+	width: 120px;
+}
+
+.lead-date {
+	width: 150px;
+}
+
+.lead-status {
+	width: 50px;
+}
+
+.lead-email {
+	width: 200px;
+}
+
+.lead-analytics, .lead-data {
+	width: 100px;
+}
+
+.list-lead .lead-note {
+	width: 50px;
+	padding: 0;
+}
+
+.lead-status[data-status="new"] {
+	color: rgb(0,175,11);
+}
+
+.lead-note-canvas {
+	width: 200px;
+	max-width: 200px;
+	min-height: 100%;
+	color: rgb(40,40,40);
+	display: block;
+	padding: 5px;
+	overflow: hidden;
+}
+
+.lead-but, .lead-page a {
+	color: rgb(56,139,190);
+	cursor: pointer;
+}
+
+.lead-but {
+	border-bottom: 1px dashed;
+}
+
+.lead-page a {
+	border-bottom: 1px solid;
+} 
+
+.lead-data-json {
+	display: none;
+}
+
+.lead-data-item {
+	padding-bottom: 8px;
+}
+
+.lead-data-key {
+	float: left;
+	font-weight: bold;
+	width: 100px;
+}
+
+.lead-data-value {
+	width: 320px;
+	float: left;
+	word-wrap: break-word;
+}
+
+.lead-man {
+
+}
+
+.but-lead-delete-wrap:hover {
+	background-color: rgb(90,90,90);
+}
+
+.but-lead-delete {
+	display: block;
+	width: 20px;
+	margin: 0 auto;
+}
+
+.but-lead-delete:hover {
+	opacity: 0.8;
+}
+
+.lead-payment-icon {
+	display: block;
+	width: 25px;
+	margin: 0 auto;
+}
+
+/*********************************************************************************/
+/*bottom*/
+.block-lead-bottom {
+	margin-top: 40px;
+}
+
+.lead-bottom-left {
+	float: left;	
+}
+
+.but-lead {
+	float: left;
+	padding: 8px 15px 7px 15px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 13px;
+	border: 1px solid transparent;
+}
+
+.but-lead:hover {
+	opacity: 0.8;
+}
+
+.but-lead-export {
+	color: rgb(240,240,240);
+	background-color: rgba(36,122,199, 0.8);
+	margin-right: 20px;
+}
+
+.but-reset-new {
+	background-color: rgb(230,230,230);
+	border: 1px solid rgb(210,210,210);
+}
+
+/**/
+.export-block {
+	margin-bottom: 30px;
+}
+
+.export-block-label {
+	font-weight: bold;
+	font-size: 15px;
+}
+
+a.export-block-but {
+	margin-top: 5px;
+	padding: 8px 0 7px 0;
+	background-color: rgb(90,90,90);
+	color: rgb(240,240,240);
+	border-radius: 3px;
+	display: block;
+	text-align: center;
+	width: 100px;
+	font-size: 13px;
+}
+
+.export-block-but:hover {
+	opacity: 0.8;
+}
+
+
+/*навигация по страницам**********************************************************************************************/
+.block-page {
+	/*margin: 50px 0 30px 0;*/
+	height: 40px;
+	float: right;
+	width: 550px;
+}
+
+.list-page-item {
+	float: right;
+}
+
+a.page-item {
+	display: block;
+	float: left;
+	padding: 4px 0 3px 0;
+	min-width: 30px;
+	text-align: center;
+	margin-left: 10px;
+	background-color: rgb(60,60,60);
+	color: rgb(240,240,240);
+	border-radius: 2px;
+}
+
+a.page-item[data-chosen] {
+	background-color: rgb(57,130,175);
+}
+
+

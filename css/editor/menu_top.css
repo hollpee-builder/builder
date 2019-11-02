@@ -1,0 +1,1195 @@
+.topPanel {
+	display: none;
+}
+
+.redactorPageTop[class] {
+	height: 37px;
+}
+
+.redactorPageTopCenter {
+	padding-top: 1px;
+}
+
+.topPanelNavPage[class] {
+	position: absolute;
+    top: 9px;
+    left: 15px;
+    z-index: 990;
+    font-size: 12px;
+    border-radius: 3px;
+    text-align: center;
+    width: 130px;
+    font-family: Verdana;
+
+    background-color: rgb(66,66,66);
+	border: 1px solid rgb(55,55,55);
+	padding-top: 7px;
+	padding-bottom: 6px;
+}
+
+
+.logo-editor {
+	padding-top: 2px;
+}
+
+
+.rightMenu {
+	margin-top: -31px;
+}
+
+body .rightMenuNav {
+	height: 26px;
+}
+
+body .rightMenuNavItem {
+	/*padding: 7px 5px 5px 5px;*/
+	padding: 7px 8px 5px 8px;
+}
+
+
+
+/*********************************/
+.logo-editor {
+	margin: 4px auto 0 auto;
+	width: 122px;
+	display: block;
+	/*float: left;*/
+	/*margin: 8px 10px 0 0px;*/
+	margin: 7px auto 0 auto;
+}
+
+.butTopPanel {
+	float: left;
+	padding: 5px 8px 4px 8px;
+	border-radius: 3px;
+	color: rgb(220,220,220);
+	margin: 6px 10px 0 0;
+	font-size: 11px;
+	display: block;
+	background-color: rgb(45,45,45);
+	border: 1px solid rgb(70,70,70);
+}
+
+.butExit {
+	/*float: right;*/
+	/*width: 18px;*/
+	/*margin: 11px 18px 0 0;*/
+}
+
+.butTopPanel:hover {
+	background-color: rgb(50,50,50);
+}
+
+.butFullShow {
+	/*display: none;*/
+}
+/*********************************************************************************************/
+.menuItem[status="false"] {
+	opacity: 0.4;
+	cursor: default;
+}
+.topMenuBlockLayer {
+	display:  none;
+}
+
+.redactorLeftSection .contentSection {
+	padding-right: 0px;
+}
+
+/*************************************************************************************************/
+/*вверхние меню*****************************************************************************/
+.redactorPageTop {
+	background-color: rgb(51,51,51);
+	/*box-shadow: inset 0 35px 35px -15px rgb(40,40,40);*/
+	color: rgb(201,204,204);
+	height: 35px;
+	padding-left: 6px;
+	/*overflow: hidden;*/
+}
+
+.redactorPageTopCenter {
+	margin-right: 275px;
+}
+
+/*правая часть*/
+.redactorPageTopRight {
+	float: right;
+	width: 268px;
+	height: 30px;
+	/*background-color: #c00;*/
+}
+
+/**********************************************************************************************/
+.butHideRightMenu {
+	width: 26px;
+	height: 26px;
+	float: right;
+	margin: 3px 20px 0 0;	
+	cursor: pointer;
+	background-position: -36px -113px;
+	display: none;
+}
+
+.butHideRightMenu[status="hide"] {
+	background-position: -4px -113px;
+}
+
+.topMenu {
+	outline: 0px solid #c00;
+	/*height: 59px;*/
+}
+
+.topMenuLeft {
+	float: left;
+	margin-left: -4px;
+}
+
+.logoEditor {
+	float: left;
+	color: rgb(47,111,179);
+	padding: 0px 9px 2px 9px;
+	margin-top: 4px;
+	font-size: 21px;
+}
+
+a.logoEditor:hover {
+	border-radius: 3px;
+	background-color: rgb(40,40,40);
+}
+
+.topMenuRight {
+	float: right;
+}
+
+.topMenuBlock {
+	float: left;
+	border-left: 1px solid rgb(31,31,31);
+	border-right: 1px solid rgb(70,70,70);
+	margin-top: 4px;
+}
+
+.topMenuButton {
+	position: relative;
+	float: left;
+	cursor: pointer;
+	font-size: 10px;
+	height: 17px;
+	padding: 8px 10px 0 10px;
+	border-right: 1px solid rgb(31,31,31);
+	border-left: 1px solid rgb(70,70,70);
+	border-top: 1px solid transparent;
+}
+
+.topMenuButton:hover, .topMenuButton[status="true"] {
+	background-color: rgb(45,45,45);
+	border-color: rgb(45,45,45);
+	border-bottom: 1px solid rgb(40,40,40);
+	border-top-color: rgb(40,40,40);
+}
+
+.butSelectPage span {
+	display: block;
+	float: left;
+}
+
+.topMenuItemLabelPage {
+	color: rgb(140,140,140);
+	float: left;
+}
+
+.butSelectBlockName {
+	max-width: 60px;
+	overflow: hidden;
+	padding-left: 3px;
+	white-space: nowrap;
+	display: block;
+	float: left;
+}
+
+.topMenuIconPlus {
+	float: left;
+	padding: 0px 2px 1px 2px;
+	border-radius: 3px;
+	margin: -1px 7px 0 0;
+	color: rgb(240,240,240);
+	
+	background-color: rgb(46,113,184);
+	/*background-color: rgb(80,80,80);*/
+	/*background-color: rgb(45,103,167);*/
+}
+/**********************************************************************************************/
+/*правое меню******************************************************************************************/
+.topMenuRight {
+	/*outline: 1px solid;*/
+	/*width: 200px;*/
+	/*border-right: 1px solid rgb(31,31,31);*/
+	border-left: 1px solid rgb(70,70,70);
+	/*height: 23px;*/
+	margin-top: 5px;
+}
+
+.topMenuRight .topMenuBlock {
+	float: right;
+	/*height: inherit;*/
+	margin-top: 0;
+	height: 26px;
+}
+
+.topMenuRight .topMenuBlock:first-child {
+	border-right: none;
+}
+
+.topMenuItem {
+	/*height: inherit;*/
+	padding: 0 	7px;
+	float: left;
+	cursor: pointer;
+	display: block;
+}
+
+.topMenuSaveIcon {
+	width: 100%;
+	height: 30px;
+	background-position: 0 2px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-image: url(/img/editor/top_panel/checkmark_green.png); 
+}
+
+.topMenuSave[is-save="false"] .topMenuSaveIcon {
+	background-image: url(/img/editor/top_panel/checkmark_red.png); 
+}
+
+.topMenuItem[type="save"] {
+	margin-top: 3px;
+	width: 17px;
+}
+
+.topMenuItem[type="show"] {
+	/*opacity: 0.5;*/
+}
+
+.topMenuItem[type="show"], .butFullShow {
+	margin-top: 4px;
+}
+
+.butFullShow {
+	width: 36px;
+}
+
+body .topMenuFastShow[class] {
+	width: 34px;
+	margin-top: 4px;
+}
+
+.topMenuItem[type="show"] {
+	/*width: 31px;*/
+	width: 21px;
+    margin-top: 3px;
+} 
+
+.topMenuItem[type="support"] {
+	width: 18px;
+	margin-top: 4px;
+	padding-right: 3px;
+}
+
+.topMenuItem img {
+	width: 100%;
+}
+
+.topMenuBlockHistory .topMenuItem {
+	width: 21px;
+	margin-top: 3px;
+	/*width: 26px;*/
+	/*margin-top: 1px;*/
+	padding: 0 5px;
+}
+
+.topMenuBlockHistory {
+	/*border-right: none;*/
+}
+
+.topMenuItem[type="next"] {
+	/*padding-right: 0;*/
+}
+
+.butSitePublished {
+	width: 41px;
+	height: 30px;
+	background: url(/img/editor/top_panel/no_publishing.png) 50% 2px no-repeat;
+	background-size: 66%;
+}
+
+.butSitePublished[data-published="true"] {
+	background-image: url(/img/editor/top_panel/publishing.png);
+}
+
+/**************************************************************************************************/
+/*список экранов*/
+.topMenuListSrcreen {
+	padding: 5px;
+	padding: 5px 165px 5px 290px;
+}
+
+.blockSelectShowDevice {
+	margin: 0 auto;
+	width: 160px;
+	overflow: hidden;
+}
+
+/*сохранение и просмотр****************************************************************************************/
+.topMenuSave {
+	position: relative;
+}
+
+.saveStatus {
+	position: absolute;
+	top: 1px; right: -10px;
+	z-index: 70;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+}
+
+.saveStatus[is-save="true"] {
+	background-color: rgb(52,210,8);
+}
+
+.saveStatus[is-save="false"] {
+	background-color: rgb(210,35,0);
+}
+
+/********************************************************************************/
+/**выбор страниц и выриантов*************************/
+.selectPagesOrOptions {
+	outline: 0px solid #c00;
+	float: right;
+	/*margin: 11px 200px 0 0px;*/
+	position: absolute;
+	top: 11px;
+	right: 288px;
+	display: none;
+}
+
+
+.headerButSelect {
+	padding: 4px 5px 3px 12px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 12px;
+	float: left;
+	background-color: rgb(40,40,40);
+	color: rgb(255,255,255);
+	border: 1px solid rgb(80,80,80);
+}
+
+.butSelectText {
+	float: left;
+}
+
+.butSelectArrow {
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin: 2px 0 0 10px;
+	background-position: -58px -18px;
+}
+
+.butSelectPage {
+	
+}
+
+.butSelectOption {
+	margin-left: 20px;
+}
+
+.topMenuLeftIcon {
+	display: block;
+	float: left;
+	width: 18px;
+}
+
+.topMenuLeftIconPage {
+	width: 15px;
+	/*margin: -2px 3px 0 -3px;*/
+	margin: -2px auto 0 auto;
+}
+
+.topMenuLeftIconModal {
+	width: 18px;
+	margin: -3px auto 0 auto;
+}
+
+.butSettingPage {
+	
+}
+
+.topMenuLeftIconSetting {
+	width: 16px;
+	margin-top: -2px;
+}
+
+.topMenuLeftIconStore {
+	width: 17px;
+	margin-top: -3px;
+}
+
+/*Модальное окно выбор*****************************************************************************************/
+#modalSelectPage {
+	/*padding: 10px 10px 0 10px;*/
+	max-height: 400px;
+	/*overflow: ;*/
+}
+
+#modalSelectPage .modalBlockFooter {
+	padding-right: 7px;
+}
+
+.selectPageItem {
+	height: 44px;
+	padding: 20px 15px 10px 15px;
+	margin-bottom: 15px;
+	border: 1px solid rgb(210,210,210);
+	border-radius: 3px;
+	/*background-color: rgb(240,240,240);*/
+	background-color: rgb(40,40,40);
+	cursor: pointer;
+}
+
+.selectPageItem[selected="selected"] {
+	background-color: rgb(80,80,80);
+	cursor: default;
+}
+
+.selectPageImg {
+	display: block;
+	width: 32px;
+	height: 39px;
+	float: left;
+	background-position: -138px -110px;
+}
+
+.selectPageIconHome {
+	float: left;
+	width: 30px;
+	height: 35px;
+	background: url(/img/editor/home.png) 0 0 no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+	margin: 5px 4px 0 10px;
+}
+
+.selectPageIconHome[chosen="true"] {
+	background-image: url(/img/editor/home_h.png);
+}
+
+#selectPagelist[type="modal"] .selectPageIconHome {
+	display: none;
+}
+
+.selectPageName, input.selectPageName {
+	display: block;
+	width: 240px;
+	padding: 7px 10px 6px 10px;
+	float: left;
+	margin: 4px 0 0 10px;
+	font-size: 15px;
+	color: rgb(250,250,250);
+}
+
+input.selectPageName {
+	background-color: rgb(60,60,60);
+	font-size: 14px;
+	border: 1px solid rgb(130,130,130);
+}
+
+.selectPageBlockManage {
+	outline: 0px solid #c00;
+	margin-left: 10px;
+	width: 80px;
+	float: right;
+	padding-top: 0px;
+}
+
+.selectPageManageItem {
+	font-size: 13px;
+	color: rgb(250,250,250);
+	margin-bottom: 3px;
+	cursor: pointer;
+}
+
+.butSelectPageCopy:hover, .butSelectPageDelete:hover {
+	color: rgb(150,150,150);
+}
+
+.selectPageNameNoEdit {
+	float: left;
+	width: 235px;
+    margin: 4px 0 0 12px;
+	padding: 8px 10px 7px 10px;
+	border: 1px solid rgb(180,180,180);
+    border-radius: 3px;
+    color: rgb(220,220,220);
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+.selectPageNameNoChanged {
+	padding: 10px 0 0 50px;
+	color: rgb(220,220,220);
+}
+
+#selectPagelist .pageName {
+	margin: 11px 0 0 15px;
+	float: left;
+	color: rgb(240,240,240);
+}
+/************************************************************************************************/
+/*удаление блока**********************************************************************************/
+.sectionRemove {
+
+}
+
+.sectionRemoveTitle {
+	outline: 0px solid;
+	padding: 40px 20px 0px 20px;
+}
+
+.sectionRemove .blockRedactionButton {
+	outline: 0px solid;
+	width: 65%;
+}
+.sectionRemove .blockRedactionButtonDelete {
+	float: right;
+}
+/*****************************************************************************/
+/********************************************************************/
+/**************************************************************************/
+.topPanel {
+	outline: 0px solid #c00;
+	height: 25px;
+	/*box-shadow: inset 40px -20px 40px 0 rgb(32,32,32);
+	*/
+	position: relative;
+	border-bottom: 5px solid rgb(46,46,46);
+	background-color: rgb(31,31,31);
+	margin-left: 2px;
+}
+
+.topPanelSiteName {
+	/*outline: 1px solid;*/
+	float: right;
+	width: 250px;
+	white-space: nowrap;
+	text-align: right;
+	font-size: 11px;
+	color: rgb(180,180,180);
+	padding: 7px 10px;
+	overflow: hidden;
+}
+
+.consultantUserEmail {
+	float: right;
+	margin: 5px 30px 0 0px;
+	color: rgb(200,200,200);
+	font-size: 13px;
+	position: absolute;
+	top: 31px; left: 0;
+	z-index: 9999999;
+	background-color: rgba(0,0,0,1);
+	padding: 5px 10px;
+	font-family: Verdana;
+}
+
+.consultantUserEmailSelf {
+	color: #c00;
+}
+/****************************************************************************/
+/******************************************************************************/
+.topPanelNav {
+	/*outline: 1px solid #cc0;*/
+	height: inherit;
+	background-color: rgb(31,31,31);
+	/*box-shadow: inset 0px -3px 0 1px rgb(46,46,46),
+				inset 3px -4px 0 1px rgb(80,80,80);*/
+	position: relative;
+	/*border-radius: 8px 8px 0 0;*/
+	float: left;
+}	
+
+.topPanelNavItem {
+	outline: 0px solid #c00;
+	padding: 6px 7px 5px 7px;
+	text-align: center;
+	cursor: pointer;
+	float: left;
+	margin: 1px 1px 0 1px;
+
+	background-color: rgb(36,36,36);
+	border: 1px solid rgb(55,55,55);
+	border-bottom: none;
+	color: rgb(201,204,193);
+	font-size: 11px;
+}
+
+.topPanelNavItem[chosen="true"] {
+	background-color: rgb(46,46,46);
+	color: rgb(62,156,227);
+}
+
+.topPanelNavItem[none="true"] {
+	cursor: default;
+}
+/*****************************************************************************************/
+/***************************************************************************************/
+.blockSelectShowDevice {
+	padding-top: 4px;
+}	
+
+.butShowItem, .butShowItemH {
+	/*outline: 1px solid;*/
+	float: right;
+	width: 19px;
+	height: 25px;
+	margin-left: 10px;
+	cursor: pointer;
+	background-size: 100%;
+}
+
+.butShowItem[chosen="true"], .butShowItemH[chosen="true"] {
+	cursor: default;
+}
+
+.butShowDesctop {
+	width: 26px;
+	background-image: url(/img/editor/screen/desktop.png?id=3);
+}
+
+.butShowDesctop[chosen="true"] {
+	background-image: url(/img/editor/screen/desktop_hover.png?id=4);
+}
+
+.butShowTabV {
+	margin-left: 12px;
+	background-image: url(/img/editor/screen/tab_v.png?id=2);
+}
+
+.butShowTabV[chosen="true"] {
+	background-image: url(/img/editor/screen/tab_v_hover.png?id=2);
+}
+
+.butShowTabH {
+	margin-left: 12px;
+	margin-top: 2px;
+	background-image: url(/img/editor/screen/tab_h.png);
+}
+
+.butShowTabH[chosen="true"] {
+	background-image: url(/img/editor/screen/tab_h_hover.png);
+}
+
+.butShowMobileH {
+	background-image: url(/img/editor/screen/mobile_h.png);
+	margin-top: 4px;
+	width: 18px;
+}
+
+.butShowMobileH[chosen="true"] {
+	background-image: url(/img/editor/screen/mobile_h_hover.png);
+}
+
+.butShowMobileV,
+.modeSimple .redactorPageEdit .butShowMobileH {
+	background-image: url(/img/editor/screen/mobile_v.png);
+	width: 17px;
+	margin-top: 2px;
+}
+
+.butShowMobileV[chosen="true"],
+.modeSimple .redactorPageEdit .butShowMobileH[chosen="true"] {
+	background-image: url(/img/editor/screen/mobile_v_hover.png);
+}
+
+/*****************************************************************************************/
+/**блок с правой стороны(передвижение и выделение)****************************************************************************/
+.topPanelSetting {
+	outline: 0px solid #c00;
+	float: right;
+	font-size: 11px;
+	color: rgb(201,204,204);
+	/*padding: 9px 20px 0 0;*/
+	height: 0px;
+}
+
+.topPanelSettingItem {
+	float: right;
+}
+
+
+.topPanelSettingItemLabel,.topPanelSettingItem form {
+	display: inline-block;
+}
+
+.topPanelSettingItemLabel {
+	margin: 0 5px 0 0;
+	float: left;
+}
+
+.topPanelSettingItem form {
+float: right;
+
+}
+
+.topPanelSettingItemInput {
+	display: inline-block;
+	margin-left: 6px;
+
+}
+
+.topPanelSettingItemInput input {
+	margin: 0px 4px 0 0;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+.topPanelSettingItemInput span {
+	display: inline-block;
+}
+/********************************************************************************/
+.toggleMethodMove {
+	outline: 0px solid #cc0;
+	margin-left: 30px;
+}
+
+
+/****************************************************************************/
+.showBorderElm {
+	outline: 0px solid #000;
+}
+/****************************************************************************************/
+/*подменю***************************************************************************************/
+.subMenuTopWrap {
+	/*outline: 1px solid #c00;*/
+	position: absolute;
+	top: 20px; left: -95px;
+	display: none;
+	width: 217px;
+	z-index: 9999978;
+}
+
+.topSubMenuButton:hover .subMenuTopWrap {
+	display: block;
+}
+
+.subMenuTop {
+	/*top: -px; left: 30px;*/
+	padding: 6px 10px 6px 10px;
+	/*height: 100px;*/
+	position: relative;
+	border-radius: 3px;
+	background-color: rgb(35,35,35);
+	background-color: rgb(10,10,10);
+	/*background-color: rgb(220,220,220);*/
+	/*border: 1px solid rgb(70,70,70);*/
+	cursor: default;
+	margin-top: 10px;
+}
+
+.subMenuTopArrow {
+	position: absolute;
+	top: -16px; left: 98px;
+	border: 7px solid transparent;
+	border-bottom: 10px solid rgb(10,10,10);
+  	background-color: transparent;
+}
+
+.subMenuItem {
+	/*outline: 1px solid #c00;*/
+	float: left;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.subMenuItem[is-last="true"] {
+	margin-right: 0;
+}
+/*выбор количества колонок*/
+.addNewColumn {
+	width: 31px;
+	height: 24px;
+}
+
+.addNewColumn[value="2"] {
+	background-position: 0px -29px;
+}
+
+.addNewColumn[value="3"] {
+	background-position: -41px -29px;
+}
+
+.addNewColumn[value="4"] {
+	background-position: -84px -29px;
+}
+
+.addNewColumn[value="5"] {
+	background-position: -125px -29px;
+	width: 32px;
+}
+
+.addNewColumn[value="6"] {
+	background-position: -168px -29px;
+}
+/*************************************************************************************************/
+/*панель добавить элемент***************************************************************************************************/
+.listAddElements {
+	position: absolute;
+	/*top: 36px;*/
+	top: 35px;
+	left: 0; 
+	z-index: 99940;
+	color: rgb(215,215,215);
+	border-right: 1px solid rgb(45,45,45);
+	background-color: rgb(40,40,40);
+	border-bottom: 1px solid rgb(34,34,34);
+	border-right: 1px solid rgb(34,34,34);
+	
+	width: 240px;
+	overflow-x: auto;
+}
+
+.listElementsContent {
+	overflow-x: auto;
+}
+
+.elementsListItemRow {
+	width: 270px;
+}
+
+.elementsListItem {
+	overflow: hidden;
+}
+/*вверхняя часть*/
+.listElementsTop {
+	padding: 6px 10px 4px 10px;
+	background-color: rgb(51,51,51);
+}
+
+.listElementsLabel {
+	float: left;
+	font-size: 13px;
+}
+
+.listElementsButClose {
+	float: right;
+	width: 19px;
+	margin-top: -2px;
+	/*height: 20px;*/
+	cursor: pointer;
+	background-position: -266px -117px;
+}
+
+/*список элементов*/
+.listElementsContent {
+	overflow: auto;
+}
+
+.listElementsBlock {
+	
+}
+
+.elementsBlockLabel {
+	padding: 7px 10px 7px 10px;
+	font-size: 11px;
+	background-color: rgb(40,40,40);
+	color: rgb(220,220,220);
+	cursor: pointer;
+	border-bottom: 1px solid rgb(35,35,35);
+}
+
+.elementsBlockLabelIcon {
+	float: left;
+	margin-right: 7px;
+	width: 14px;
+	height: 14px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: rgb(35,35,35);
+	font-size: 11px;
+	margin-top: 0px;
+}
+
+.elementsBlockLabelText {
+	float: left;
+}
+
+.elementsListItem {
+	background-color: rgb(51,51,51);
+}
+
+.elementsListItemRow {
+	border-bottom: 1px solid rgb(40,40,40);
+}
+
+.elementsListItemRow:last-child {
+	border-bottom: none;
+}
+/*один элемент*/
+.elementsItem {
+	width: 77px;
+	border-right: 1px solid rgb(40,40,40);
+	float: left;
+	padding: 9px 0 7px 0;
+	cursor: pointer;
+}
+
+.elementsItem[no-add="true"] {
+	cursor: default;
+	opacity: 0.4;
+}
+
+
+.elementsItem:not([no-add="true"]):hover {
+	background-color: rgb(72,72,72);
+}
+
+.elementsItem:nth-child(3n) {
+	border-right: none;
+}
+
+/*.elementsItem*/
+
+.elementsItemImage {
+	width: 22px;
+	display: block;
+	margin: 0 auto;
+}
+
+.elementItemIframe {
+	/*width: 22px;*/
+}
+
+.elementsItemName {
+	margin-top: 3px;
+	text-align: center;
+	font-size: 11px;
+	color: rgb(200,200,200);
+	overflow: hidden;
+}
+
+/*особености для элемента*/
+.elementsItemSection img {
+	width: 33%;
+	margin-bottom: 0px;
+	margin-top: -3px;
+}
+
+.elementsItem[type="nav"] img, .elementsItem[type="nav-button-mobile"] img {
+	width: 25%;
+	margin-bottom: 4px;
+	margin-top: -2px;
+}
+
+.elementsItem[type="nav-item"] img {
+	width: 31%;
+	/*margin-bottom: -2px;*/
+	margin-top: -3px;
+}
+
+.elementsItem[type="row"] img {
+	width: 33%;
+	margin-bottom: 0px;
+	margin-top: -3px;
+}
+
+.elementsItem[type="button"] img, .elementsItem[type="submit"] img {
+	width: 50%;
+	margin-top: -10px;
+	margin-bottom: -7px;
+}
+
+.elementsItem[type="text"] img {
+	width: 30%;
+}
+
+.elementsItem[type="form"] img {
+	padding-left: 3px;
+}
+
+.elementsItem[type="input"] img {
+	width: 44%;
+	margin-top: -8px;
+	margin-bottom: -4px;
+}
+
+.elementsItem[type="textarea"] img {
+	width: 40%;
+	margin-top: -6px;
+	margin-bottom: -3px;
+}
+
+.elementsItem[type="slider"] img {
+	width: 25px;
+	margin-top: -3px;
+	margin-bottom: 0px;
+}
+
+.elementsItem[type="gallery"] img {
+	width: 27px;
+    margin-top: -3px;
+    margin-bottom: -2px;
+}
+
+.elementsItem[type="h-tab"] img {
+	width: 38px;
+    margin-top: -10px;
+    margin-bottom: -7px;
+}
+
+/*******************************************************************************************/
+/*Модальное - настройки страницы******************************************************************************************/
+
+.pageSettingBlockRight {
+	float: right;
+	width: 47%;
+}
+
+.pageSettingBlockLeft {
+	float: left;
+	width: 47%;
+	border-right: 1px solid rgb(200,200,200);
+}
+
+.pageSettingBlockCode {
+	margin-bottom: 30px;
+}
+
+.pageSettingBlockLabel {
+	font-weight: bold; 
+}
+
+.pageSettingBlockContent {
+	margin-top: 15px;
+}
+
+.pageSettingBlockItem {
+	margin-bottom: 10px;
+}
+
+.pageSettingBlockItemKey {
+	float: left;
+	width: 25%;
+	font-size: 15px;
+}
+
+.pageSettingBlockItemValue {
+	float: right;
+	width: 70%;
+}
+
+.pageSettingBlockItemValue textarea {
+	height: 80px;
+}
+
+.pageSettingBlockCode .pageSettingBlockItemKey,
+.pageSettingBlockCode .pageSettingBlockItemValue {
+	width: 50%;
+}
+
+.pageSettingBlockAdded .pageSettingBlockItemKey {
+	width: 35%;
+}
+
+.pageSettingBlockAdded .pageSettingBlockItemValue {
+	width: 63%;
+}
+
+.butPageSettingManagerFile, .butPageSettingCodeInsert, 
+.butEditSiteIcon, .butPageSettingToggleItem, .butPageSetting {
+	font-size: 13px;	
+	float: left;
+	border-radius: 3px;
+	color: rgb(240,240,240);
+	cursor: pointer;
+}
+
+.butPageSettingManagerFile:hover, 
+.butPageSettingCodeInsert:hover,
+.butEditSiteIcon:hover {
+	opacity: 0.8;
+}
+
+.pageSettingBlockManagerFile {
+	margin-top: 40px;
+}
+
+.butPageSettingManagerFile {
+	background-color: rgb(62,156,227);
+	padding: 6px 15px 5px 15px;
+}
+
+.butPageSettingCodeInsert, .butEditSiteIcon,
+.butPageSettingToggleItem, .butPageSetting {
+	background-color: rgb(90,90,90);
+	padding: 5px 10px 4px 10px;
+}
+
+
+.menuSiteIcon, .openGraphImage {
+	width: 80px;
+	max-height: 100px;
+	margin-right: 15px;
+	float: left;
+	display: block;
+}
+
+.butEditSiteIcon {
+	margin-left: 15px;
+}
+
+/*but manager*/
+.butManagerFile {
+    width: 130px;
+    padding: 5px 10px 4px 10px;
+    border-radius: 2px;
+	background-color: rgb(90,90,90);
+    color: rgb(240,240,240);
+    font-size: 14px;
+    cursor: pointer;
+	text-align: center;
+}
+
+/*added*/
+.pageSettingBlockAdded {
+	
+}
+
+.butHeadFootStatus {
+	float: left;
+	padding: 5px 10px 4px 10px;
+	color: rgb(240,240,240);
+	background-color: rgb(90,90,90);
+	margin-right: 10px;
+	font-size: 13px;
+    border-radius: 3px;
+    text-align: center;
+    width: 45px;
+    cursor: pointer;
+}
+
+.butHeadFootStatus[data-chosen="true"] {
+	background-color: rgb(42,100,149);
+}
+
+/*site*/
+.butPageSettingToggleItem {
+	min-width: 50px;
+	margin-right: 10px;
+	text-align: center;
+}
+
+.butPageSettingToggleItem[data-chosen="true"] {
+	background-color: rgb(46,113,184);
+}
+

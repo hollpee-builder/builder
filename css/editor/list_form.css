@@ -1,0 +1,80 @@
+.formV1 {
+	background-color: rgb(205,0,0);
+	background-image: linear-gradient(to top, rgb(255,65,18), rgb(148,18,16));
+}
+
+.formV1 .elementFormLabel {
+	color: rgb(250,250,250);
+}
+
+.formV1 .elementFormInput {
+	
+}
+
+.formV1 .elementFormSubmit {
+	color: rgb(255,225,255);
+	background-color: rgb(133,255,40);
+	background-image: linear-gradient(to top, rgb(5,0,36), rgb(64,49,148));
+}
+
+.formV1 .elementStatusHover {
+	background-color: rgb(35,255,222);
+	background-image: linear-gradient(to bottom, rgb(255,65,18), rgb(148,18,16));
+}
+/***********************************************************************************************/
+/***************************************************************************************************/
+.formV2 {
+	background-color: rgb(35,255,222);
+}
+
+.formV2 .elementFormLabel {
+	color: rgb(250,250,250);
+}
+
+.formV2 .elementFormInput {
+	background-color: #fff;
+}
+
+.formV2 .elementFormSubmit {
+	color: rgb(255,225,255);
+	background-color: rgb(53,35,255);
+}
+
+.formV2 .elementStatusHover {
+	background-color: rgb(255,176,50);
+	box-shadow: inset 0 0 10px 2px rgb(0,0,0);
+}
+
+
+
+
+/*************************************************************************************************/
+/***********************************************************************************************/
+.formV3 {
+	background-color: rgb(63,63,63);
+}
+
+
+
+
+
+
+
+
+/*************************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

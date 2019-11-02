@@ -1,0 +1,1 @@
+var ADMIN_FOLDER = "test/admin";

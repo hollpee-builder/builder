@@ -1,0 +1,103 @@
+.grid {
+	/*width: 100%;*/
+	/*height: 0;*/
+	display: none;
+	/*position: static;*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	width: 960px;
+}
+
+.redactorPageEdit .content .full-width .grid[class] {
+	display: none;
+}
+
+.redactorPageEdit .content[screen="desktop"] .grid {
+	display: block;
+}
+
+.gridBg {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+	background: url(/img/editor/grid-2.png) 1px 0 repeat-y;
+	background-size: 100%;
+	opacity: 0.2;
+}
+
+.grid[data-type="none"] .listGridLine,
+.grid[data-type="none"] .gridBg {
+	display: none;
+}
+
+.grid[data-type="half"] .gridBg {
+	opacity: 0.1;
+	background-image: url(/img/editor/grid-3.png);
+}
+
+.grid[data-type="half"] .gridLine {
+	background-color: rgba(36,95,205, 0.4);
+}
+
+.gridLine {
+	z-index: 99910;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background-color: rgba(255,25,44, 0.5);
+}
+
+.gridLine[data-chosen="true"] {
+	width: 2px;
+	margin-left: -1px;
+	background-color: rgba(87, 138, 240, 1)
+}
+
+.grid[data-type="half"] .gridLine[data-chosen="true"] {
+	background-color: rgba(255,25,44, 0.7)
+}
+
+.gridLine0 { left: 0;}
+.gridLine1 { left: 6.5%;}
+.gridLine1-2 { left: 8.5%;}
+
+.gridLine2 { left: 15%;}
+.gridLine2-2 { left: 17%;}
+
+.gridLine3 { left: 23.5%;}
+.gridLine3-2 { left: 25.5%;}
+
+.gridLine4 { left: 32%;}
+.gridLine4-2 { left: 34%;}
+
+.gridLine5 { left: 40.5%;}
+.gridLine5-2 { left: 42.5%;}
+
+.gridLine6 { left: 49%;}
+.gridLine6-2 { left: 51%;}
+
+.gridLine7 { left: 57.5%;}
+.gridLine7-2 { left: 59.5%;}
+
+.gridLine8 { left: 66%;}
+.gridLine8-2 { left: 68%;}
+
+.gridLine9 { left: 74.5%;}
+.gridLine9-2 { left: 76.5%;}
+
+.gridLine10 { left: 83%;}
+.gridLine10-2 { left: 85%;}
+
+.gridLine11 { left: 91.5%;}
+.gridLine11-2 { left: 93.5%;}
+
+
+.gridLine12 { left: 100%;}

@@ -1,0 +1,731 @@
+.rightMenu {
+	position: relative;
+	/*width: 257px;*/
+	/*width: 267px;*/
+	float: right;
+	padding: 0 0px 90px 0px;
+	color: rgb(220,220,220);
+	background-color: rgb(51,51,51);
+	/*background-color: rgb(45,45,45);*/
+}
+
+.rightMenuWrap {
+	padding: 0px 0 10px 0;
+	height: 100%;
+	width: 267px;
+}
+
+.rightMenuListContent {
+	outline: 0px solid #c00;
+	height: 83%;
+	font-size: 11px;
+	position: relative;
+}
+
+.rightMenuContent {
+	overflow: auto;
+	height: 100%;
+	display: none;
+}
+
+.menuSetting {
+	height: 95%;
+}
+
+.rightMenuContent[chosen="true"] {
+	display: block;
+}
+
+.menuStyle {
+	
+}
+
+.butMenu {
+	padding: 5px 8px 4px 8px;
+    border-radius: 2px;
+    background-color: rgb(80,80,80);
+    cursor: pointer;
+    min-width: 70px;
+    text-align: center;
+}
+
+.butMenu:hover {
+	opacity: 0.8;
+}
+
+.select .option {
+	word-wrap: break-word;
+}
+
+/***********************************************************************************************/
+/*навигация блока ******************************************************************************/
+.rightMenuNav {
+	background-color: rgb(31,31,31);
+	/*border-radius: 8px 0px 0 0;*/
+	/*border-bottom: 1px solid rgb(80,80,80);*/
+	position: relative;
+	z-index: 99;
+	height: 23px;
+	font-size: 11px; 
+	padding: 1px 0 0 1px;
+}
+
+.rightMenuNavItem {
+	background-color: rgb(36,36,36);
+	border: 1px solid rgb(51,51,51);
+	/*border-radius: 5px 5px 0 0;*/
+	padding: 5px 7px 5px 7px;
+	cursor: pointer;
+	float: left;
+	margin-right: 1px;
+	color: rgb(201,204,193);
+}
+
+.rightMenuNavItem:last-child {
+	margin-right: 0;
+	margin-bottom: -3px;
+}
+
+.rightMenuNavItem[chosen="true"] {
+	color: rgb(62,156,227);
+	background-color: rgb(43,43,43);
+	padding-bottom: 5px;
+	border-bottom: 1px solid rgb(43,43,43);
+}
+/***************************************************************************************/
+/*верхняя панель меню******************************************************************************/
+.rightMenuTop {
+	border-bottom: 1px solid rgb(31,31,31);
+	padding-top: 3px;
+	/*margin-top: -2px;*/
+	background-color: rgb(43,43,43);
+}
+
+/*название блока*/
+.rightMenuLabel {
+	outline: 0px solid #c00;
+	margin-left: 2px;
+	padding: 10px 0 9px 30px;
+	color: rgb(220,220,220);
+	font-size: 11px; 
+	background: url(/img/editor/elements/page.png) 6px 7px no-repeat;
+	background-size: 18px;
+	width: 96px;
+	overflow: hidden;
+	float: left;
+}
+
+.titleSiteName {
+	color: rgb(62,156,227);
+}
+
+.rightMenuTitleItem[type="struct"] {
+	display: none;
+}
+
+.rightMenuTitleItem[type="struct"] .rightMenuLabel {
+	/*background-image: url(/img/rightIcon/page.png);	*/
+	background: url(/img/editor/struct.png) 6px 9px no-repeat;
+	background-size: 15px;
+}
+
+.rightMenuTopButton {
+	border: 1px solid rgb(41,40,41);
+	background-color: rgb(75,75,75);	
+	color: rgb(230,230,230);
+	/*background-color: rgb(230,230,230);	*/
+	/*color: rgb(75,75,75);*/
+
+	padding: 5px 4px 4px 4px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 11px;
+	float: right;
+	margin: 5px 10px 0 0;
+	display: none;
+	padding:0; 
+}
+
+.rightMenuTopButton:hover {
+	background-color: rgb(65,65,65);
+}
+
+.rightMenuTopButtonText {
+	padding: 4px 5px 3px 5px;
+	display: inline-block;
+}
+
+/*тип состояние*/
+.rightMenuTitle .blockTypeState {
+	float: right;
+	margin: 5px 12px 2px 0;
+}
+
+.menuButElmState[value="focus"] {
+	display: none;
+}
+/*фиксированые параметры******************************************************************/
+.rightMenuListFixedProperty {
+	margin: 0 7px;
+	/*padding: 10px 0 7px 0;*/
+	font-size: 11px;
+}
+
+.rightMenuFixedProperty {
+	display: none;
+	margin-bottom: 8px;
+}
+
+.rightMenuFixedProperty[type="style"] {
+	display: block;
+}
+
+/****/
+.menuFixedPropertyItem {
+	margin-bottom: 10px;
+}
+
+.menuFixedPropertyItem:last-child {
+	margin-bottom: 0;
+}
+
+.menuFixedPropertyItem:first-child {
+	padding-top: 10px;
+	border-top: 1px solid rgb(35,35,35);
+}
+
+.menuFixedPropertyLabel, .menuFixedPropertyValue {
+	float: left;
+}
+
+.menuFixedPropertyLabel {
+	width: 100px;
+}
+
+
+
+/*state****************************************************************************************/
+.selectElmState {
+	float: right;
+	font-size: 12px;
+	margin: 9px 13px 0 0;
+}
+
+.selectElmState .selectBlockButton > input[type="button"] {
+	padding-top: 0;
+	width: 100px;
+	color: rgb(200,200,200);
+}
+
+.selectElmState .selectBlockButton {
+	height: 20px;
+	margin-top: -4px;
+	font-size: 11px;
+}
+
+.selectElmState .selectButtonArrow,
+.selectElmState .selectBlockButton input {
+	background-color: transparent;
+}
+
+.selectElmState .selectButtonArrow span {
+	margin-top: 4px;
+}
+
+
+/*классы элемента**********************************************************************************************/
+.rightMenuFixedProperty .menuFixedItemClass {
+	padding-top: 7px;
+	margin-bottom: -3px;
+}
+
+.menuListClassLabel {
+	float: left;
+	margin: 5px 8px 0px 0;
+}
+
+.menuListClassBlock, .valuleMenuClassAdded {
+	float: left;
+	width: 185px;
+	height: 19px;
+	padding: 3px 3px 2px 3px;
+	margin-top: -2px;
+	background-color: rgb(27,27,27);
+	border-radius: 3px;
+}
+
+.valuleMenuClassAdded {
+	display: none;
+	color: rgb(210,210,210);
+	/*height: 26px;*/
+}
+
+.menuListClass {
+	float: left;
+	/*float: right;*/
+}
+
+.menuFixedClass {
+	float: left;
+	padding: 3px 7px 2px 7px;
+	background-color: rgb(32,32,32);
+	border: 1px solid rgb(55,55,55);
+	border-radius: 2px;
+	white-space: nowrap;
+	overflow: hidden;
+	cursor: default;
+	max-width: 125px;
+	cursor: pointer;
+
+	margin-top: -1px;
+    margin-left: -1px;
+}
+
+.menuFixedClass:not([no-edit="true"]):hover {
+	background-color: rgb(52,52,52);
+}
+
+.menuFixedClass[no-edit="true"] {
+	cursor: default;
+	opacity: 0.8;
+}
+
+.menuFixedItemClass[added="true"] .menuFixedClass {
+	max-width: 62px;
+}
+
+.menuClassAdded {
+	margin-left:4px;
+	display: none;
+}
+/*кнопки*/
+.menuListButClassAdded {
+	float: left;
+	float: right;
+	margin-left: 5px;
+}
+
+.menuClassBut {
+	/*outline: 1px solid #fff;*/
+	float: left;
+	width: 17px;
+	height: 17px;
+	border-radius: 2px;
+	cursor: pointer;
+	margin-top: 1px;
+}
+
+.menuClassButAdd {
+	background: url(/img/editor/plus.png?id=1) 4px 4px no-repeat;
+	background-size: 64%;
+	background-color: rgb(36,95,205);
+}
+
+.menuClassButAdd:hover {
+	background-color: rgb(55,128,208);
+}
+
+.menuClassButDelete {
+	/*background-color: rgb(196,33,33);*/
+	background-size: 92%;
+	background-position: 0 2px;
+	background-image: url(/img/editor/delete-white-2.png?id=1);
+	display: none;
+}
+
+.menuClassButDelete:hover {
+	/*background-color: rgb(196,55,55);*/
+	background-image: url(/img/editor/delete-white-h.png?id=1);
+}
+/**********************************************************************************************/
+/*******************************************************************************************/
+/*Структура************************************************************************************/
+.menuStruct {
+	overflow-x: hidden;
+}
+
+.structItem {
+	position: relative;
+	border-bottom: 1px solid rgb(40,40,40);
+	cursor: pointer;
+}
+
+.structItem[chosen="true"] {
+	background-color: rgb(68,68,68);
+}
+
+.structItem:not([chosen="true"]):hover {
+	background-color: rgb(57,57,57); 
+}
+
+.structItem[no-show="true"] {
+	opacity: 0.4;
+	cursor: default;
+}
+
+.structItem span {
+	height: 25px;
+	display: block;
+	padding: 6px 0 0 20px;
+	margin-left: 3px;
+	background-size: 13px;
+	background-position:2px 6px;
+	box-sizing: border-box;
+	float: left;
+}
+
+.structItemArrow {
+	/*outline: 1px solid;*/
+	display: inline-block;
+	float: left;
+	width: 13px;
+	height: 12px;
+	margin-top: 6px;
+}
+.structItemArrow:hover {
+	background-color: rgb(40,40,40);
+	border-radius: 3px;
+}
+
+.structItemArrow:not([is-child="true"]) {
+	/*background-color: rgb(0,0,0);*/
+	background-image: none;
+	height: 0;
+}
+
+.structItemName {
+	white-space: nowrap;
+}
+
+.structItemArrow[is-child="true"] {
+	/*outline: 1px solid;*/
+	
+}
+
+.structItemWrap[status="hide"] .structItemArrow {
+	background-position: -101px -16px;
+}	
+
+.structItemWrap[status="show"] .structItemArrow {
+	background-position: -90px -17px;
+}
+
+.structItemWrap[status="hide"] > ul {
+	display: none;
+}
+
+/*передвигаемый элемент*/
+.structItemMove {
+	display: none;
+	position: absolute;
+	z-index: 9999999;
+	background-color: rgba(0,0,0,0.5);
+	color: rgb(240,240,240);
+	width: 200px;
+	padding-left: 10px;
+	font-family: Verdana;
+	font-size: 11px;
+}
+
+.structItemMove:hover {
+	background-color: rgba(0,0,0,0.5);
+}
+
+.structItemLineSelect {
+	position: absolute;
+	left: 5%; bottom: 0;
+	width: 90%;
+	height: 2px;
+	background-color: rgb(68,90,210);
+	display: none;
+}
+
+.structItemLineSelect[show="true"] {
+	display: block;
+}
+
+/*разные элементы*/
+.structItem[type="modal"] span {
+	background-image: url(/img/editor/elements/modal.png);
+}
+
+.structItem[type="section"] span {
+	background-image: url(/img/editor/elements/section.png);
+}
+
+.structItem[type="page"] span {
+	background-image: url(/img/editor/elements/page.png);
+}
+
+.structItem[type="header"] span {
+	background-image: url(/img/editor/elements/header.png);
+}
+
+.structItem[type="footer"] span {
+	background-image: url(/img/editor/elements/footer.png);
+}
+
+.structItem[type="nav"] span {
+	background-image: url(/img/editor/elements/nav.png);
+}
+
+.structItem[type="nav-mobile"] span {
+	background-image: url(/img/editor/elements/nav.png);
+}
+
+
+.structItem[type="nav-panel-mobile"] span {
+	background-image: url(/img/editor/elements/section.png);
+}
+
+.structItem[type="nav-button-mobile"] span {
+	background-image: url(/img/editor/elements/nav.png);
+}
+
+.structItem[type="nav-item"] span {
+	background-image: url(/img/editor/elements/nav-item.png);
+}
+
+.structItem[type="nav-item-mobile"] span {
+	background-image: url(/img/editor/elements/nav-item.png);
+}
+
+.structItem[type="row"] span {
+	background-image: url(/img/editor/elements/row.png);
+}
+
+.structItem[type="column"] span {
+	background-image: url(/img/editor/elements/columns.png);
+}
+
+.structItem[type="block"] span {
+	background-image: url(/img/editor/elements/block.png);
+}
+
+.structItem[type="image"] span {
+	background-image: url(/img/editor/elements/image.png);
+}
+
+.structItem[type="video"] span {
+	background-image: url(/img/editor/elements/video.png);
+}
+
+.structItem[type="map"] span {
+	background-image: url(/img/editor/elements/map.png);
+}
+
+.structItem[type="iframe"] span,
+.structItem[type="embed"] span {
+	background-image: url(/img/editor/elements/iframe.png);
+}
+
+.structItem[type="slider"] span,
+.structItem[type="slider-but-toggle"] span {
+	background-image: url(/img/editor/elements/slider.png);
+}
+
+.structItem[type="slider-list-chosen"] span {
+	background-image: url(/img/editor/elements/slider.png);
+}
+
+.structItem[type="block-hover"] span {
+	background-image: url(/img/editor/elements/block-hover.png);
+}
+
+.structItem[type="block-hover-active"] span {
+	background-image: url(/img/editor/elements/block-hover.png);
+}
+
+.structItem[type="button"] span {
+	background-image: url(/img/editor/elements/button.png);
+}
+
+.structItem[type="heading"] span {
+	background-image: url(/img/editor/elements/heading.png);
+}
+
+.structItem[type="text"] span {
+	background-image: url(/img/editor/elements/text.png);
+	
+}
+
+.structItem[type="text-span"] span {
+	background-image: url(/img/editor/elements/span.png);
+	
+}
+
+/*галерея*/
+
+.structItem[type="gallery"] span {
+	background-image: url(/img/editor/elements/gallery.png);
+	
+}
+
+.structItem[type="gallery-list-image"] span {
+	background-image: url(/img/editor/elements/gallery.png);
+	
+}
+
+.structItem[type="gallery-image"] span {
+	background-image: url(/img/editor/elements/image.png);
+	
+}
+
+/*tab*/
+
+.structItem[type="h-tab"] span {
+	background-image: url(/img/editor/elements/tab.png);
+	
+}
+
+.structItem[type="tab-list-but"] span {
+	background-image: url(/img/editor/elements/tab.png);
+	
+}
+
+.structItem[type="tab-button"] span {
+	background-image: url(/img/editor/elements/button.png);
+	
+}
+
+.structItem[type="tab-list-canvas"] span {
+	background-image: url(/img/editor/elements/tab.png);
+}
+
+.structItem[type="tab-canvas"] span {
+	background-image: url(/img/editor/elements/tab.png);
+}
+
+/*форма*/
+.structItem[type="form"] span {
+	background-image: url(/img/editor/elements/form.png);	
+}
+
+.structItem[type="input"] span {
+	background-image: url(/img/editor/elements/input.png);	
+}
+
+.structItem[type="submit"] span {
+	background-image: url(/img/editor/elements/submit.png);	
+}
+
+.structItem[type="textarea"] span {
+	background-image: url(/img/editor/elements/textarea.png);	
+}
+
+/*уровни*/
+.structItem[level="2"] {padding-left: 30px;}
+.structItem[level="3"] {padding-left: 40px;}
+.structItem[level="4"] {padding-left: 60px;}
+.structItem[level="5"] {padding-left: 80px;}
+.structItem[level="6"] {padding-left: 100px;}
+.structItem[level="7"] {padding-left: 120px;}
+.structItem[level="8"] {padding-left: 140px;}
+.structItem[level="9"] {padding-left: 160px;}
+.structItem[level="10"] {padding-left: 180px;}
+.structItem[level="11"] {padding-left: 200px;}
+
+/*************************************************************************************************/
+
+.structItem[type="blog-list-articles"] span {
+	background-image: url(/img/editor/elements/section.png);	
+}
+
+.structItem[type="blog-list-articles-item"] span {
+	background-image: url(/img/editor/elements/section.png);	
+}
+
+.structItem[type="blog-article-avatar"] span {
+	background-image: url(/img/editor/elements/image.png);	
+}
+
+
+/*article*/
+.structItem[type="blog-article"] span {
+	background-image: url(/img/editor/elements/section.png);	
+}
+
+.structItem[type="blog-article-title"] span {
+	background-image: url(/img/editor/elements/heading.png);	
+}
+
+.structItem[type="blog-article-text"] span {
+	background-image: url(/img/editor/elements/text.png);	
+}
+
+.structItem[type="blog-article-blockquote"] span {
+	background-image: url(/img/editor/elements/text.png);	
+}
+
+/*author*/
+.structItem[type="blog-article-author"] span {
+	background-image: url(/img/editor/elements/section.png);	
+}
+
+.structItem[type="blog-article-author-gravatar"] span {
+	background-image: url(/img/editor/elements/image.png);	
+}
+
+.structItem[type="blog-article-author-name"] span {
+	background-image: url(/img/editor/elements/text.png);	
+}
+
+.structItem[type="blog-article-author-desc"] span {
+	background-image: url(/img/editor/elements/image.png);	
+}
+
+.structItem[type="blog-article-h1"] span,
+.structItem[type="blog-article-h2"] span,
+.structItem[type="blog-article-h3"] span,
+.structItem[type="blog-article-h4"] span {
+	background-image: url(/img/editor/elements/heading.png);	
+}
+
+.structItem[type="blog-article-text"] span,
+.structItem[type="blog-article-link"] span,
+.structItem[type="blog-article-blockquote-p"] span {
+	background-image: url(/img/editor/elements/text.png);	
+}
+
+.structItem[type="hlp-ol"] span,
+.structItem[type="hlp-ul"] span,
+.structItem[type="hlp-li"] span,
+.structItem[type="blog-article-ul"] span,
+.structItem[type="blog-article-ul-li"] span,
+.structItem[type="blog-article-ol"] span,
+.structItem[type="blog-article-ol-li"] span {
+	background-image: url(/img/editor/elements/nav-item.png);	
+}
+
+
+
+
+
+/****************************************************************************************************/
+/*************************************************************************************************/
+
+
+
+
+
+
+
+/**********************************************************************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

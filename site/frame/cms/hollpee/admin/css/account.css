@@ -1,0 +1,54 @@
+.user-property {
+	width: 80%;
+}
+
+.account-key {
+	float: left;
+	width: 130px;
+}
+
+.account-value {
+	float: left;
+}
+
+.account-edit-psw, .but-edit-property {
+	cursor: pointer;
+	color: rgb(60,88,155);
+	border-bottom: 1px dashed;
+}
+/***************************************************************************************************/
+.list-modal {
+	display: none;
+}
+
+/*изменить пароль*/
+.account-item {
+	margin-bottom: 10px;
+}
+
+.row-psw .error-label {
+	text-align: right;
+}
+
+.row-psw-label {
+	width: 170px;
+	float: left;
+}
+
+input.psw-value {
+	width: 300px;
+	float: left;
+	margin-top: 4px;
+}
+
+#modalEditPsw .errorForm {
+	text-align: right;
+}
+
+/*email*/
+.but-edit-property {
+	float: left;
+	margin-left: 20px;
+}
+
+

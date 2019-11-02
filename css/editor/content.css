@@ -1,0 +1,1987 @@
+
+/*block*/
+.float-right { float: right; }
+.hlp-children-float > * { float: left; }
+.hlp-children-no-float > *[class] { float: none; }
+/**/
+
+
+.listModal {
+	display: none;
+}
+
+.contentItem[class] .hlp-nav-panel-mobile[class] {
+	z-index: 9980;
+}
+
+/*video bg*/
+.redactorPageEdit .hlp-bg-video-paralax[class] {
+	position: absolute;
+}
+
+.hlp-bg-video[class] {
+	z-index: -980;
+}
+
+.redactorPageEdit .hlp-bg-video, 
+.redactorPageEdit .hlp-bg-video-opacity, 
+.redactorPageEdit .hlp-bg-video > video, 
+.redactorPageEdit .hlp-bg-video > iframe {
+	min-height: 100%;
+}
+
+.redactorPageEdit .hlp-bg-video {
+	padding-bottom: 0;
+}
+
+.site {
+	min-height: 100vh;
+}
+
+.site[class] .section[class] {
+	/*overflow: hidden;*/
+}
+
+/*nav*/
+.hlp-nav li:hover .hlp-nav-level-wrap {
+	display: none;
+}
+
+.redactorPageShow .hlp-nav li:hover > .hlp-nav-level-wrap {
+	display: block;
+}
+
+body .hlp-nav li[data-hlp-nav-open-level="true"] > .hlp-nav-level-wrap {
+	display: block;
+}
+
+.redactorPageEdit .element[class] {
+	transition: all 0.0s ease;
+}
+
+.redactorPageShow .hlp-section .button,
+.redactorPageShow input[type="submit"],
+.redactorPageShow .nav-item {
+	transition: all 0.3s ease;
+}
+
+.textRedactorField {
+	word-wrap: break-word;
+}
+
+.contentItem[screen="desktop"] .element:hover {
+	animation-delay: 0s; 
+	/*animation-duration: 1s;*/
+}
+
+.redactorPageShowContent .contentItem[screen="desktop"] .section[data-paralax='1'] {
+	background-attachment: fixed;
+}
+
+/*paralax*/
+.redactorPageEdit .hlp-bg-video-paralax[class], 
+.redactorPageEdit .hlp-elm-paralax[class] {
+	position: absolute;
+}
+
+body .hlp-elm-full-width[class]:not([this-not-attr1]):not([this-not-attr1]) {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.listElmBasicType {
+	display: none;
+}
+
+
+/**/
+
+.hlp-section[class] {
+	padding-bottom: 2px;
+	padding-top: 2px;
+}
+
+div {
+	overflow: visible;
+	position: static;
+}
+
+.button {
+	text-align: center;
+}
+
+.redactorPageEdit[class] .contentItem[screen][class] .element[class] {
+	transition: 0s;
+} 
+
+.hlp-element-code {
+	display: none;
+}
+
+/*menu*/
+.redactorPageEdit .hlp-nav-level {
+	outline: 1px dashed rgb(0,0,0);
+}
+
+/*video bg*/
+.hlp-site[class] .hlp-section[class~="hlp-section-bg-paralax"] {
+    z-index: 2;
+}
+
+/*triger*/
+.site[class] .element[data-hlp-triger-event='videotimer'] {
+	opacity: 1;
+}
+
+.site[class] .hlp-tabs[class],
+.site[class] .hlp-embed[class] {
+	overflow: visible;
+}
+
+/*видео фон*/
+.contentItem[screen="tab-l"] .hlp-bg-video,
+.contentItem[screen="tab-p"] .hlp-bg-video,
+.contentItem[screen="mobile-l"] .hlp-bg-video,
+.contentItem[screen="mobile-p"] .hlp-bg-video {
+	display: none;
+}
+
+.element {
+	max-width: 100%;
+}
+
+.blockManModeSimple {
+	display: none;
+}
+
+.hlp-site[class] .input[type="hlp-hidden"] {
+	/*outline: 2px solid #5c90d2;*/
+	background: rgb(70,70,70);
+	color: rgb(240,240,240);
+}
+
+/****************************************************************************/
+/****************************************************************************/
+/****************************************************************************/
+.scaleBlock {
+	background-color: rgb(57,57,57);
+}
+
+.contentItem  {
+	position: relative;
+	z-index: 80;
+}
+
+.contentModal {
+	padding-top: 1px;
+}
+
+.wrapper[class]:not([sdhkjfhdskj]) .displayNone[class]:not([sdhkjfhdskj]) {
+	display: none;
+}
+/**********************************************************************************************/
+.content .section {  
+	overflow: visible;
+}
+
+.content, .redactorPageShow {
+	/*font-family: Times New Roman;*/
+}
+
+.block {
+	/*background-color: rgb(0,8,255);*/
+}
+
+/*из за ленейки нужен отступ*/
+
+.elementHide {
+	opacity: 0;
+}
+
+a {
+	box-sizing: border-box;
+}
+
+.site[class] .resizeBlock, 
+.site[class] .resizeBlock *,
+.site[class] .guides,
+.site[class] .guides * {
+	box-sizing: content-box;
+}
+
+.element {	
+	z-index: 1;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.section {	
+	z-index: 2;
+}
+
+.map-full-width {
+	position: absolute;
+}
+
+.rightMenu input, 
+.modalBlock input {
+	font-family: Verdana;
+}
+
+.rightMenu input {
+	font-size: 11px;
+}
+
+.image > img {
+	width: 100%;
+	height: inherit;
+	min-height: inherit;
+	max-height: inherit;
+	border-radius: inherit;
+	display: block;
+}
+
+/*min-height for element******/
+
+
+.list-slider-item, .slider-item {
+	overflow: visible;
+}
+/**********************************************************************************************/
+
+.redactorPageEdit .contentItem .element,  
+.redactorPageEdit .contentItem .slider-but-chosen {
+	cursor: pointer;
+}
+
+.redactorPageEdit .contentItem .elementSelected,
+.redactorPageEdit .contentItem .elementSelected > .slider-but-chosen {
+	cursor: move;
+}
+
+.redactorPageEdit .contentItem .elementSelected[class~="modal"] {
+	cursor: default;
+}
+
+.elementSelected {
+	z-index: 2;
+	/*position: relative;*/
+}
+
+.redactorPageEdit .contentItem .elementSelected:not([position-side]) {
+	/*position: relative;*/
+}
+
+.map-full-width[class~="element"] {
+	z-index: 0;
+}
+
+
+.redactorPageEdit .contentItem .textRedactorField {
+	cursor: text;
+}
+
+.element[is-parent-selected="true"] {
+	z-index: 2;
+}
+
+/*.content .elementSelected > .section-content {
+	z-index: 80;
+}*/
+
+.redactorPageEdit .element[border~="true"] {
+	cursor: default;
+}
+
+.redactorPageEdit .section-content:not(.full-width) {
+	border-left: 1px solid rgb(54,117,173);
+	border-right: 1px solid rgb(54,117,173);
+}
+
+/*.content .section-static {
+	height: auto;
+	min-height: inherit;
+}*/
+
+/*маска для видео, что бы оно не запускалось*/
+.selfVideoBlackout, .selfElementBlackout {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 960;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+.selfEmbedBlackout {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.selfEmbedBlackoutText {
+	padding: 20px;
+	text-align: center;
+	color: rgb(220,220,220);
+	font-size: 14px;
+}
+
+/***************************************************************************/
+.contentSection {
+	background-color: rgb(57,57,57);
+	/*padding-top: 4px;*/
+}
+
+.contentSection .scaleWrap {
+	display: none;
+}
+
+.redactorPageEdit .contentItem {
+	padding-left: 4px;
+}
+
+.section {
+
+}
+
+.content .page {
+	position: relative;
+}
+
+.contentWrap {
+	position: relative;
+	background-color: rgb(75,75,75);
+	overflow: auto;
+	height: 800px;
+}
+
+.content {
+	outline: 0px solid;
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	/*height: 535px;*/
+}
+
+.content .section .resizeBlock {
+	margin: 0 -3px;
+}
+
+.contentSectionFooter {
+	outline: 0px solid #c00;
+	height:27px;
+	/*background-color: #000;
+	*/
+}
+
+.noScroll {
+	overflow: hidden;
+}
+
+.content .displayBlock {
+	display: block;
+}
+
+.content .displayNone {
+	display: none;
+}
+/*for nav mobile*************************************************************************************/
+.content[class] .nav-panel-mobile[class] {
+	position: absolute;
+}
+
+.content[class] .site[class]:not(.this-no-class-hlp-123) {
+	/*overflow: visible;*/
+	/*position: static;*/
+}
+
+
+.nav-button-mobile > img {
+	width: 100%;
+}
+/*****************************************************************************************/
+/*типы экранов*/
+.content[screen="desktop"] {
+
+}
+
+.contentItem[screen] {
+	background-color: rgb(57,57,57);
+	margin: 0 auto;
+}
+
+.site, .modalWrap {
+	background-color: rgb(255,255,255);
+	position: relative;
+}
+
+.modalWrap {
+	margin: 0 auto;
+}
+
+/*.contentWrap:not([screen="desktop"]) {*/
+.contentWrap {
+	overflow-x: hidden;
+}
+
+.contentItem[screen] .section, .site {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.contentItem[screen="tab-l"] .site, .contentItem[screen="tab-l"] .modalWrap {
+	width: 900px
+}
+
+.contentItem[screen="tab-p"] .site, .contentItem[screen="tab-p"] .modalWrap {
+	width: 700px;
+}
+
+.contentItem[screen="mobile-l"] .site, .contentItem[screen="mobile-l"] .modalWrap {
+	width: 480px;
+}
+
+.contentItem[screen="mobile-p"] .site, .contentItem[screen="mobile-p"] .modalWrap  {
+	width: 300px;
+}
+
+
+/*max width modal*/
+.contentItem[screen="tab-l"] .modal {
+	max-width: 900px
+}
+
+.contentItem[screen="tab-p"] .modal {
+	max-width: 700px;
+}
+
+.contentItem[screen="mobile-l"] .modal {
+	max-width: 480px;
+}
+
+.contentItem[screen="mobile-p"] .modal  {
+	max-width: 300px;
+}
+
+.wrapper[class] .contentItem[screen="mobile-p"]:not(.hlp-this-not-cls) .modal[class]:not(.hlp-this-not-cls) {
+	margin-left: auto;
+	margin-right: auto;
+} 
+/********************************************************************************/
+/*оптикание********************************************************************************************/
+/*tab l*/
+.contentItem[screen="tab-l"] .hlp-children-float-tl > .element,
+.contentItem[screen="tab-p"] .hlp-children-float-tl > .element,
+.contentItem[screen="mobile-l"] .hlp-children-float-tl > .element,
+.contentItem[screen="mobile-p"] .hlp-children-float-tl > .element,
+.contentItem[screen="tab-l"] .hlp-children-float-tl > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="tab-p"] .hlp-children-float-tl > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .hlp-children-float-tl > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .hlp-children-float-tl > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: left;
+}
+
+
+.contentItem[screen="tab-l"] .site .float-right-tl,
+.contentItem[screen="tab-p"] .site .float-right-tl,
+.contentItem[screen="mobile-l"] .site .float-right-tl,
+.contentItem[screen="mobile-p"] .site .float-right-tl,
+.contentItem[screen="tab-l"] .site .float-right-tl[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="tab-p"] .site .float-right-tl[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .site .float-right-tl[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .site .float-right-tl[class-added]:not(.hlp-this-not-class-234324)  {
+	float: right;
+}
+
+
+.contentItem[screen="tab-l"] .site .float-left-tl,
+.contentItem[screen="tab-p"] .site .float-left-tl,
+.contentItem[screen="mobile-l"] .site .float-left-tl,
+.contentItem[screen="mobile-p"] .site .float-left-tl,
+.contentItem[screen="tab-l"] .site .float-left-tl[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="tab-p"] .site .float-left-tl[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .site .float-left-tl[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .site .float-left-tl[class-added]:not(.hlp-this-not-class-234324) {
+	float: left;
+}
+
+.contentItem[screen="tab-l"] .hlp-children-no-float-tl > .element,
+.contentItem[screen="tab-p"] .hlp-children-no-float-tl > .element,
+.contentItem[screen="mobile-l"] .hlp-children-no-float-tl > .element,
+.contentItem[screen="mobile-p"] .hlp-children-no-float-tl > .element,
+.contentItem[screen="tab-l"] .hlp-children-no-float-tl > .element[class-added]:not(.hlp-this-not-class-234324):not(.hlp-this-not-class-234324),
+.contentItem[screen="tab-p"] .hlp-children-no-float-tl > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .hlp-children-no-float-tl > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .hlp-children-no-float-tl > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: none;
+}
+
+/*tab p*/
+
+.contentItem[screen="tab-p"] .hlp-children-float-tp > .element,
+.contentItem[screen="mobile-l"] .hlp-children-float-tp > .element,
+.contentItem[screen="mobile-p"] .hlp-children-float-tp > .element,
+.contentItem[screen="tab-p"] .hlp-children-float-tp > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .hlp-children-float-tp > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .hlp-children-float-tp > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: left;
+}
+
+
+.contentItem[screen="tab-p"] .site .float-right-tp,
+.contentItem[screen="mobile-l"] .site .float-right-tp,
+.contentItem[screen="mobile-p"] .site .float-right-tp,
+.contentItem[screen="tab-p"] .site .float-right-tp[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .site .float-right-tp[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .site .float-right-tp[class-added]:not(.hlp-this-not-class-234324)    {
+	float: right;
+}
+
+
+.contentItem[screen="tab-p"] .site .float-left-tp,
+.contentItem[screen="mobile-l"] .site .float-left-tp,
+.contentItem[screen="mobile-p"] .site .float-left-tp,
+.contentItem[screen="tab-p"] .site .float-left-tp[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .site .float-left-tp[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .site .float-left-tp[class-added]:not(.hlp-this-not-class-234324)  {
+	float: left;
+}
+
+.contentItem[screen="tab-p"] .hlp-children-no-float-tp > .element,
+.contentItem[screen="mobile-l"] .hlp-children-no-float-tp > .element,
+.contentItem[screen="mobile-p"] .hlp-children-no-float-tp > .element,
+.contentItem[screen="tab-p"] .hlp-children-no-float-tp > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-l"] .hlp-children-no-float-tp > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .hlp-children-no-float-tp > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: none;
+}
+
+/*mobile l*/
+.contentItem[screen="mobile-l"] .hlp-children-float-ml > .element,
+.contentItem[screen="mobile-p"] .hlp-children-float-ml > .element,
+.contentItem[screen="mobile-l"] .hlp-children-float-ml > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .hlp-children-float-ml > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: left;
+}
+
+
+.contentItem[screen="mobile-l"] .site .float-right-ml,
+.contentItem[screen="mobile-p"] .site .float-right-ml,
+.contentItem[screen="mobile-l"] .site .float-right-ml[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .site .float-right-ml[class-added]:not(.hlp-this-not-class-234324)  {
+	float: right;
+}
+
+.contentItem[screen="mobile-l"] .site .float-left-ml,
+.contentItem[screen="mobile-p"] .site .float-left-ml,
+.contentItem[screen="mobile-l"] .site .float-left-ml[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .site .float-left-ml[class-added]:not(.hlp-this-not-class-234324)  {
+	float: left;
+}
+
+.contentItem[screen="mobile-l"] .hlp-children-no-float-ml > .element,
+.contentItem[screen="mobile-p"] .hlp-children-no-float-ml > .element,
+.contentItem[screen="mobile-l"] .hlp-children-no-float-ml > .element[class-added]:not(.hlp-this-not-class-234324),
+.contentItem[screen="mobile-p"] .hlp-children-no-float-ml > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: none;
+}
+
+/*mobile p*/
+
+.contentItem[screen="mobile-p"] .hlp-children-float-mp > .element,
+.contentItem[screen="mobile-p"] .hlp-children-float-mp > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: left;
+}
+
+.contentItem[screen="mobile-p"] .site .float-right-mp,
+.contentItem[screen="mobile-p"] .site .float-right-mp[class-added]:not(.hlp-this-not-class-234324) {
+	float: right;
+}
+
+.contentItem[screen="mobile-p"] .site .float-left-mp,
+.contentItem[screen="mobile-p"] .site .float-left-mp[class-added]:not(.hlp-this-not-class-234324) {
+	float: left;
+}
+
+.contentItem[screen="mobile-p"] .hlp-children-no-float-mp > .element,
+.contentItem[screen="mobile-p"] .hlp-children-no-float-mp > .element[class-added]:not(.hlp-this-not-class-234324) {
+	float: none;
+}
+
+/*******************************************************************************/
+/*разные экраны*****************************************************************************/
+.contentItem:not([screen="desktop"]) .section {
+	/*padding-left: 10px;*/
+	/*padding-right: 10px;*/
+	width: 100%;
+	/*max-width: 98%;*/
+}
+
+.contentItem:not([screen="desktop"]) .hlp-section-content {
+	/*width: 100%;*/
+	/*max-width: 100%;*/
+}
+
+.contentItem:not([screen="desktop"]) .full-width {
+	padding-left: 0;
+	padding-right: 0;	
+}
+
+.contentItem[screen="mobile-l"] .section-content > * > .column,
+.contentItem[screen="mobile-p"] .section-content > * > .column,
+.contentItem[screen="mobile-l"] .modal > * > .column,
+.contentItem[screen="mobile-p"] .modal > * > .column {
+	width: 100%;
+	margin-right: 0;
+    margin-left: 0;
+}
+
+/*планшет*/
+.contentItem[screen="tab-l"] .hlp-row-col-1-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-1-tp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-1-ml > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-1-mp > .column {
+	width: 100%;
+	margin-right: 0;
+    margin-left: 0;
+}
+
+/********************************************************************************************/
+
+
+/*без отступа*/
+.contentItem[screen="tab-l"] .hlp-row-col-2-tl[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-2-tp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-2-mp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-2-ml[class~="hlp-row-col-no-indent"] > .column { 
+	width: 50%;
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-3-tl[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-3-tp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-3-mp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-3-ml[class~="hlp-row-col-no-indent"] > .column { 
+	width: 33.33334%; 
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-4-tl[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-4-tp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-4-mp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-4-ml[class~="hlp-row-col-no-indent"] > .column { 
+	width: 25%; 
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-5-tl[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-5-tp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-5-mp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-5-ml[class~="hlp-row-col-no-indent"] > .column { 
+	width: 20%; 
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-6-tl[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-6-tp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-6-mp[class~="hlp-row-col-no-indent"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-6-ml[class~="hlp-row-col-no-indent"] > .column { 
+	width: 16.66%; 
+}
+
+
+/*c оступом*/
+.contentItem[screen="tab-l"] .hlp-row-col-2-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-2-tp > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-2-mp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-2-ml > .column { 
+	width: 49%;
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-3-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-3-tp > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-3-mp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-3-ml > .column { 
+	width: 32%; 
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-4-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-4-tp > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-4-mp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-4-ml > .column { 
+	width: 23.5%; 
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-5-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-5-tp > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-5-mp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-5-ml > .column { 
+	width: 18.4%; 
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-6-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-6-tp > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-6-mp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-6-ml > .column { 
+	width: 15%; 
+}
+
+/*размер конкретной*************************************************************************/
+
+.contentItem[screen="tab-l"] .hlp-row[class] > .hlp-col-w-12-tl,
+.contentItem[screen="tab-p"] .hlp-row[class] > .hlp-col-w-12-tp,
+.contentItem[screen="mobile-p"] .hlp-row[class] > .hlp-col-w-12-mp,
+.contentItem[screen="mobile-l"] .hlp-row[class] > .hlp-col-w-12-ml { 
+	width: 100%;
+	clear: none;
+	margin-right: 0; 
+	margin-left: 0;
+}
+
+.contentItem[screen="tab-l"] .hlp-row[class] > .hlp-col-w-6-tl,
+.contentItem[screen="tab-p"] .hlp-row[class] > .hlp-col-w-6-tp,
+.contentItem[screen="mobile-p"] .hlp-row[class] > .hlp-col-w-6-mp,
+.contentItem[screen="mobile-l"] .hlp-row[class] > .hlp-col-w-6-ml { 
+	width: 50%;
+	clear: none;
+	margin-right: 0; 
+	margin-left: 0;
+}
+
+.contentItem[screen="tab-l"] .hlp-row[class] > .hlp-col-w-4-tl,
+.contentItem[screen="tab-p"] .hlp-row[class] > .hlp-col-w-4-tp,
+.contentItem[screen="mobile-p"] .hlp-row[class] > .hlp-col-w-4-mp,
+.contentItem[screen="mobile-l"] .hlp-row[class] > .hlp-col-w-4-ml {
+	width: 33.33334%;
+	clear: none;
+	margin-right: 0; 
+	margin-left: 0; 
+}
+
+.contentItem[screen="tab-l"] .hlp-row[class] > .hlp-col-w-3-tl,
+.contentItem[screen="tab-p"] .hlp-row[class] > .hlp-col-w-3-tp,
+.contentItem[screen="mobile-p"] .hlp-row[class] > .hlp-col-w-3-mp,
+.contentItem[screen="mobile-l"] .hlp-row[class] > .hlp-col-w-3-ml {
+	width: 25%;
+	clear: none;
+	margin-right: 0; 
+	margin-left: 0;
+}
+
+/*****************************************************************************/
+
+
+.contentItem[screen="tab-l"] .hlp-row-col-2-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-2-tp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-2-ml > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-2-mp > .column,
+
+.contentItem[screen="tab-l"] .hlp-row-col-3-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-3-tp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-3-ml > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-3-mp > .column, 
+
+.contentItem[screen="tab-l"] .hlp-row-col-4-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-4-tp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-4-ml > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-4-mp > .column,
+
+.contentItem[screen="tab-l"] .hlp-row-col-5-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-5-tp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-5-ml > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-5-mp > .column,
+
+.contentItem[screen="tab-l"] .hlp-row-col-6-tl > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-6-tp > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-6-ml > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-6-mp > .column { 
+	margin-right: 2%;
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-2-tl[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-2-tp[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-2-ml[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-2-mp[class~="hlp-children-float-right"] > .column,
+
+.contentItem[screen="tab-l"] .hlp-row-col-3-tl[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-3-tp[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-3-ml[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-3-mp[class~="hlp-children-float-right"] > .column, 
+
+.contentItem[screen="tab-l"] .hlp-row-col-4-tl[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-4-tp[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-4-ml[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-4-mp[class~="hlp-children-float-right"] > .column,
+
+.contentItem[screen="tab-l"] .hlp-row-col-5-tl[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-5-tp[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-5-ml[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-5-mp[class~="hlp-children-float-right"] > .column,
+
+.contentItem[screen="tab-l"] .hlp-row-col-6-tl[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="tab-p"] .hlp-row-col-6-tp[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-l"] .hlp-row-col-6-ml[class~="hlp-children-float-right"] > .column,
+.contentItem[screen="mobile-p"] .hlp-row-col-6-mp[class~="hlp-children-float-right"] > .column { 
+	margin-left: 2%;
+	margin-right: 0;
+}
+
+
+
+.contentItem[screen="tab-l"] .row[class~="hlp-row-col-no-indent"] > .column[class],
+.contentItem[screen="tab-p"] .row[class~="hlp-row-col-no-indent"] > .column[class],
+.contentItem[screen="mobile-p"] .row[class~="hlp-row-col-no-indent"] > .column[class],
+.contentItem[screen="mobile-l"] .row[class~="hlp-row-col-no-indent"] > .column[class] { 
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/********/
+.contentItem[screen="tab-l"] .hlp-row-col-2-tl > .column:nth-child(2n+2),
+.contentItem[screen="tab-p"] .hlp-row-col-2-tp > .column:nth-child(2n),
+.contentItem[screen="mobile-p"] .site .hlp-row-col-2-mp > .column:nth-child(2n),
+.contentItem[screen="mobile-l"] .site .hlp-row-col-2-ml > .column:nth-child(2n) { 
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-3-tl > .column:nth-child(3n),
+.contentItem[screen="tab-p"] .hlp-row-col-3-tp > .column:nth-child(3n),
+.contentItem[screen="mobile-p"] .site .hlp-row-col-3-mp > .column:nth-child(3n),
+.contentItem[screen="mobile-l"] .site .hlp-row-col-3-ml > .column:nth-child(3n) { 
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-4-tl > .column:nth-child(4n),
+.contentItem[screen="tab-p"] .hlp-row-col-4-tp > .column:nth-child(4n),
+.contentItem[screen="mobile-p"] .site .hlp-row-col-4-mp > .column:nth-child(4n),
+.contentItem[screen="mobile-l"] .site .hlp-row-col-4-ml > .column:nth-child(4n) { 
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-5-tl > .column:nth-child(5n),
+.contentItem[screen="tab-p"] .hlp-row-col-5-tp > .column:nth-child(5n),
+.contentItem[screen="mobile-p"] .site .hlp-row-col-5-mp > .column:nth-child(5n),
+.contentItem[screen="mobile-l"] .site .hlp-row-col-5-ml > .column:nth-child(5n) { 
+	margin-right: 0;
+	margin-left: 0;
+}
+
+.contentItem[screen="tab-l"] .hlp-row-col-6-tl > .column:nth-child(6n),
+.contentItem[screen="tab-p"] .hlp-row-col-6-tp > .column:nth-child(6n),
+.contentItem[screen="mobile-p"] .site .hlp-row-col-6-mp > .column:nth-child(6n),
+.contentItem[screen="mobile-l"] .site .hlp-row-col-6-ml > .column:nth-child(6n) { 
+	margin-right: 0;
+	margin-left: 0;
+}
+
+
+/*****/
+.contentItem[screen="desktop"] .row[class] > .hlp-col-no-indent[class],
+.contentItem[screen="tab-l"] .row[class] > .hlp-col-no-indent-tl[class],
+.contentItem[screen="tab-p"] .row[class] > .hlp-col-no-indent-tp[class],
+.contentItem[screen="mobile-l"] .row[class] > .hlp-col-no-indent-ml[class],
+.contentItem[screen="mobile-p"] .row[class] > .hlp-col-no-indent-mp[class] { 
+	margin-right: 0;
+	margin-left: 0;
+}
+
+/*************************************************************************/
+
+
+/*для allocate**********************************************************************************/
+.section {
+	/*padding-bottom: 1px;*/
+}
+
+/*ряд*/
+
+/*для колонок*/
+.redactorPageEdit .column, 
+.redactorPageEdit .block, 
+.redactorPageEdit .slider,
+.redactorPageEdit .block-hover,
+.redactorPageEdit .slider-list-chosen,
+.redactorPageEdit .text-span,
+.redactorPageEdit .iframe,
+.redactorPageEdit .embed,
+.redactorPageEdit .hlp-tabs,
+.redactorPageEdit .tab-list-canvas,
+.redactorPageEdit .gallery,
+.redactorPageEdit .gallery-list-image {
+	outline: 1px dashed #000;
+}
+
+.redactorPageEdit .market .column {
+	outline: none;
+} 
+
+.redactorPageEdit .column:first-child {
+
+}
+
+.redactorPageEdit .column:last-child {
+
+}
+
+.content .column[border="true"] {
+	z-index: 15;
+}
+/***********/
+/*выделение текущего элемента для pageStruct*/
+.redactorPageEdit .element[insert-after="true"],
+.redactorPageEdit .section-content[insert-after="true"] {
+	outline: 2px solid rgb(22,83,117);
+
+	outline: 2px solid rgb(255,3,20);
+}
+
+
+/*выбраный элемент у которого нельзя изменить размер*/
+.redactorPageEdit .element[border="true"], .redactorPageEdit .section-content[border="true"] {
+	outline: 2px dashed rgb(231,22,18);
+	cursor: default;
+}
+
+/*при наведении*/
+.redactorPageEdit[class]:not(.sdu8970) .element[data-hover="true"]:not(.elementSelected) {
+	outline: 2px dashed rgb(11,35,255);
+}
+
+.redactorPageEdit[class]:not(.sdu8970) .section:not(.elementSelected) .section-content[data-hover="true"] {
+	outline: 2px dashed rgb(11,35,255);
+}
+
+/*для обычных элементов***************************************************************************************/
+
+
+.redactorPageEdit .section-content {
+	outline: 0px solid #c00;
+	/*border: 1px dashed rgb(20,20,20);*/
+	border-top: none;
+}
+/*для каркаса************************************************************************************************/
+#header .section-content { 
+	position: relative;
+	z-index: 7;
+	/*height: auto;*/
+}
+
+#nav .section-content {
+	position: relative;
+	z-index: 3;
+	/*height: auto;*/
+}
+/***********************************************************************************************/
+/**************************************************************************************************/
+/*вкладка модальное окно************************************************************************************************/
+.contentModal {
+	/*background-color: rgb(245,245,245);*/
+	
+}
+
+.redactorPageEdit .contentModal {
+	display: none;
+}
+
+.modal {
+	/*max-width: 100%;*/
+}
+
+.contentModal .modalWrap {
+	padding-top: 1px;
+	height: 100%;
+	background-color: rgba(0,0,0,.3);
+	/*max-width: 100%;*/
+}
+/***********************************************************************************************/
+/**************************************************************************************************/
+/*направляющие у элемента************************************************************************************************/
+.guides {
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 99905;
+	display: none;
+}
+
+.guidesHide {
+	display: none;
+}
+
+.redactorPageShow .guides {
+	display: none;
+}
+
+.guidesContent {
+	background-color: rgb(64,61,163);
+	width: 100%;
+	height: 100%;
+}
+
+.guidesHorizontal {
+	width: 100%;
+	height: 1px;
+	cursor: s-resize;
+	padding: 3px 0;
+}
+
+
+.guidesVertical {
+	height: 100%;
+	width: 1px;
+	left: 20px;
+	cursor: e-resize;
+	padding: 0 3px;
+}
+
+/*список элементов для направляющих******/
+.listGuidesElm {
+	
+}
+
+.guidesInfo, .guidesPropertySection {
+	display: none;
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 99910;	
+	background-color: rgb(50,50,50);
+	border-radius: 3px;
+}
+
+.guidesInfo {
+	padding: 6px 8px 5px 8px;
+	color: rgb(180,180,180);
+	font-size: 13px;
+}
+
+/*секция*/
+.guidesPropertySection {
+	/*display: block;*/
+	top: 0; left: 0;
+	padding: 7px 8px 7px 10px;
+	width: 152px;
+}
+
+.valueGuidesPosition {
+	float: left;
+	display: block;
+	width: 40px;
+	font-size: 12px;
+	padding: 3px 0 2px 0;
+	text-align: center;
+	background-color: rgb(30,30,30);
+	border-radius: 3px;
+	margin-top: 9px;
+	color: rgb(200,200,200);
+}
+
+.guidesBlockColor {
+	float: left;
+	margin-left: 13px;
+}
+
+.guidesColorRow:first-child {
+	margin-bottom: 3px;
+}
+
+.guidesColorItem {
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-right: 3px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.butGuidesDelete {
+	display: block;
+	float: left;
+	margin: 8px 0 0 8px;
+	width: 19px;
+	cursor: pointer;
+}
+/************************************************************************************************/
+/**********************************************************************************************/
+/*блок перетаскивания*/
+.resizeBlock {
+	position: absolute;
+	top: -6px; left: -3px;
+	/*top: 0; left: 0;*/
+	padding: 6px;
+	width: 100%;
+	height: 100%;
+	border: 0px solid #c00;
+}
+
+.hlp-vertical-align > .resizeBlock {
+	/*left: -6px;*/
+}
+
+.lineElementCenter {
+	position: absolute;
+	left: 50%;
+	top: -20px;
+	width: 0;
+	border-right: 1px solid rgb(221,4,12);
+	display: none;
+}
+
+.modal .resizeBlock, .nav-panel-mobile .resizeBlock {
+	left: -6px;
+}
+
+/*в режиме редактирования виден*/
+.redactorPageEdit .resizeBlock {
+	display: block;
+}
+
+.redactorPageShow .resizeBlock, .content .resizeBlockHide {
+	display: none;
+}
+
+/***************************************************************************/
+.resize {
+	
+}
+
+.moveTop, .moveBottom, .moveLeft, .moveRight {
+	position: absolute;
+	background-color: rgb(226,221,213);
+	/*color: rgb(53,234,255);*/
+	color: rgb(42,42,42);
+}
+
+.moveTop, .moveBottom {
+	width: 100%;
+	/*height: 1px;*/
+}
+
+.moveLeft, .moveRight {
+	/*width: 1px;*/
+	height: 100%;
+}
+
+.moveTop {
+	border-top: 1px dashed;
+	top: 0px; left:0;
+	/*cursor: n-resize;*/
+} 
+
+.moveBottom {
+	border-bottom: 1px dashed;
+	bottom: 0px; left:0;
+	/*cursor:s-resize;*/
+}
+
+.moveLeft {
+	border-left: 1px dashed;
+	top: 0; left:0;
+	/*cursor:w-resize;*/
+} 
+
+.moveRight {
+	border-right: 1px dashed;
+	top: 0; right:0;
+	/*cursor: e-resize;*/
+}
+ 
+
+/*****************************************************************************/
+.moveTopLeft, .moveTopCenter, .moveTopRight, .moveCenterLeft, .moveCenterRight, .moveBottomLeft, .moveBottomCenter, .moveBottomRight {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	/*border-radius: 50%;*/
+	z-index: 9;
+	background-color: rgb(255,255,255);
+	border: 1px solid rgb(42,42,42);
+}
+
+/*.moveLeft, .moveRight { background-color: transparent; }
+.moveLeft { 
+	border-right: 3px solid transparent;
+} 
+.moveRight { 
+	border-left: 3px solid transparent;
+}*/
+
+.moveTopLeft {top:-3px; left:-3px; cursor:nw-resize;}
+
+.moveTopCenter {top:-3px; left:49%; cursor:n-resize;} 
+
+.moveTopRight {top:-3px; right:-3px; cursor:ne-resize;}
+
+.moveCenterLeft {top:49%; left:-3px; margin-top:-3px; cursor:w-resize;} 
+
+.moveCenterRight {top:49%; right:-3px; margin-top:-3px; cursor: e-resize;}
+
+.moveBottomLeft {bottom:-3px; left:-3px; cursor:sw-resize;} 
+
+.moveBottomCenter {bottom:-3px; left:49%; cursor: s-resize;} 
+
+.moveBottomRight {bottom:-3px; right:-3px; cursor:se-resize;}
+
+/*особености для элементов***********************************************************/
+/*секция*/
+#resizeBlockSection {
+	top: 0px; 
+	left: 2px;
+	padding: 0 2px 1px 0;
+}
+
+#resizeBlockSection .moveBottomCenter {
+	border: none;
+	
+	width: 36px;
+	height: 19px;
+	bottom: -18px;
+	left: 48%;
+	border-radius: 0 0 7px 7px;
+	background: url(/img/editor/reorder-up.png) 1px 1px no-repeat,
+			 	url(/img/editor/reorder-down.png) 18px 2px no-repeat;
+	background-size: 48%;
+	background-color: rgb(33,35,34);
+	border-radius: 0 0 4px 4px;
+}
+
+/*дополнительный элемент****/
+.addedBlockSection {
+	position: absolute;
+	right: 0px; bottom: 0px;
+	/*background-color: rgba(0,0,0,0.8);*/
+	/*border-radius: 4px 0 0 0;*/
+	/*padding: 3px 7px 3px 7px;*/
+	z-index: 99950;
+
+	height: 26px;
+	padding: 0 7px 0 7px;
+	/*width: 170px;*/
+	background-color: rgb(50,50,50);
+	border-radius: 3px 0 0 0;
+}
+
+.addedBlock {
+	font-family: Verdana;
+}
+
+.redactorPageShow .addedBlockSection,
+.redactorPageShow .butAddTemplate {
+	display: none;
+}
+
+.butAddedItemSection[class] {
+	display: block;
+	float: left;
+	width: 19px;
+    margin: 4px 0 0 10px;
+	cursor: pointer;
+}
+
+.butAddedItemSection[class]:first-child {
+	margin-left: 0;
+}
+
+.butAddedItemSection[data-no-active="true"] {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.butMoveSection {
+	/*background-position: 3px 3px;
+	background-color: rgb(74,98,255);
+	border-radius: 50%; */
+}
+
+.butMoveDownSection {
+	/*background-position: -214.5px -116px;*/
+	margin-right: 0;
+}
+
+.butMoveUpSection {
+	/*background-position: -227.5px -116px;*/
+	
+}
+
+.butCopySection {	
+	background-position: -175px -116px;
+}
+
+.butDeleteSection {
+	background-position: -197px -115px;
+	margin-right: 0;
+}
+
+/*кнопка добавлении секции*/
+.contentItem .butEditElement,
+.contentItem .butAddTemplate {
+	letter-spacing: 0;
+	line-height: 1;
+	font-family: Verdana;
+	font-weight: normal;
+	font-style: normal;
+	text-decoration: none;
+	text-transform: none;
+}
+
+.butAddTemplate {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 80;
+	padding: 8px 10px 7px 10px;
+	background-color: rgb(50,50,50);
+	color: rgb(240,240,240);
+	font-size: 12px;
+	cursor: pointer;
+	border-radius: 0 3px 0 0;
+}
+
+.sectionAddedPanel {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+
+.addedBlockSectionWrap {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: 99991;
+}
+/*кнопки переключения*/
+.butChosenMode {
+	float: left;
+	padding: 4px 12px 3px 12px;
+	border-radius: 0 2px 2px 0;
+	margin: 2px 0 0 0px;
+	font-size: 13px;
+	/*background-color: rgb(30,30,30);*/
+	color: rgb(240,240,240);
+	cursor: pointer;
+}
+
+.chosenEditorMode {
+	float: right;
+	margin-right: 15px;
+}
+
+.butChosenMode[data-chosen="true"] {
+	/*background-color: rgb(47,111,179);*/
+	background-color: rgb(30,30,30);
+	cursor: default;
+}
+
+.butChosenMode:first-child {
+	border-radius:  2px 0 0 2px;
+}
+
+/*дополнительный блок menu mobile*/
+.butShowNavMobile[class] {
+	position: absolute;
+	top: 0; right: -106px;
+	padding: 3px 0 2px 0;
+	width: 98px;
+	max-width: none;
+	border-radius: 2px;
+	background-color: rgb(17,128,207);
+	color: rgb(240,240,240);
+	font: 12px Verdana;
+	text-align: center;
+	cursor: pointer;
+}
+
+.butShowNavMobile[type="hide"] {
+	background-color: rgb(84,156,207);
+}
+
+.modalBlock input, .modalBlock textarea {
+	display: inline;
+	font-family: Verdana;
+}
+
+.wrapper .rightMenu input, 
+.wrapper .rightMenu textarea, 
+.wrapper .select input, 
+.wrapper .inputBlock > input {
+	font-family: Verdana;
+}
+
+.rightMenu .menuOneStyle .valueText {
+	font-size: 11px;
+}
+/*дополнительный блок slider***************************************************************/
+.slider-item[class] {
+	position: relative;
+	opacity: 1;
+}
+
+.slider-item:first-child,
+.tab-canvas:first-child {
+	display: none;
+}
+
+.show-element[class] {
+	display: block;
+	opacity: 1;
+}
+
+.content .slider-list-toggle {
+	z-index: 999970;
+}
+
+/**********/
+.addedBlock, .addedBlock > * {
+	overflow: visible;
+}
+
+.addedBlockSlider {
+	/*outline: 2px solid rgb(202,24,27);*/
+	position: absolute;
+	top: 0; 
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	cursor: default;
+}
+
+.elm-full-width > .addedBlockSlider {
+	width: 98%;
+	left: 1%;
+}
+
+.addedSliderPanel {
+	box-sizing: border-box;
+	position: absolute; 
+	left: 0;
+	/*top:0;*/
+	height: 30px;
+	width: 100%;
+	border-radius: 3px;
+}
+
+.addedBlockSlider:not(.addedBlockPosBottom) .addedSliderPanel {
+	top: 0px;
+}
+
+.sliderListButMan, .sliderListButNum {
+	margin-top: -35px;
+}
+
+.addedBlockPosBottom .addedSliderPanel {
+	bottom: 0px;
+}
+
+.addedBlockPosBottom .sliderListButMan, .addedBlockPosBottom .sliderListButNum {
+	margin-top: 35px;
+}
+
+.sliderListButNum {
+	float: right;
+}
+
+.butSliderNum {
+	float: left;
+	padding: 4px 0px 3px 0px;
+	width: 25px;
+	text-align: center;
+	background-color: rgb(44,44,44);
+	color: rgb(240,240,240);
+	margin-left: 4px;
+	cursor: pointer;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.butSliderNum[chosen="true"] {
+	background-color: rgb(73,88,219);
+	cursor: default;
+}
+
+.butSliderNum:not([chosen="true"]):hover {
+	background-color: rgb(50,50,50);
+}
+
+.butSliderNum:first-child {
+	margin-left: 0;
+}
+
+/*блок с кнопками манипулирования*/
+.sliderListButMan {	
+	/*outline: 1px solid;*/
+	/*width: 200px;*/
+	/*height: 30px;*/
+	float: left;
+}
+
+.butSliderMan {
+	display: block;
+	float: left;
+	margin-left: 4px;
+	background-color: rgb(44,44,44);
+	border-radius: 3px;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+
+
+}
+
+.butSliderMan > img {
+	display: block;
+	margin: 0 auto;
+}
+
+.butSliderMan:first-child {
+	margin-left: 0;
+}
+
+.butSliderManAdd > img {
+	width: 17px;
+	padding-top: 4px;
+}
+
+.butSliderManDelete > img {
+	width: 13px;
+	padding-top: 6px;
+}
+
+/*выбор слайдера*/
+
+
+
+/***********************************************************************************************/
+/*дополнительный блок для block hover*/
+.addedBlockHover {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	top: 0;
+	width: 100%;
+	cursor: default;
+}
+
+.addedBlockHover:not(.addedBlockPosBottom) {
+	/*top: -37px;*/
+}
+
+.addedHoverListBut {
+	position: absolute;
+	right: 0;
+	width: 150px;
+}
+
+.addedBlockHover:not(.addedBlockPosBottom) .addedHoverListBut {
+	top: -37px;
+}
+
+.addedBlockPosBottom .addedHoverListBut {
+	bottom: -37px;
+}
+
+.addedHoverBut {
+	float: right;
+	padding: 5px 13px 4px 13px;
+	background-color: rgb(44,44,44);
+	color: rgb(240,240,240);
+	border-radius: 3px;
+	font-size: 13px;
+	margin-left: 8px;
+	cursor: pointer;
+}
+
+.addedHoverBut[chosen="true"] {
+	background-color: rgb(73,88,219);
+	cursor: default;
+}
+
+.block-hover-active {
+	position: absolute;
+	opacity: 1;
+	left: 0;
+	top: 0;
+}
+
+/*************************************************************************************************/
+/*панель управления элементом form_input**************************************************************************************************/
+.panelManInput {
+	position: absolute;
+	top: 0; left: 0;
+	width: 87px;
+	height: 20px;
+	padding: 6px 0 0 11px;
+	border-radius: 4px;
+	/*background-color: rgba(255,255,255,1);*/
+	background-color: rgba(0,0,0,0.8);
+	z-index: 9999960;
+	cursor: default;
+}
+
+.panelManInputArrow {
+	position: absolute;
+	top: 9px; left: -10px;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-right: 10px solid rgba(0,0,0,0.8);
+}
+
+.panelManInputItem {
+	float: left;
+	border-radius: 50%;
+	cursor: pointer;
+	display: block;
+	margin-right: 6px;
+}
+
+.panelManInputItem[status="false"] {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.panelManInputItem[type="down"], .panelManInputItem[type="up"] {
+	background-color: rgb(74,98,255);
+	padding: 3px;
+	width: 9px;
+}
+
+.panelManInputItem[type="add"] {
+	width: 16px;
+	margin-right: 2px;
+}
+
+.panelManInputItem[type="delete"] {
+	width: 21px;
+	margin-top: -2px;
+}
+/**************************************************************************************/
+/*линейка*******************************************************************************************/
+.scaleWrap {
+	overflow: hidden;
+	z-index: 99920;
+	display: none;
+	cursor: default;
+}
+
+.scaleWrap, .contentWrap {
+	background-color: rgb(57,57,57);
+}
+
+.contentSection {
+	position: relative;
+	overflow: hidden;
+}
+
+.scale {
+	overflow: hidden;
+}
+
+.scaleBlock {
+	color: rgba(193,193,193, 0.6);
+}
+
+
+.scaleItem {
+	background-color: rgba(193,193,193, 0.6);
+}
+
+.scaleLabel {
+	font-size: 8px;
+}
+
+/*для модального прячем*/
+.contentSection[data-type="modal"] .scaleWrap[class] {
+	display: none;
+}
+
+.contentSection[data-type="modal"] {
+	padding-top: 0;
+}
+
+.contentSection[data-type="modal"] .contentItem {
+	padding-left: 0;
+}
+/**********************************************************************************************/
+.contentSection {
+	/*padding-top: 15px;*/
+}
+
+.scaleHorizontalWrap {
+	position: absolute;
+	top: 0px; 
+	left: 15px;
+	width: 97%;
+	/*padding-right: 15px;*/
+	z-index: 9980;
+} 
+
+.scaleHorizontal {
+	height: 15px;
+	margin-right: -100px;
+}
+
+.scaleHorizontal .scaleBlock {
+	width: 49px;
+	float: left;
+	position: relative;
+	padding-top: 11px;
+	border-left: 1px solid;	
+}
+
+.scaleHorizontal .scaleItem {
+	width: 1px;
+	height: 5px;
+	background-color: rgb(193,193,193);
+	margin-left: 9px;
+	float: left;
+}
+
+.scaleHorizontal .scaleLabel {
+	position: absolute;
+	top: 1px; 
+	left: 2px;
+}
+/**********************************************************************************************/
+.scaleVerticalWrap {
+	position: absolute;
+	top: 0px; left: 0px;
+	width: 15px;
+	height: 100%;
+}
+
+.scaleVertical {
+	
+}
+
+.scaleVertical .scaleBlock {
+	height: 50px;
+	position: relative;
+	padding-left: 11px;
+	border-top: 1px solid;
+}
+
+.scaleVertical .scaleItem {
+	height: 1px;
+	margin-top: 9px;
+}
+
+.scaleVertical .scaleLabel {
+	outline: 0px solid #c00;
+	width: 5px;
+	position: absolute;
+	top: 2px; 
+	left: 3px;
+	word-break:break-all;
+}
+
+/**********/
+.scaleBlock:first-child {
+	border-color: transparent;
+}
+/******************************************************************************************/
+/*редактор****************************************************************************************/
+.textRedactor {
+	outline: 1px dashed #000;
+	position: absolute;
+	height: auto;
+	background-color: transparent;
+	/*padding: 5px 7px;*/
+	z-index: 99930;
+	display: none;
+}
+
+.textRedactor .textRedactorField {
+	width: 100%;
+	height: 100%;
+	cursor: text;
+}
+
+.textRedactorMenu {
+	position: absolute;
+	top: -37px; 
+	bottom: 0px;
+	height: 28px;
+	/*width: 435px;*/
+	width: 270px;
+	padding: 5px 0 0 9px;
+	background-color: rgb(31,31,31);
+	border: 1px solid rgb(40,40,40);
+	border-radius: 3px;
+	font-family: Tahoma;
+}
+
+
+/************/
+.textRedactor .inputBlock {
+	float: left;
+	margin-right: 10px;
+	font-size: 12px;
+}
+
+.textRedactor .inputBlock input, 
+.textRedactor .select input[type="button"], 
+.textRedactor .option {
+	font-size: 12px;
+	color: rgb(200,200,200);	
+}
+
+
+.textRedactor .inputBlock input {
+	float: left;
+	background-color: rgb(27,27,27);
+}
+
+.textRedactor .select {
+	margin-right: 10px;
+}
+
+.textRedactor .select input[type="button"] {
+	width: 80px;
+}
+
+.textRedactor .valueTextColorPart {
+	margin-right: 10px;
+	margin-top: 4px;
+	width: 38px;
+	height: 17px;
+}
+/*кнопки*/
+.textRedactorBlockButtons {
+	/*width: 155px;*/
+	margin-top: 3px;
+}
+
+.textRedactorButton {
+	float: left;
+	width: 30px;
+	height: 100%;
+	border-right: 1px solid rgb(50,50,50);
+	box-sizing: border-box;
+	color: rgb(240,240,240);
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.textRedactorButtonWrap {
+
+}
+
+.textRedactorButton:hover , .textRedactorButton[chosen="true"] {
+	background-color: rgb(50,50,50);
+	border-right-color: rgb(22,22,22);
+	
+}
+
+.textRedactorButton span {
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.textRedactorButton:last-child {
+	/*border: none;*/
+}
+
+.textRedactorButton[value="bold"] {
+	font-weight: bold;
+}
+
+.textRedactorButton[value="italic"] {
+	font-style: italic;
+}
+
+.textRedactorButton[value="underline"] {
+	text-decoration: underline;
+}
+
+.textRedactorButton[value="strikeThrough"] {
+	text-decoration: line-through;
+}
+
+/*clear*/
+.textRedactorButClear {
+	margin-top: -2px;
+}
+
+.textRedactorButClear span {
+	width: 25px;
+	height: 18px;
+	padding-top: 2px;
+	display: block;
+	margin: 0px auto 0 auto;
+	background-position: -236px 5px;
+}
+
+/*history*/
+.textRedactorBlockHistory {
+	float: left;
+	margin-right: 13px;
+	padding-top: 4px;
+}
+
+.butTextHistory {
+	width: 18px;
+	float: left;
+	cursor: pointer;
+}
+
+.butTextHistory:first-child {
+	margin-right: 8px;
+}
+
+/**************************************************************************************/
+/********************************************************************************************/
+/*режим просмотра modal*************************************************************************************/
+.modalMethodBlock {
+	height: 100%;
+	padding-bottom: 20000px;
+	padding-top: 70px;
+}
+
+.butAddModal {
+	margin: 100px auto 0 auto;
+	padding: 12px 0 10px 0;
+	width: 230px;
+	font-size: 14px;
+	background-color: rgb(36,95,205);
+	color: rgb(240,240,240);
+	border-radius: 3px;
+	text-align: center;
+	cursor: pointer;
+	font-family: Verdana;
+}
+
+.butAddModal:hover {
+	background-color: rgb(59,110,205);
+}
+
+
+/************************************************************************************/
+/***************************************************************************************/
+/***режим просмотра***********************************************************************************/
+
+.redactorPageShowContent .hlp-bg-video-content[class] {
+    /*padding-bottom: 14%;*/
+}
+
+.redactorPageShowContent .element[data-action] {
+	cursor: pointer
+}
+
+
+.redactorPageShowContent .hlp-site .hlp-section-fixed[class] {
+    top: 40px;
+}
+
+
+.redactorPageShowContent .content .nav-panel-mobile {
+    position: fixed;
+    /*top: 40px;*/
+}
+
+

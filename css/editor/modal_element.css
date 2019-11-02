@@ -1,0 +1,1068 @@
+.modalHeadClose {
+	background-position: -266px -117px;
+}
+
+.modalHeadResize[status="min"] {
+	background-position: -291px -113px;
+	background-size: auto;
+}
+
+.modalHeadResize[status="max"] {
+	background-position: -320px -113px;
+	background-size: auto;
+}
+
+.emptyModalBlock {
+	text-align: center;
+	width: 80%;
+	margin: 20px auto 20px auto;
+}
+
+#modalManagerElement .modalBlockCont,
+#modalAddFont .modalBlockCont {
+	max-height: 460px;
+}
+
+/*********************************************************************************************/
+/*добавление класса в ручную*/
+.labelAddClassUniqueManual, .labelEditClass {
+	text-align: center;
+}
+
+.valueUniqueManual {
+	
+}
+
+.butAddClassUniqueManual, .butEditClass {
+	width: 100px;
+	margin: 15px auto 0 auto;
+	padding: 7px 0 6px 0;
+	font-size: 14px;
+	text-align: center;
+	border-radius: 3px;
+	background-color: rgb(55,102,255);
+	color: rgb(250,250,250);
+	cursor: pointer;
+	float: none;
+}
+
+#modalEditClass .butEditClass {
+	float: right;
+	margin: 0;
+}
+
+.butAddClassUniqueManual:hover {
+	opacity: 0.8;
+}
+
+/*изменение класса*/
+.modalEditClass {
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+
+.listButEditClass {
+	width: 215px;
+	margin: 15px auto 0 auto;
+}
+
+.listButEditClass .butCancel {
+	font-size: 14px;
+}
+
+.editOldClassW {
+	color: rgb(36,95,205);
+}
+
+.editClassAllClassWrap {
+
+}
+
+.valueEditClassAllClass {
+	float: left;
+	cursor: pointer;
+}
+
+.editClassAllClassLabel {
+	float: left;
+	padding: 5px 0 0 10px;
+}	
+
+/********************************************************************************************/
+/*Модальное окно - элемент изображение*/
+#modalImage {
+
+}
+
+.modalImageSection {
+}
+
+#modalImage .modalBlockCont {
+	padding: 0;
+}
+
+/*header*/
+
+
+/*навигация*/
+.modalImageTop {
+	height: 45px;
+	border-bottom: 1px solid rgb(204,204,204);
+	box-shadow: inset 0 -10px 30px 1px rgb(240,240,240);
+	background-color: rgb(250,250,250);
+	padding: 0 10px;
+}
+
+
+/*поиск*/
+.modalImageSearchBlock {
+	outline: 0px solid;
+	float: left;
+	margin: 7px 0 0 10px;
+	position:relative;
+}
+
+#modalImage .modalImageSearchInput {
+	width: 200px;
+	/*border: 1px solid rgb(180,180,180);*/
+	border-radius: 4px;
+	font-size: 14px;
+	padding: 8px 28px 6px 10px;
+	margin: 0;
+	float: left;
+}
+
+.modalImageImgSearch {
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 10px 0 0 -22px;
+	background-position: -246px -116px;
+}
+
+.modalImageSearchInput {
+
+}
+/*сортировка*/
+.modalImageSortBlock {
+	outline: 0px solid;
+	float: right;
+	height: 100%;
+	padding-right: 10px;
+}
+
+.modalImageSortItem {
+	font-size: 12px;
+	float: left;
+	border: 1px solid rgb(204,204,204);
+	/*box-shadow: inset 0 0 2px 0px rgb(190,190,190);*/
+	border-radius: 3px;
+	margin: 11px 0 0 16px;
+	cursor: pointer;
+}
+
+.modalImageSortItem[status="true"] {
+	background-color: rgb(80,80,80);
+	/*background-color: rgb(120,249,103);*/
+	/*box-shadow: inset 0 0 3px 0px rgb(100,100,100);*/
+	color: rgb(255,255,255);
+	cursor: default;
+}
+
+.imageSortItemText {
+	padding: 6px 15px 4px 15px; 
+}
+
+.infoMaxSize {
+	float: left;
+	color: rgb(89,95,95);
+	margin: 5px 0 0 10px;
+}
+
+/*для файла*/
+.modalImageTopBut {
+	padding: 6px 15px 5px 15px;
+	color: rgb(255,255,255);
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;
+	margin: 9px 0 0 0;
+}
+
+.modalImageButFolderBack {
+	float: left;
+	background-color: rgb(80,80,80);
+}
+
+.modalImageButFolderBack[data-no-back="true"] {
+	opacity: 0.3;
+	cursor: default;
+}
+
+.modalImageButCreateDir {
+	float: right;
+	background-color: #1ec4d6;
+}
+
+.modalImageFolderUrl {
+	float: left;
+	padding: 13px 0 0 5px;
+}
+
+.modalImageUrl, .modalImageUrlSeparator {
+	float: left;
+}
+
+.modalImageUrl {
+	color: #1ec4d6;
+	cursor: pointer;
+	/*text-decoration: underline;*/
+	border-bottom: 1px dashed;
+}
+
+.modalImageUrlSeparator {
+	padding: 0 7px;
+	color: rgb(100,100,100);
+}
+
+.modalImageUrl[data-type="root"] {
+	color: rgb(0,0,0);
+}
+
+.modalImageUrl:not([data-type="current"]):hover {
+	opacity: 0.8;
+} 
+
+.modalImageUrl[data-type="current"] {
+	cursor: default;
+	color: rgb(0,0,0);
+	border-bottom: none;
+	color: rgb(80,80,80);
+}
+
+/*************************************************************************/
+/*поле для картинок*/
+.modalImageContent {
+	/*background: url(/img/modal/checkered-bg.png) 0 0 repeat;*/
+	padding-top: 30px;
+	overflow: auto;
+}
+
+.modalImgItem {
+	display: inline-block;
+	width: 13.8%;
+	margin: 0 1% 15px 1%;
+	padding: 15px 0;
+	cursor: pointer;
+	border-radius: 5px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+
+.modalImgItem[data-file-type="file"] {
+	background-color: rgba(0,0,0,0.15);
+}
+
+.modalImgItem > img {
+	padding: 0px 5% 0 5%;
+	width: 90%;
+	max-height: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.modalImgItemName, .modalImgItemScreen {
+	text-align: center;
+	font-size: 13px;
+}
+
+.modalImgItemName {
+	padding: 5px 0 2px 0;
+	overflow: hidden;
+}
+
+/*управление картинками*/
+.modalImageBlockMan {
+	display: none;
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 3px;
+	cursor: default;
+}
+
+.modalImgItem:hover .modalImageBlockMan {
+	display: block;
+}
+
+.modalImageBlockMan .modalButDeleteImage {
+	width: 25px;
+	display:block;
+	margin: 8px auto;
+	cursor: pointer;
+}
+
+.modalButDeleteImage[no-delete="true"] {
+	opacity: 0.5;
+	cursor: default;	
+}
+
+.imageOneFolder[insert='true'] {
+	background-color: rgb(74,117,166);
+	color: rgb(250,250,250);
+}
+
+/*кнопки картинки группы "мои"*/
+.modalImgItemBut {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 20px;
+	background-color: #c00;
+	display: none;
+	margin-top: 50%;
+}
+/************************************************************************************************/
+/*вертикальная панель*/
+
+
+
+
+
+/*footer - часть с кнопками***********************************************************************/
+#modalImage .modalBlockFooter {
+	padding: 0 5px;
+	height: 50px;
+}
+
+#modalImage .modalBlockButtton {
+	float: none;
+	margin: 0; 
+}
+
+#modalImage .butOk, #modalImage .butCancel {
+	float: right;
+}
+
+#modalImage .butOk {
+	margin-right: 0px;
+}
+
+#modalImage .butAdd {
+	float: left;
+}
+/****************************************************************************************************/
+/**форма*****************************************************************************************/
+#modalForm {
+	
+}
+
+/*вверхняя часть**********************************************************************************/
+#modalForm .modalBlockTop {
+	background-color: rgb(255,255,255);
+	height: 40px;
+	border-bottom: 1px solid rgb(204,204,204);
+}
+
+#modalForm .selectTypeBlock {
+	float: right;
+	margin: 9px 15px 0 0;
+}
+
+#modalForm .selectTypeLabel {
+	float: left;
+	margin-right: 15px;
+	padding-top: 4px;
+	font-size: 14px;
+}
+
+#modalForm .selectTypeForm {
+	display: block;
+	float: right;
+	cursor: pointer;
+	border: 1px solid #ccc;
+	padding: 2px 4px;
+	border-radius: 4px;
+	font-size: 14px;
+}
+
+#modalForm .selectTypeForm option {
+	cursor: pointer;
+}
+
+/*содержимое***********************************************************************************/
+#modalForm .modalBlockCont {
+	background: url(/img/editor/modal/checkered-bg.png) 0 0 repeat;
+	padding: 0;
+}
+
+#modalForm .modalBlockButtton .butBlock {
+	float: right;
+}
+
+
+.modalFormBlock {
+	padding: 20px 0 0 0;
+	overflow: auto;
+}
+
+.modalFormItem {
+	display: inline-block;
+	width: 16.3%;
+	margin: 0 0.5% 20px 0.5%;
+	padding: 1%;
+	cursor: pointer;
+	border-radius: 6px;
+}
+
+.modalFormItemImg {
+	display: block;
+	width: 100%;
+}
+/*добавление input***********************************************************************************************/
+#modalAddInput {
+	height: 200px;
+}
+
+.modalAddInputLabel {
+	font-size: 16px;
+}
+
+#modalAddInput .choseType {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	width: 180px;
+	padding: 5px 5px 3px 5px;
+	border-radius: 4px;
+	cursor: pointer;
+	box-shadow: inset 0 -5px 10px 2px rgb(220,220,220);
+}
+/**********************************************************************************************/
+/**видео*****************************************************************************************/
+#modalVideo {
+
+}
+
+#modalVideo .modalBlockCont {
+}
+
+.modalVideoBlock {
+	float: left;
+	
+	
+}
+/*блок с лева*************************************************************************************/
+.modalVideoBlockLeft {
+	outline: 0px solid #c00;
+	border-right: 1px solid rgb(198,198,198);
+	padding-right: 14px;
+	position: relative;
+	width: 400px;
+}
+
+#modalVideoFrame {
+	width: 100%;
+	height: 268px;
+}
+
+/*блок с права**************************************************************************************/
+.modalVideoBlockRight {
+	outline: 0px solid #cc0;
+	padding-left: 14px;
+	width: 340px;
+}
+
+.modalVideoListParam {
+	margin-bottom: 20px;
+}
+
+.modalVideoBlockItem {
+	margin-bottom: 10px;
+}
+
+.modalVideoLabel {
+	font-size: 13px;
+	font-weight: bold;
+}
+
+input.modalVideoCheckbox {
+	cursor: pointer;
+}
+
+/*url*/
+.modalVideoBlockItemUrl {
+	margin-bottom: 15px;
+}
+
+.modalVideoUrlInput {
+	width: 279px;
+	border: 1px solid rgb(163,163,163);
+	border-radius: 4px;	
+	font-size: 14px;
+	padding: 5px 10px 4px 10px;
+}
+/*кнопки*/
+#modalVideo {
+	overflow: hidden;
+}
+
+#modalVideo .modalBlockButtton  {
+	outline: 0px solid #c00;
+	width: 370px;
+	float: left;
+	margin-left: -8px;
+}
+
+#modalVideo .butBlock {
+	float: left;
+}
+
+/*butInstruction*/
+/************************************************************************************************/
+/**********************************************************************************************/
+/*менеджер шрифта*/
+.modalAddFont {
+
+}
+
+.modalInstruction {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.modalAddFontLabel {
+	font-size: 14px;
+	padding: 10px 0;
+}
+
+.modalAddFontLabel a {
+	color: rgb(104,104,255);
+	border-bottom: 1px solid;
+}
+
+.valueAddedFontLink {
+	min-height: 120px;
+}
+
+/*таблица со шрифтами*/
+.tableFont {
+	font-size: 15px;
+	border-spacing: 0px;
+}
+
+.tableFont th {
+	padding: 4px 4px 3px 4px;
+}
+
+ 
+.tableFont td {
+	padding: 7px 4px 8px 4px;
+}
+
+.tableFontHeading {
+	background-color: rgb(55,55,55);
+	color: rgb(240,240,240);
+	margin-bottom: 3px;
+}
+
+.tableFontHeading th {
+	font-weight: normal;
+}
+
+.tableOneFont:nth-child(2n+1) {
+	background-color: rgb(220,220,220);
+}
+
+.tableFont tr {
+	
+}
+
+.tableFont td {
+	
+}
+
+.tableFont th {
+	text-align: left;
+}
+
+.tableFontNumber {
+	width: 40px;
+}
+
+.tableFontName {
+	width: 250px;
+}
+
+.tableFontSource {
+	width: 140px;
+}
+
+td.tableFontSource  {
+	font-size: 14px;
+	color: rgb(70,70,70);
+}
+.tableFontMan {
+	width: 160px;
+}
+
+.butManFont {
+	cursor: pointer;
+	font-size: 12px;
+	padding: 3px 5px 2px 5px;
+	border-radius: 3px;
+	color: rgb(240,240,240);
+	/*text-align: center;*/
+}
+
+.butEditFont {
+	background-color: rgb(73,133,243);
+	float: right;
+	margin-right: 15px;
+}
+
+.butDeleteFont {
+	background-color: rgba(184,69,70, 0.8);
+	float: right;
+}
+
+.butManFont:hover {
+	opacity: 0.7;
+}
+
+.tableOneFont[data-place="local"] .butEditFont {
+	display: none;
+}
+
+/*******************************************************************************************/
+/*карта******************************************************************************************/
+#modalMap {
+	
+}
+
+#modalMap .modalBlockButtton {
+	width: 100%;
+}
+
+#modalMap .butBlock:not(.butAdd) {
+	float: right;
+}
+
+.modalMapsListItem {
+	/*width: 270px;*/
+	/*margin: 10px auto 0 auto;*/
+	margin-top: 15px;
+}
+
+.modalMapsItem {
+	padding-bottom: 15px;
+} 
+
+.modalMapsItemKey {
+	/*outline: 1px solid;*/
+	/*float: left;*/
+	/*width: 170px;*/
+}
+
+.modalMapsLink {
+	color: rgb(61,97,137);
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.modalMapsItemValue {
+	/*outline: 1px solid;*/
+	/*float: right;*/
+	/*width: 450px;*/
+	/*width: 440px;*/
+}
+
+
+.modalMapsListMap {
+	width: 270px;
+	margin: 0 auto;
+}
+
+.butServiceMap {
+	display: block;
+	width: 100px;
+	height: 80px;
+	cursor: pointer;
+	padding: 8px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 3px;
+	background-color: rgb(245,245,245);
+}
+
+.butServiceMap[chosen="true"] {
+	cursor: default;
+	background-color: rgb(255,255,255);
+	border: 2px solid rgb(0,195,204);
+	margin: -1px;
+}
+
+.butServiceMap:hover {
+
+}
+
+.butServiceMap > img {
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.butServiceMapYandex {
+	float: left;
+}
+
+.butServiceMapGoogle {
+	float: right;
+}
+
+.butServiceMapGoogle > img:not([class]) {
+	width: 54%;
+	height: auto;
+}
+
+.butServiceMapYandex > img {
+	margin-top: 0px;
+}
+
+.butServiceMapText {
+	text-align: center;
+	margin-top: 4px;
+	font-size: 10px;
+	color: rgb(65,65,65);
+	font-weight: bold;
+}
+
+
+.modalMapsCode {
+	width: 100%;
+	max-width: 100%;
+	height: 100px;
+	display: block;
+	border: rgb(220,220,220);
+}
+
+/********************************************************************************************/
+/*editor code*/
+.valueEditorCode {
+	border: 1px solid rgb(230,230,230);
+	border-radius: 3px;
+	height: 120px;
+	height: 400px;
+
+	overflow: auto;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.modalCodeBlockTutorial {
+	float: left;
+	/*display: none;*/
+}
+
+.modalCodeBlockTutorialLabel {
+	float: left;
+	padding: 17px 0px 0px 10px;
+}
+
+.butModalCodeTutorialShow {
+	float: left;
+	font-size: 13px;
+    margin: 13px 0 0 15px;
+	padding: 5px 7px;
+	border-radius: 3px;
+	background-color: rgb(80,80,80);
+	color: rgb(240,240,240);
+	cursor: pointer;
+}
+
+.butModalCodeTutorialShow:hover {
+	opacity: 0.8;
+}
+
+/************************************************************************************/
+/*менеджер шаблонов - секции***********************************************************************************/
+.managerTemplateNav {
+	/*outline: 1px solid;*/
+	height: 350px;
+	float: left;
+	width: 22%;
+	padding-right: 20px;
+	border-right: 1px solid rgb(230,230,230);
+}
+
+.listManagerTemplateFolder {
+	height: 350px;
+	margin-bottom: 15px;
+	padding-right: 10px;
+	overflow: auto;
+}
+
+.managerTemplateListItem {
+	height: 500px;
+	overflow: auto;
+	float: right;
+	width: 75%;
+}
+
+.teplateItemBlock {
+	position: relative;
+	overflow: hidden;
+	float: left;
+	border: 3px solid rgb(220,220,220);
+	margin-bottom: 20px;
+	cursor: pointer;
+	width: 48%;
+	box-sizing: border-box;
+	margin-right: 2%;
+	height: 250px;
+	padding-top: 34px;
+}
+
+.teplateItemBlock:nth-child(2n) {
+	/*float: right;*/
+	margin-right: 0;
+}
+
+.templateItemImg {
+	width: 100%;
+}
+
+.managerTemplateListItem .templateItemImg {
+	min-width: 110%;
+	margin-left: -5%;
+}
+
+.teplateItemName {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 9;
+    background: rgb(40,40,40);
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px 10px 7px 10px;
+    text-align: center;
+    font-size: 14px;
+    overflow: hidden;
+    color: rgb(240,240,240);
+}
+
+.teplateItemType {
+	padding-right: 10px;
+	color: rgb(11,145,255);
+}
+
+.templateItemBlackout {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 8;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+	cursor: default;
+}
+
+.listButManagerTemplate {
+	width: 245px;
+	margin: 120px auto 0 auto;
+}
+
+.managerTemplateListItem[data-type="standart"] .listButManagerTemplate,
+.managerTemplateListItem[data-type="prototype"] .listButManagerTemplate {
+	width: 50px;
+}
+
+.managerTemplateListItem[data-type="standart"] .butManagerTemplate:not(.butAddtemplate),
+.managerTemplateListItem[data-type="prototype"] .butManagerTemplate:not(.butAddtemplate) {
+	display: none;
+}
+
+.teplateItemBlock:hover .templateItemBlackout {
+	display: block;
+}
+
+.butAddtemplate:hover {
+	background-color: rgb(27,57,207);
+}
+
+.butManagerTemplate {
+	float: left;
+	border-radius: 3px;
+	width: 45px;
+	height: 36px;
+	margin-left: 15px;
+	background-color: rgb(50,50,50);
+	cursor: pointer;
+}
+
+.butManagerTemplate:hover {
+	background-color: rgb(70,70,70);
+}
+
+.butManagerTemplate > img {
+	display: block;
+	width: 20px;
+	margin: 9px auto 0 auto;
+}
+
+/*****************************************/
+
+.templateNavList[data-type="standart"] {
+	display: none;
+	padding-right: 10px;
+	overflow: auto;
+}
+
+.templateNavList[data-type="standart"] .listManagerTemplateFolder {
+	height: 380px;
+}
+
+.managerTemplateTypeNav {
+	margin: 5px 0 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgb(200,200,200);
+}
+
+.managerTemplateTypeNavItem {
+	float: left;
+	padding: 7px 5px 6px 5px;
+	border-radius: 3px;
+	background-color: rgb(40,40,40);
+	color: rgb(240,240,240);
+	font-size: 13px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.managerTemplateTypeNavItem[data-type="standart"] {
+	width: 105px;
+}
+
+.managerTemplateTypeNavItem[data-type="my"] {
+	float: right;
+	width: 105px;
+}
+
+.managerTemplateTypeNavItem[data-type="prototype"] {
+	float: none;
+	width: 225px;
+}
+
+.managerTemplateTypeNavItem[data-chosen="true"] {
+	background-color: rgb(47,111,179);
+	cursor: default;
+}
+
+.templateNavList[data-type="standart"] .folderNameTemplate {
+	width: 100%;
+}
+
+.managerTemplateTypeNavPrototype {
+	float: right;
+}
+
+/**/
+.managerTemplateTypeNavBottom {
+	margin-top: 10px;
+}
+
+/********************************/
+
+.butAddFolderTemplate {
+	padding: 8px 8px 7px 8px;
+	border-radius: 3px;
+	width: 196px;
+	margin: 0 auto 10px auto;
+	text-align: center;
+	background-color: rgb(47,111,179);
+	color: rgb(240,240,240);
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.butAddFolderTemplate:hover {
+	background-color: rgb(74,156,207);
+}
+
+.managerTemplateNavItem {
+	padding: 9px 10px 7px 15px;
+	/*border-bottom: 1px solid rgb(220,220,220);*/
+	cursor: pointer;
+	border-radius: 3px;
+	font-size: 14px;
+	margin-bottom: 5px;
+} 
+
+.managerTemplateNavItem:hover {
+	background-color: rgb(210,210,210);
+}
+
+.managerTemplateNavItem[data-chosen="true"] {
+	background-color: rgb(70,70,70);
+	color: rgb(240,240,240);
+	cursor: default;
+}
+
+.folderNameTemplate { 
+	display: block;
+	width: 118px;
+	white-space: nowrap;
+	overflow: hidden;
+	float: left;
+}
+
+.managerNavItemListBut {
+	float: right;
+	display: none;
+}
+
+.managerTemplateNavItem[data-chosen="true"] .managerNavItemListBut {
+	display: block;
+}
+
+.butFolderTemplate {
+	float: right;
+	width: 17px;
+	margin-left: 15px;
+	cursor: pointer;
+}
+
+.butFolderTemplate:hover {
+	opacity: 0.7;
+}
+
+.butFolderTemplateDelete {
+	width: 16px;
+}
+
+.butFolderTemplate[data-no-active="true"] {
+	opacity: 0.4;
+	cursor: default;
+}
+
+/**********/
+
+.selectFolder {
+	display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px 10px 6px 10px;
+    font-size: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.lableSelectFolderNewTemplate {
+	margin-top: 15px;
+}
+
+/***********************************************************************************/

@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: none;
+	font-family: Verdana;
+	text-decoration: none;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	background-color: rgb(60,60,60);
+}
+
+
+body * {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+#wrapper {
+
+}
+
+.checkbox {
+	cursor: pointer;
+}
+
+.clear {
+	clear: both;
+}
+/**************************************************************************************************/
+#blockForm {
+	width: 390px;
+	margin: 20px auto 0 auto;
+	padding: 0 15px;
+}
+
+.logo-form {
+	display: block;
+	width: 180px;
+	margin: 100px auto 0 auto;
+}
+
+.logo-form > img {
+	width: 100%;
+	display: block;
+}
+
+.form-title {
+	margin-bottom: 15px;
+	font-size: 18px;
+	color: rgb(240,240,240);
+	text-align: center;
+}
+
+.form-item {
+	margin-bottom: 15px;
+}
+
+#blockForm input {
+	display: block;
+}
+
+
+#blockForm .input {
+	padding: 12px 10px 8px 10px;
+	width: 100%;
+	font-size: 14px;
+	border: 1px solid rgb(210,210,210);
+	border-radius: 3px;
+	background-color: rgb(246,247,255);
+	box-sizing: border-box;
+}
+
+#blockForm .send {
+	width: 100%;
+	padding: 13px 0 10px 0;
+	margin-top: 20px;
+	background-color: rgb(0,164,209);
+	color: rgb(255,255,255);
+	font-size: 16px;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+#blockForm  .send:hover {
+	background-color: rgb(0,240,209);
+}
+
+#blockForm .checkbox {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 15px;
+	margin-top: 2px;
+}
+
+#blockForm .check-label {
+	float: right;
+	font-size: 13px;
+	color: rgb(240,240,240);
+	/*margin-left: 10px;*/
+	border-bottom: 1px dashed rgb(0,164,209);
+	cursor: pointer;
+	display: block;
+	width: 364px;
+	margin-right: -15px;
+}	
+
+#butRestoryPsw {
+	display: block;
+	margin-top: 15px;
+	padding-bottom: 3px;
+	color: rgb(0,164,209);
+	border-bottom: 1px dashed;
+	float: right;
+}

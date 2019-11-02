@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Ваш заголовок</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="icon" type="image/png" href="/images/" sizes="32x32" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="/site/frame/css/hollpee_main.css?index=20">
+	
+	<script type="text/javascript" src="/js/main/jquery.js?index=20"></script>
+	<script type="text/javascript" src="/site/frame/js/hollpee_script.js?index=20"></script>
+	<script type="text/javascript" src="/site/frame/js/jquery.lazyload.min.js?index=20" ></script>
+	
+	
+</head> 
+<body>
+
+<style id="styleMain">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);
+
+
+</style>
+<style id="stylePage">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);
+
+.hlp-section-content {
+	padding: 65px 0 45px 0;
+}
+
+.hlp-type-heading2 {
+	font-size: 34px;
+	font-size: 2.125rem;
+	font-weight: 600;
+}
+
+.hlp-type-button {
+	color: rgb(255, 255, 255);
+	background: linear-gradient(to bottom, rgba(39, 119, 133, 1), rgba(30, 92, 102, 1));
+	border-radius: 3px;
+}
+
+.hlp-type-button:hover {
+	background: linear-gradient(to bottom, rgba(151, 197, 204, 1), rgba(30, 92, 102, 1));
+	background-color: rgb(173, 48, 48);
+}
+
+.hlp-row {
+	margin-top: 70px;
+}
+
+.hlp-col {
+	margin-bottom: 40px;
+}
+
+</style>
+	<div class="hlp-site hlp-no-flexbox">
+		
+		<div class="hlp-section section-2">
+			<div class="hlp-section-content"></div>
+		</div>
+	</div>
+</body>
+</html>
+

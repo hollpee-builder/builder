@@ -1,0 +1,102 @@
+#videoCms {
+	width: 400px;
+	height: 250px;
+	margin-left: auto;
+	display: block;
+}
+
+.cmsRight {
+	float: right;
+	width: 39%;
+}
+
+.cmsLeft {
+	float: left;
+	width: 590px;
+}
+
+
+/******/
+
+.brandingItem {
+	padding-bottom: 15px;
+	margin-bottom: 15px;
+	border-bottom: 1px solid rgb(230,230,230)
+}
+
+.brandingItem:last-child {
+	border-bottom: none;
+}
+
+.brandingItemKey {
+	float: left;
+	width: 35%;
+}
+
+.brandingItemValue {
+	float: right;
+	width: 62%;
+}
+
+.valueBrandingName {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	font-size: 14px;
+	padding: 9px 10px 8px 10px;
+	border-radius: 3px;
+	border: 1px solid rgb(210,210,210);
+}
+
+/*logo*/
+.brandingLogoImgWrap {
+	float: left;
+	width: 200px;
+	padding: 20px 30px;
+	border-radius: 3px;
+}
+
+.brandingLogoImgWrap[data-type="white"] {
+	background-color: rgb(60,60,60);
+}
+
+.brandingLogoImg {
+	/*float: left;*/
+	display: block;
+	width: 150px;
+}
+
+.brandingListBut {
+	float: left;
+	padding: 10px 0 0 50px;
+}
+
+.brandingLogoBut {
+	padding: 7px 10px 6px 10px;
+	font-size: 13px;
+	color: rgb(240,240,240);
+	border-radius: 3px;
+	cursor: pointer;
+	text-align: center;
+	width: 100px;
+}
+
+.brandingButEdit {
+	background-color: rgb(42,100,149);
+}
+
+.brandingButDelete {
+	background-color: #ff5050;
+	margin-top: 15px;
+}
+
+.brandingLogoBut:hover {
+	opacity: 0.8;
+}
+
+
+
+
+
+
+

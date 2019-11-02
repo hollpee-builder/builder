@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="icon" type="image/png" href="/images/" sizes="32x32" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="/site/frame/css/hollpee_main.css?index=20">
+	
+	<script type="text/javascript" src="/js/main/jquery.js?index=20"></script>
+	<script type="text/javascript" src="/site/frame/js/hollpee_script.js?index=20"></script>
+	<script type="text/javascript" src="/site/frame/js/jquery.lazyload.min.js?index=20" ></script>
+	
+	
+</head> 
+<body>
+
+<style id="styleMain">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);
+
+
+</style>
+<style id="stylePage">@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i);
+
+.heading-1 {
+	margin-top: 51px;
+	font-size: 30px;
+	font-size: 1.875rem;
+}
+
+</style>
+	<div class="hlp-site hlp-no-flexbox">
+		<section class="hlp-section section-1">
+			<div class="hlp-section-content">
+				<h2 class="heading-1">
+					Thanks!
+				</h2>
+			</div>
+		</section>
+		<div class="hlp-section section-2">
+			<div class="hlp-section-content"></div>
+		</div>
+		<div class="hlp-section section-3">
+			<div class="hlp-section-content"></div>
+		</div>
+		<div class="hlp-section section-4">
+			<div class="hlp-section-content"></div>
+		</div>
+	</div>
+</body>
+</html>
+

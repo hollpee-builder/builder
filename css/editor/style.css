@@ -1,0 +1,846 @@
+/**********************************************************************************************/
+/**********************************************************************************************/
+
+* {
+	margin: 0;
+	padding: 0;
+	border-width: 0;
+	outline: none;
+	background-repeat: no-repeat;
+	background-position: top left;
+	/*font-family: Verdana; */
+}
+
+/*компенсация*******/
+img {
+	width: auto;
+}
+
+input[type="button"], input[type="submit"] {
+	padding: 0;
+	border-width: 0;
+	border-style: none;
+	border-color: none;
+	border-image: none;
+}
+/*************************************************************************************/
+
+
+li:not(.element) {
+	list-style-type: none;
+}
+
+html, body, .wrapper, .contentAdmin, .redactorBottom, .redactorPageShow, .redactorPageEdit {
+	height: 100%;
+
+}
+
+iframe {
+	width: 0;
+	height: 0;
+	border: none;
+	overflow: hidden;
+}
+
+a, a:visited {
+	/*color: rgb(43,47,116);*/
+	cursor: pointer;
+}
+
+.imgLoading {
+	display: none;
+	position: fixed;
+	top: 40%; left: 44%;
+	z-index: 9600;
+}
+
+.wrapper {
+	/*max-width: 2050px;*/
+	margin: 0 auto;
+	font-family: Verdana;
+	font-style: 14px;
+}
+
+.contentItem {
+	/*font-family: Times New Roman;*/
+}
+
+.redactorPageEdit {
+	min-width: 900px;
+}
+
+html, body, .wrapper {
+	overflow: hidden;
+}
+
+div.clear {
+	border: none;
+	outline: none;
+	clear: both;
+}
+
+.errorLabel {
+	text-align: center;
+	color: rgb(255,10,10);
+	margin: 10px 0 -10px 0;
+	font-size: 18px;
+}
+
+input[type="text"]:focus {
+	box-shadow: 0 0 2px 0 rgb(98,127,255);
+}
+
+*[is-image="true"] {
+	background-image: url(/img/editor/sprinter.png?id=8);
+}
+
+.tipBlock {
+	font-size: 11px;
+}
+
+.no-active {
+	opacity: 0.5;
+	cursor: default;
+}
+
+*[data-no-active="true"] {
+	opacity: 0.5;
+}
+
+.modalBlock a {
+	display: inline;
+}
+
+.displayNone {
+	display: none;
+}
+/*******************************/
+.redactorPageEdit ::-webkit-scrollbar
+{
+	width: 10px;
+	height: 10px;
+	background: rgb(51,51,51);
+}
+
+.redactorPageEdit ::-webkit-scrollbar-track
+{
+	background: rgb(51,51,51);
+}
+
+.redactorPageEdit ::-webkit-scrollbar-thumb
+{
+	background: rgb(65,65,65);
+}
+
+/*стрелки*/
+.redactorPageEdit ::-webkit-scrollbar-button {
+	height: 14px;
+    background-image: url(/img/editor/sprinter.png?id=1);
+    background-color:  rgb(65,65,65);
+    color: rgb(50,50,50);
+}
+
+.redactorPageEdit ::-webkit-scrollbar-button:start {
+	background-position: -2px -15px;
+	border-bottom: 1px solid;
+}
+
+.redactorPageEdit 																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																							::-webkit-scrollbar-button:end {
+	background-position: -19px -16px;
+	border-top: 1px solid;
+}
+
+.wrapper .supportSubMenuWrap {
+	width: 25px;
+}
+
+
+/**********************************************************************************************/
+/*загрузка редактора***********************************************************************************************/
+.loadingSiteSection {
+	position: fixed;
+	top: 0; left: 0;
+	z-index: 999999940;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	background-color: rgb(20,20,20);
+
+	/*display: none;*/
+}
+
+.loadingSiteSectionContent {
+	margin-top: 120px;
+	width: 290px;
+	margin: 140px auto 0 auto;
+}
+
+.loadingSiteBlock {
+	padding: 19px 0 25px 0;
+	background-color: rgba(0,0,0,0.8);
+	background-color: rgb(30,30,30);
+	border-radius: 4px;
+	border: 1px solid rgb(43,43,43);
+}
+
+.loadingSiteIcon {
+	display: block;
+	width: 100px;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.loadingSiteLabel {
+	width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	color: rgb(200,200,200);
+	font-family: Verdana;
+	font-size: 13px;
+}
+
+.loadingSiteLogo {
+	width: 150px;
+	display: block;
+	margin: 6px auto 10px auto;
+}
+/**********************************************************************************************/
+/**********************************************************************************************/
+#modalNoEdit {
+	text-align: center;
+}
+
+.modalNoEditTitle {
+	font-size: 18px;
+	/*color: rgb(244,29,29);*/
+	text-align: center;
+	padding: 8px 0 10px 0;
+}
+
+.noModalCountBlock {
+	padding-bottom: 8px;
+}	
+
+.noModalCountItem {
+	/*font-weight: bold;*/
+	padding-bottom: 3px;
+}
+/*******************************************************************************************/
+/*****************************************************************************************/
+/*****************************************************************************************/
+
+.imgSmallLoad {
+	display: block;
+	margin: 0 auto 0 auto;
+	z-index: 9000;
+	position: absolute;
+	top: 32%; left: 40%;
+}
+
+.modalSmallMasck {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0, 0.1);
+	z-index: 9000;
+}
+
+.readyPage {
+	display: none;
+}
+/***************************************************************************************/
+/************************************************************************************/
+/************************************************************************************/
+/*нижняя часть*/
+.redactorPageEdit {
+	background-color: rgb(51,51,51);
+	height: inherit;
+	padding-bottom: 1px;
+}
+
+.redactorBottom {
+	outline: 0px solid #c00;
+	/*height: 600px;*/
+	
+}
+
+.sectionCenter, .leftMenu, .rightMenu {
+	height: 100%;
+	box-shadow: 0 0 0 1px rgb(60,60,60), 
+				0 0 0 2px rgb(34,34,34); 
+}
+
+.sectionCenter {
+	outline: 0px solid #c00;
+	/*margin: 0 267px 0 0px;*/
+	margin: 0 277px 0 0px;
+	padding-right: 0px; 
+	position: relative;
+}
+
+.contentSection  {
+	
+}
+
+.redactorPageEdit .content[screen="desktop"] .site {
+	/*padding-left: 15px;*/
+}
+
+.redactorPageEdit .site {
+	/*padding-left: 15px;*/
+}
+
+.content, .modalMethodBlock {
+	width: auto;
+	background-color: rgb(255,255,255);
+	position: relative;
+}
+
+.modalMethodBlock {
+	overflow: auto;
+}
+/***************************************************************************************************/
+/*нижняя часть***************************************************************************************************/
+.contentSectionFooter {
+
+}
+/*манипулирование элементом*/
+.footerElementMan {
+	float: right;
+	width: 140px;
+	height: 21px;
+	margin-top: 4px;
+	/*background-color: #ccc;*/
+	border-left: 1px solid rgb(80,80,80);
+	padding-left: 3px;
+
+	opacity: 0;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+}
+
+.butElementMan {
+	width: 20px;
+	margin: 0 7px;
+	cursor: pointer;
+	float: left;
+	display: block;
+}
+
+.butElementMan[type="copy"] {
+
+}
+
+.butElementMan[type="cut"] {
+	
+}
+
+.butElementMan[type="insert"] {
+	
+}
+
+.butElementMan[type="delete"] {
+	padding-top: 3px;
+}
+
+/*список иконок*/
+.listIconFooter {
+	float: right;
+	margin-right: 10px;
+	/*margin-right: 20px;*/
+	position: relative;
+}
+
+.editorModeBlock {
+	/*display: none;*/
+}
+
+.listIconFooter[data-type="modal"] .butVisibleRuler,
+.listIconFooter[data-type="modal"] .butShowGrid {
+	display: none;
+}
+
+.butShowGrid {
+	width: 17px;
+	height: 25px;
+	display: block;
+	float: right;
+	cursor: pointer;
+	margin: 6px 0 0 0;
+
+	background: url(/img/editor/grid-icon.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+
+.butShowGrid[data-type="half"] {
+	background-image: url(/img/editor/grid-icon-half.png);
+}
+
+.butShowGrid[data-type="none"] {
+	background-image: url(/img/editor/grid-icon-off.png);
+	/*background-image: url(/img/editor/icons/grid.png);*/
+}
+
+.topMenuAutoClass {
+	float: right;
+	width: 16px;
+	margin: 6px 15px 0 0;
+	cursor: pointer;
+} 
+
+/*видео инструкция*/
+.butTutorial {
+	float: right;
+	white-space: nowrap;
+	font-size: 11px;
+	color: rgb(200,200,200);
+	background-color: rgb(35,35,35);
+	padding: 9px 15px 0 15px;
+	margin-right: 40px;
+	height: 40px;
+	cursor: pointer;
+	display: none;
+}
+
+.butTutorial:hover {
+	background-color: rgb(25,25,25);
+}
+
+/* отображение линейки**/
+.visibleRuler .contentSection {
+	padding-top: 15px;
+} 
+
+.visibleRuler .redactorPageEdit .contentItem {
+	padding-left: 15px;
+}
+
+.visibleRuler .redactorPageEdit .contentModal {
+	padding-left: 9px;
+}
+
+.visibleRuler .contentSection .scaleWrap {
+	display: block;
+}
+
+.visibleRuler .guides {
+	display: block;
+}
+
+.butVisibleRuler {
+	float: right;
+	width: 20px;
+	height: 19px;
+	margin: 5px 0 0 15px;
+	background: url(/img/editor/icons/ruler.png) 0 0 no-repeat;
+	background-size: 100%;
+	cursor: pointer;
+}
+
+.butVisibleRuler[data-visible="true"] {
+	background-image: url(/img/editor/icons/ruler_visible.png);
+}
+
+/*вложеность элементов*/
+.nestedSection {
+	background-color: rgb(60,60,60);
+	color: rgb(241,241,241);
+	position: relative;
+	z-index: 99930;
+	float: left;
+}
+
+.nestedSectionItem {
+	float: left;
+	padding: 9px 10px 5px 10px;
+	cursor: pointer;
+}
+
+.nestedSectionItem[chosen="true"] {
+	background-color: rgb(63,63,63);
+	color: rgb(167,167,167);
+	cursor: default;
+}
+
+.nestedSectionItem:not([chosen="true"]):hover {
+	background-color: rgb(70,70,70);
+}
+
+.nestedSectionItemImg {
+	width: 13px;
+	display: block;
+	float: left;
+}
+
+.nestedSectionItemText {
+	float: left;
+	font-size: 11px;
+	margin-left: 6px;
+	margin-top: 0px;
+}
+/********************************************************************************************/
+/*режим просмотра****************************************************************************************/
+.redactorPageShow {
+	overflow-y: auto;
+	overflow-x: hidden;
+	height: inherit;
+	display: none;
+}
+
+.redactorPageShow .moveBlock {
+	opacity: 0;
+	cursor: default;
+}
+
+/*содержимое*/
+.redactorPageShowContent {
+	background-color: rgb(75,75,75);
+	padding-top: 40px;
+}
+
+.redactorPageShowContent .content {
+	height: auto;
+}
+
+/*заголовок*/
+.redactorPageShowHeader {
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%;
+	height: 40px;
+	background-color: rgb(45,45,45);
+	z-index: 770;
+}
+
+@media screen and (max-width:1024px),  screen and (max-device-width:1024px) {
+	.redactorPageShowContent {
+		padding-top: 0;
+	}
+
+	.redactorPageShowHeader {
+		display: none;
+	}
+}
+
+.modeShowHeaderContent {
+	/*outline: 1px solid;*/
+	width: 890px;
+	margin: 0 auto;
+}
+
+.butModeEdit {
+	margin-top: 8px;
+	padding: 6px 10px 5px 10px;
+	float: right;
+	border-radius: 2px;
+	background-color: rgb(51,128,216);
+	color: rgb(240,240,240);
+	font-family: Verdana;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.modeShowHeaderLeft {
+	float: left;
+}
+
+.blockDetailShowType {
+	display: none;
+}
+
+.modeShowHeaderLeft[data-showing-tutorial="no"] .logoShow {
+	display: none;
+}
+
+.modeShowHeaderLeft[data-showing-tutorial="no"] .blockDetailShowType {
+	display: block;
+}
+
+/*список устройств*/
+.modeEditListDevices {
+	outline: 0px solid;
+	width: 200px;
+	float: right;
+	padding-top: 11px;
+	margin-right: 75px;
+}	
+
+.logoShow {
+	width: 145px;
+	float: left;
+	margin-top: 9px;
+}
+
+.blockDetailShowType {
+	float: left;
+	font-family: Verdana;
+	padding-top: 14px;
+	color: rgb(240,240,240);
+	font-size: 13px;
+}
+
+.butDetailShowInfo {
+	padding: 5px 10px 4px 10px;
+	margin-left: 7px;
+	background-color: rgb(80,80,80);
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 12px;
+}
+
+.butDetailShowInfo:hover {
+	background-color: rgb(100,100,100);
+}
+
+.videoDetailShowType {
+	width: 100%;
+	height: 280px;
+}
+
+/******************************************************************************************/
+/****************************************************************************************/
+/*кнопки на формах**********************************************************************/
+.blockRedactionButton {
+	outline: 0px solid #000;
+	margin: 20px auto 0px auto;
+	color: rgb(255,255,249);
+}
+
+.blockRedactionButtonCancel, .blockRedactionButtonOk, .blockRedactionButtonDelete, .blockImgSectionItemOther, a.blockImgSectionItemOther {
+	font-size: 15px;
+	text-align: center;
+	padding: 7.5px 15px 7px 33px;
+	border-radius: 6px;
+	cursor: pointer;
+	color: rgba(255,255,255, 1);
+	height: 33px;
+} 
+
+.blockRedactionButtonCancel {
+	float: left;
+	border: 1px solid rgb(169,169,169);
+	background: rgba(172,172,172, 1) url(/img/editor/cancel.png) 10px 7.5px no-repeat;
+	background-size: 21px;
+}
+
+.blockRedactionButtonOk {
+	background: rgba(165,190,64, 1) url(/img/editor/tick.png) 10px 8px no-repeat;
+	background-size: 22px;
+	float: right;
+}
+
+.blockRedactionButtonDelete {
+	float: right;
+	background: rgba(233,111,98, 1) url(/img/editor/tick.png) 10px 7px no-repeat;
+	background-size: 22px;
+}
+
+.blockImgSectionItemOther {
+	background: rgba(165,190,64, 1) url(/img/editor/tick.png) 10px 7.5px no-repeat;
+	background-size: 22px;
+}
+
+/*****************************************************************************/
+/*статус о выполненой операции***************************************************************************/
+.transactionStatus {
+	font-size: 18px;
+	text-align: center;
+}
+
+.transactionStatus span {
+	display: inline-block;
+	margin: 60px 0 30px 0;  
+}
+/*навигация*******************************************************************/
+
+/*************************************************************************/
+/*******************************************************************************/
+/*мой селект******************************************************************************/
+ .select {
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+
+.selectWrap {
+	float: left;
+}
+
+.optionBlock {
+	position: absolute;
+	top: 23px; left:0px;
+	display: none;
+	z-index: 970;
+	overflow-y: auto;
+    overflow-x: hidden;
+	padding: 3px 3px 0 3px;
+	background-color: rgb(30,30,30);
+	border: 1px solid rgb(60,60,60);
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 0 0 4px 4px;
+	max-height: 200px;
+}
+
+.option {
+	margin-bottom: 4px;
+	padding: 2px 0 1px 3px;
+	cursor: pointer;
+	border: 1px solid rgba(0,0,0,0);
+}
+
+.optionLabel {
+	margin: 3px 0;
+	padding: 3px 0 2px 3px;
+	/*background-color: rgb(57, 125, 165);*/
+	background-color: rgb(20,20,20);
+	cursor: default;
+	border-radius: 2px;
+}
+
+.option:hover, .option[chosen="true"] {
+	background-color: rgb(60,60,60);
+	border-radius: 2px;
+}
+
+.selectBlockButton {
+	position: relative;
+	border: 1px solid rgb(60,60,60);
+	border-radius: 3px;
+	height: 24px;
+}
+
+.selectButtonArrow {
+	float: right;
+	width: 19px;
+	height: inherit;
+	border-left: 1px solid rgb(80,80,80);
+	cursor: pointer;
+	border-radius: 0 2px 2px 0;
+}
+
+.selectButtonArrow span {
+	/*outline: 1px solid;*/
+	width: 12px;
+	height: 12px;
+	display: block;
+	margin: 7px auto 0 auto;
+	background-position: -43px -16px;
+}
+
+.selectBlockButton input[type="button"] {
+	outline: 0px solid #c00;
+	width: 100px;
+	height: inherit;
+	padding: 3px 0px 0 5px;
+	background-color: rgb(27,27,27);
+	color: rgb(152,152,152);
+	border: 1px solid rgb(35,35,35);
+	cursor: pointer;
+	font-size: 12px;
+	text-align: left;
+	float: left;
+	border-radius: 2px 0 0 2px;
+}
+/*************************************************************************************************/
+/********************************************************************************************/
+.checkBox {
+	outline: 0px solid #c00;
+	position: relative;
+	width: 12px;
+	height: 12px;
+	border-radius: 3px;
+	/*box-shadow: inset 0 0 3px 0 rgb(20,20,20);*/
+	cursor: pointer;
+	background-color: rgb(210,210,210); 
+}
+
+.checkBoxChecked { 
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 0px; left: 0px;
+	z-index: 9;
+	background-position: -75px -16px;
+}
+/******************************************************************************/
+/******************************************************************************/
+/*color*************************************************************************/
+.valueColorValBlock {
+	height: 17px;
+	margin: -1px 10px 0 0px;
+	float: left;
+}
+
+.valueColorVal {
+	width: 50px;
+}
+
+.valueColorValBlock span {
+	font-size: 16px;
+}
+
+.colorpickerField {
+	outline: 0px solid #c00;
+	position: relative;
+	z-index: 99;
+	width: 40px;
+	height: 19px;
+	color: transparent;
+	float: left;
+	cursor: pointer;
+	margin-top: -1px;
+	border-radius: 4px;
+	/*background: url(/img/color_picker_btn.png) -1px 0 no-repeat;*/
+	
+	background-position: -326px -3px;
+}
+
+.colorpickerField:focus {
+	box-shadow: none;
+}
+
+.valueColorShowColor {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	z-index: 9;
+}
+
+.valueColorValShowBlock {
+
+}
+
+/**********************************************************************************/
+
+#modalRateLimited {
+	text-align: center;
+} 
+
+.modalRateLimitedTitle {
+	font-size: 18px;
+	text-align: center;
+	padding: 4px 0 15px 0;
+}
+
+a.butRateLimited {
+	display: block;
+	margin: 40px auto 10px auto;
+	width: 210px;
+	padding: 9px 0 8px 0;
+	border-radius: 3px;
+	font-size: 14px;
+	text-align: center;
+	color: rgb(240,240,240);
+	background-color: rgb(88,101,244);
+}
+
+a.butRateLimited:hover {
+	background-color: rgb(105,117,244);
+}
+/*********************************************************************************/
+/*********************************************************************************/
+/*color picker*/
+.cp-color-picker[class] {
+	z-index: 99980;
+}

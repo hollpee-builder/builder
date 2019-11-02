@@ -1,0 +1,70 @@
+.menuBlockValueFull .menuButValue {
+	float: none;
+	width: 100%;
+}
+
+
+/*slider**/
+.valueSliderCurSlide, .valueTabsCurItem {
+	border: none;
+}
+
+.valueSliderCurSlide .menuButValue,
+.valueTabsCurItem .menuButValue {
+	margin: 0 5px 5px 0;
+	padding: 5px 5px 2px 5px;
+}
+
+.butWidgetSlider {
+	padding: 4px 8px 3px 8px;
+	border-radius: 2px;
+	background-color: rgb(80,80,80);
+	cursor: pointer;
+	min-width: 50px;
+	text-align: center;
+}
+
+.butWidgetSlider:hover {
+	opacity: 0.8;
+}
+
+.butWidgetSliderAdd, .butWidgetTabsAdd {
+	float: left;
+}
+
+.butWidgetSliderDelete, .butWidgetTabsDelete {
+	float: right;
+}
+
+/*************************************************************************************/
+.menuWidgetGalleryModal .menuStyleBlock { 
+	position: relative; 
+}
+
+.menuStyleBlockNone {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(40,40,40,0.8);
+	z-index: 90;
+}
+
+.menuStyleBlockNoneText {
+	width: 70%;
+	margin: 10px auto 0 auto;
+	text-align: center;
+	font-size: 12px; 
+}
+
+/***********************************************************************************/
+/*hover*/
+
+.butEditHoverImg {
+	/*box-sizing: border-box;*/
+	padding: 5px 0 4px 0;
+	text-align: center;
+}
+

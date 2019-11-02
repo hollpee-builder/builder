@@ -1,0 +1,653 @@
+* {
+	font-size: 14px;
+}
+
+.table {
+	border-top: 1px solid rgb(220,220,220);
+	border-right: 1px solid rgb(220,220,220);
+}
+
+.tableCell {
+	display: block;
+	float: left;
+	height: 45px;
+	text-align: center;
+	font-size: 14px;
+	position: relative;
+	white-space: nowrap;
+}
+
+.tableCell span {
+	display: block;
+}
+
+.tableCell {
+	border-spacing: 0;
+	border-bottom: 1px solid rgb(230,230,230);
+	border-left: 1px solid rgb(230,230,230);
+}
+
+.tableCell span, .tableCell a, .abtestLabelAll {
+	margin-top: 17px;
+}
+
+.tableCell[data-type="variant"] a {
+	display: block;
+	cursor: pointer;
+	border-bottom: 1px dashed;
+	color: rgb(41,127,255);
+}
+
+.tableCell[data-type="variant"] a, .tableCell[data-type="variant"] .abtestLabelAll {
+	text-align: left;
+	margin-left: 10px;
+	float: left;
+}
+
+.abtestItem[data-id="all"] {
+	font-weight: bold;
+}
+
+.tableCell {
+	width: 10%;
+	overflow: hidden;
+    padding-bottom: 3px;
+}
+
+.tableContent .tableCell > span {
+	width: 90%;
+	display: block;
+	margin: 0 auto 0 auto;
+	overflow: hidden;
+	padding-top: 15px;
+}
+
+.table .tableCell[data-type="variant"] {
+	width: 40%;
+}
+
+.abtest .tableCell {
+	width: 15%;
+}
+
+.blockAbtestUpdateStatus {
+	font-size: 14px;
+	text-align: center;
+	padding: 12px 0 10px 0px;
+	margin: 15px 0 10px 0;
+	background-color: rgba(247,79,91, 0.1);
+	border: 1px solid rgba(247,79,91, 0.5);
+	color: rgb(80,80,80);
+	border-radius: 3px;
+	display: none;
+}
+
+.blockAbtestUpdateStatus[data-published="yes"][data-type="no"] {
+	display: block;
+}
+
+.tableRowH,
+.tableContent > .tableRow:nth-child(2n+2) {
+    background-color: rgb(245,245,245);
+}
+
+.abtest .tableRow[class] {
+	/*background-color: rgb(255,255,255);*/
+}
+
+/*******************************************************************************/
+/*list section*/
+.listSection {
+
+}
+
+.sectionPage {
+	height: 0;
+	overflow: hidden;
+	margin: 0;
+}
+
+.listSection[data-type="ab_test"] .sectionPage[data-type="ab_test"],
+.listSection[data-type="sts"] .sectionPage[data-type="sts"],
+.listSection[data-type="adaptive_title"] .sectionPage[data-type="adaptive_title"] {
+	height: auto;
+	margin-bottom: 40px;
+}
+
+.listSectionListBut {
+	padding: 12px 15px 10px 15px;
+	background-color: rgb(245,245,245);
+	border: 1px solid rgb(235,235,235);
+	border-radius: 3px;
+}
+
+.butChosenSection {
+	float: left;
+	padding: 7px 17px 5px 17px;
+	font-size: 14px;
+	border-radius: 3px;
+	cursor: pointer;
+	float: right;
+	margin-left: 7px;
+}
+
+.butChosenSection:not([data-chosen="true"]):hover {
+	opacity: 0.85;
+}
+
+.butChosenSection[data-chosen="true"] {
+	background-color: rgb(41,127,255);
+	cursor: default;
+	color: rgb(240,240,240);
+}
+
+.listSectionContent {
+	margin-top: 30px;
+}
+
+.sectionPageTitle {
+	font-size: 16px;
+	font-size: 17px;
+	color: rgb(60,60,60);
+	border-radius: 4px;
+	float: left;
+	padding-top: 5px;
+}
+
+.listSectionContent .sectionPageTitle {
+	display: none;
+}
+
+.sectionPageContent {
+	min-height: 100px;
+}
+
+/****************************************************************************/
+/****************************************************************************/
+
+.listButAbtestRunning {
+	float: right;
+	margin: 10px 10px 0 0;
+	font-size: 13px;
+}
+
+.butAbtestRunning {
+	float: left;
+	background-color: rgb(220,220,220);
+	padding: 5px 10px 4px 10px;
+	cursor: pointer;
+}
+
+.butAbtestRunning[data-type="off"] {
+	border-radius: 3px 0 0 3px;
+}
+
+.butAbtestRunning[data-type="on"] {
+	border-radius: 0 3px 3px 0;	
+}
+
+.butAbtestRunning[data-chosen="true"] {
+	color: rgb(240,240,240);
+	cursor: default;
+}
+
+.butAbtestRunning[data-type="off"][data-chosen="true"] {
+	background-color: rgb(247,79,91);
+}
+
+.butAbtestRunning[data-type="on"][data-chosen="true"] {
+	background-color: rgb(72,170,47);
+}
+
+/**/
+.butAbtestDelete {
+	width: 80px;
+	margin: 10px auto;
+	color: rgb(243,81,49);
+	padding: 5px 5px 4px 5px;
+	border-radius: 3px;
+	border: 1px solid;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+.abtestListBut {
+	margin-top: 20px;
+}
+
+.butAbtestVariantAdd, .butAbtestResetStat {
+	border-radius: 3px;
+	font-size: 13px;
+	padding: 8px 15px 7px 15px;
+	cursor: pointer;
+	float: right;
+	text-align: center;
+}
+
+.butAbtestVariantAdd {
+	background-color: rgba(60,101,139, 0.8);
+	color: rgb(240,240,240);
+}
+
+.butAbtestResetStat {
+	background-color: rgb(230,230,230);
+	margin-right: 20px;
+}
+
+.butAbtestDelete:hover, 
+.butAbtestVariantAdd:hover,
+.butAbtestResetStat:hover {
+	opacity: 0.8;
+}
+
+.valueAbtestVariantNew {
+	display: block;
+	width: 100%;
+	box-sizing: border-box;
+	margin-top: 15px;
+	padding: 8px 10px 6px 10px;
+	border-radius: 3px;
+	font-size: 14px;
+}
+
+/*********************************************************************************/
+/**adaptive title************************************************************************/
+
+.butDeleteAdaptiveTitle {
+	width: 80px;
+	padding: 5px 0 4px 0;
+	border-radius: 3px;
+	color: rgb(247,79,91);
+	border: 1px solid;
+	font-size: 12px;
+	margin: 10px auto 0 auto;
+	cursor: pointer;
+}
+
+.butDeleteAdaptiveTitle:hover {
+	opacity: 0.8;
+}
+
+.tableAdaptiveTitle .tableContent .tableCell[data-type="elm"],
+.tableAdaptiveTitle .tableContent .tableCell[data-type="url"] {
+	cursor: pointer;
+}
+
+.tableAdaptiveTitle .tableContent .tableCell[data-type="elm"]:hover,
+.tableAdaptiveTitle .tableContent .tableCell[data-type="url"]:hover {
+	background-color: rgb(235,235,235);
+}
+
+textarea.valueAdaptiveTitleEdit {
+	min-height: 120px;
+}
+
+.tableAdaptiveTitle .tableCell .adaptiveElmImage {
+	display: block;
+	height: 80%;
+	margin: 5px auto 0 auto;
+}
+
+.tableAdaptiveTitle .tableCell[data-elm-type="image"] {
+	background-color: rgb(245,245,245);
+}
+
+/**/
+.tableAdaptiveTitle .tableCell[data-type="url"] {
+	width: 20%;
+}
+
+.tableAdaptiveTitle .tableCell[data-type="button"] {
+	width: 10%;
+}
+
+.tableAdaptiveTitle .tableRow[data-count-elm="1"] .tableCell[data-type="elm"] {
+	width: 70%;
+}
+
+.tableAdaptiveTitle .tableRow[data-count-elm="2"] .tableCell[data-type="elm"] {
+	width: 35%;
+}
+
+.tableAdaptiveTitle .tableRow[data-count-elm="3"] .tableCell[data-type="elm"] {
+	width: 23.33333%;
+}
+
+.tableAdaptiveTitle .tableRow[data-count-elm="4"] .tableCell[data-type="elm"] {
+	width: 17.5%;
+}
+
+.tableAdaptiveTitle .tableRow[data-count-elm="5"] .tableCell[data-type="elm"] {
+	width: 14%;
+}
+
+.tableAdaptiveTitle .tableRow[data-count-elm="6"] .tableCell[data-type="elm"] {
+	width: 11.66666%;
+}
+
+.tableAdaptiveTitle .tableRow[data-count-elm="7"] .tableCell[data-type="elm"] {
+	width: 10%;
+}
+
+/*link*/
+.adaptiveTitleListLink, 
+#modalAdaptiveTitleAddValue .modalBlockCont {
+	max-height: 400px;
+	overflow: auto;
+}
+
+.urlUtmItem {
+	margin-top: 15px;
+}
+
+.urlUtmItemKey {
+	float: left;
+	width: 150px;
+}
+
+.urlUtmItemValue[class] {
+	margin: 0;
+} 
+
+.urlUtmItemKey, .adaptiveTitleLinkWrap {
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.adaptiveTitleLinkWrap {
+	float: left;
+	width: 630px;
+}
+
+.adaptiveTitleLinkWrap input.urlUtmItemValue {
+	width: 100%;
+}
+
+a.adaptiveTitleLink {
+	color: rgb(41,127,255);
+	text-decoration: underline;
+	display: block;
+	float: left;
+}
+
+/*add new value*/
+
+.modalAdaptiveTitleAddPropertyItem {
+	margin-bottom: 15px;
+}
+
+.butAddAdaptiveTitleValue {
+	float: right;
+	padding: 8px 15px 6px 15px;
+	border-radius: 3px;
+	color: rgb(240,240,240);
+	background-color: rgba(60,101,139, 0.8);
+	font-size: 13px;
+	margin-top: 20px;
+	cursor: pointer;
+}
+
+.butAddAdaptiveTitleValue:hover {
+	opacity: 0.8;
+}
+
+.modalAdaptiveTitleAddLabel {
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+
+.modalAdaptiveTitleAddPropertyName {
+	float: left;
+	width: 30%;
+}
+
+.modalAdaptiveTitleAddPropertyValue[class] {
+	float: right;
+	width: 70%;
+	display: block;
+}
+
+textarea.modalAdaptiveTitleAddPropertyValue[class] {
+	min-height: 70px;
+}
+
+.butAddAdaptiveTitleElm,
+.butAddAdaptiveTitleElm:visited {
+	margin-bottom: 10px;
+	color: rgb(93,131,247);
+	border-bottom: 1px solid;
+	float: left;
+	cursor: pointer;
+	display: block;
+}
+
+/*********************************************************************************/
+/**sts****************************************************************************/
+
+.pageStsListFooter {
+	margin-top: 20px;
+}
+
+.butResetSts {
+	float: right;
+	width: 200px;
+	padding: 8px 0 6px 0;
+	text-align: center;
+	background-color: rgb(230,230,230);
+	border: 1px solid rgb(220,220,220);
+	border-radius: 3px;
+	font-size: 13px;
+	cursor: pointer;
+}
+
+.butResetSts:hover {
+	background-color: rgb(210,210,210);
+}
+
+.pageStsGroupItem {
+	float: left;
+	margin-bottom: 10px;
+	margin-right: 20px;
+	padding: 7px 10px 6px 10px;
+	background-color: rgb(230,230,230);
+	color: rgb(10,10,10);
+	border-radius: 3px;
+	box-sizing: border-box;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.pageStsGroupItem[data-chosen="true"], .stsTabVariant[data-chosen="true"] {
+	background-color: rgb(70,70,70);
+	color: rgb(240,240,240);
+	cursor: default;
+}
+
+.pageStsGroupItem:not([data-chosen="true"]):hover,
+.stsTabVariant:not([data-chosen="true"]):hover {
+	background-color: rgb(210,210,210);
+}
+
+.pageSts {
+	display: none;
+}
+
+.listSection[data-sts="date"] .pageSts[data-type="date"],
+.listSection[data-sts="utm"] .pageSts[data-type="utm"],
+.listSection[data-sts="ttl"] .pageSts[data-type="ttl"] {
+	display: block;
+}
+
+.sectionPage[data-type="sts"] .sectionPageTitle {
+	display: none;
+}
+
+.butStsDateDetail[class], a.valueDymTtlLink span {
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+    color: rgb(41,127,255);
+    border-bottom: 1px dashed;
+}
+
+.butStsDateDetail[class] {
+	float: right;
+}
+
+a.valueDymTtlLink {
+	padding-top: 14px;
+}
+
+a.valueDymTtlLink[class] span {
+	display: inline;
+	width: auto;
+}
+
+.butStsDateDetail:hover {
+	opacity: 0.8;
+}
+
+.sts-date-name {
+	float: left;
+}
+
+/*table*/
+.abtestItemH .tableCell, .tableRowH .tableCell {
+	font-weight: bold;
+}
+
+.tableStat .tableCell[data-type="name"] {
+	width: 40%;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.tableStat .tableCell {
+	width: 20%;
+}
+
+.tableStat[data-type="os"] .tableCell[data-type="name"],
+.tableStat[data-type="device"] .tableCell[data-type="name"] {
+	width: 20%;
+}
+
+/*.tableStat[data-type="utm"] .tableCell[class] {
+	width: 11.5%;
+}
+
+.tableStat[data-type="utm"] .tableCell[data-type="name"] {
+	width: 19.5%;
+}*/
+
+.tableRowDateDetail .tableCell {
+	width: 20%;
+}
+
+.tableRowDateDetail .tableCell[data-type="date_detail_src"] {
+	width: 40%;
+}
+
+.butSalesFunnel[class] {
+	width: 65px;
+	margin: 15px auto 0 auto;
+	cursor: pointer;
+	color: rgb(41,127,255);
+	border-bottom: 1px dashed;
+}
+
+.butSalesFunnel:hover {
+	opacity: 0.8;
+}
+
+/**/
+
+.stsListTabVariant {
+	margin-bottom: 20px;
+}
+
+.stsTabVariant {
+	float: left;
+	padding: 7px 15px 5px 15px;
+	background-color: rgb(240,240,240);
+	border: 1px solid rgb(220,220,220);
+	border-radius: 3px;
+	margin-right: 15px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+/*utm********************************************************************************/
+
+.butUtmSetting {
+	display: none;
+	width: 170px;
+	float: right;
+	margin-left: 20px;
+	padding: 8px 0 6px 0;
+	text-align: center;
+	background-color: rgba(60,101,139, 0.8);
+	color: rgb(240,240,240);
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.butUtmSetting:hover {
+	opacity: 0.8;
+}
+
+.listSection[data-sts="utm"] .butUtmSetting {
+	display: block;
+}
+
+/**/
+
+.utmSettingItem {
+	padding: 10px 10px 9px 10px;
+	border-radius: 3px;
+}
+
+.utmSettingItem:nth-child(2n+1) {
+    background-color: rgb(240,240,240);
+}
+
+.utmItemName {
+	float: left;
+	width: 150px;
+	padding-top: 4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.utmItemToggleBlock {
+	float: right;
+}
+
+.utmItemToggleBut {
+	float: left;
+	padding: 7px 8px 6px 8px;
+	background-color: rgb(90,90,90);
+	color: rgb(240,240,240);
+	cursor: pointer;
+	font-size: 13px;
+}
+
+.utmItemToggleBut[data-type="click"] {
+	border-radius: 3px 0 0 3px;
+}
+
+.utmItemToggleBut[data-type="cost"] {
+	border-radius: 0 3px 3px 0;
+}
+
+.utmItemToggleBut[data-chosen] {
+	cursor: default;
+	background-color: rgba(41,127,255,0.7);
+}
+
+#modalUtmSetting .utmItemValue {
+	float: right;
+	width: 250px;
+	margin: 0 20px 0 0;
+}

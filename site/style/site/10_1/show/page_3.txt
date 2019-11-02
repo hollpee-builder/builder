@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="icon" type="image/png" href="/images/" sizes="32x32" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="stylesheet" href="/site/frame/css/hlp_main.css?index=1499301667">
+		
+	<script type="text/javascript" src="/site/frame/js/jquery.js?index=1499301667"></script>
+	<script type="text/javascript" src="/site/frame/js/hlp_script.js?index=1499301667"></script>
+	
+	
+</head> 
+<body>
+
+<style id="stylePage">
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i,700,700i&subset=cyrillic,latin);
+
+
+
+/*section*/
+.p1-section-5 {
+	background-color: rgba(106, 106, 106, 1);
+}
+
+.p1-heading-1 {
+	width: 500px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(175, 175, 175, 1);
+}
+
+/*section*/
+.p2-section-2 {
+	width: 100%;
+	background-color: rgba(179, 179, 179, 1);
+}
+
+.p2-heading-2 {
+	width: 500px;
+	margin-top: 0px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*section*/
+.p3-section-1 {
+	width: 100%;
+}
+
+/*section**********************************************************************/
+.p3-section-2 {
+	width: 100%;
+}
+
+/*section**********************************************************************/
+.p3-section-3 {
+	width: 100%;
+}
+
+/*section**********************************************************************/
+.p3-section-4 {
+	width: 100%;
+}
+
+</style>
+<div class="hlp-site">		
+		<section class="hlp-section p1-section-5">
+			<div class="hlp-section-content">
+				<h2 class="p1-heading-1">header</h2>
+			</div>
+		</section>
+		<div class="hlp-list-modal"></div>
+<div class="hlp-page">		
+		<div class="hlp-section p3-section-1">
+			<div class="hlp-section-content"></div>
+		</div>
+		<div class="hlp-section p3-section-2">
+			<div class="hlp-section-content"></div>
+		</div>
+		<div class="hlp-section p3-section-3">
+			<div class="hlp-section-content"></div>
+		</div>
+		<div class="hlp-section p3-section-4">
+			<div class="hlp-section-content"></div>
+		</div>
+		<div class="hlp-list-modal"></div>
+</div>		
+		<section class="hlp-section p2-section-2">
+			<div class="hlp-section-content">
+				<h2 class="p2-heading-2">footer</h2>
+			</div>
+		</section>
+		<div class="hlp-section hlp-privacy-policy">
+			<div class="hlp-section-content">
+				<p class="hlp-privacy-policy-link">
+					<a href="hlp_privacy_policy.php" target="_blank">Политика конфиденциальности</a>
+				</p>
+			</div>
+		</div>
+		<div class="hlp-list-modal"></div>
+</div></body>
+</html>
+

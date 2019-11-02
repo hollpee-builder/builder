@@ -1,0 +1,1722 @@
+.colorpicker_field input {
+	width: 28px;
+}
+
+/*затемнение*/
+.menuStyleBlackout {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 980;
+	display: none;
+}
+
+.menuStyleModal {
+	position: absolute;
+	top: 70px; left: 3%;
+	width: 94%;
+	z-index: 990;
+	background-color: rgb(51,51,51);
+	border-radius: 2px;
+	padding: 8px 6px 5px 6px;
+	box-sizing: border-box;
+	display: none;
+}
+
+.menuStyleModal .menuStyleItem {
+	
+}
+
+.menuStyleModalTop {
+	height: 20px;
+}
+
+.menuStyleModalTitle {
+	width: 150px;
+	float: left;
+}
+
+
+.menuStyleModalExit {
+	float: right;
+	width: 15px;
+	margin: -1px 1px 0 0;
+	cursor: pointer;
+}
+/**********************************************************************************************/
+/*стили**************************************************************************************/
+.menuOneStyle {
+	font-size: 11px;
+	background-color: rgb(51,51,51);
+	border-bottom: 1px solid rgb(31,31,31);
+	border-top: 1px solid rgb(80,80,80);
+	position: static;
+}
+
+.menuOneStyle[last="true"] {
+	border-bottom: none;
+}
+
+.menuOneStyle:last-child {
+	border-bottom: none;
+}
+
+.menuStyleBlock {
+	padding: 0px 5px 8px 5px;
+}
+
+.menuStyleItem, .menuGeometryPropertyExtendedButWrap {
+	padding: 8px 0px 6px 10px;
+	background-color: rgb(40,40,40);
+	position: relative;
+	border-radius: 3px;
+	margin-bottom: 5px;
+}
+
+
+.menuStyleItemRow {
+	margin-top: 8px;
+	position: relative;	
+}
+
+.menuStyleItemRow:first-child {
+	margin-top: 0;
+}
+
+.menuStyleItemLabel {
+	outline: 0px solid;
+	float: left;
+	/*width: 68px;*/
+	width: 78px;
+	color: rgb(200,200,200);
+	white-space: nowrap;
+	overflow: hidden;
+	min-height: 10px;
+}
+
+.menuStyleItemLabel[multy-string="true"] {
+	white-space: normal;
+}
+
+.menuLabelFullWidth {
+	float: none;
+	width: 200px;
+	margin-bottom: 8px;
+}
+
+.menuStyleItemValue {
+	width: 145px;
+	float: left;
+	position: relative;	
+}
+
+
+/*название стиля*/
+.menuStyleName {
+	color: rgb(62,156,227);
+	padding: 7px 10px 8px 10px;
+	box-shadow: inset 0 18px 18px -5px rgb(64,64,64);
+	cursor: pointer;
+	position: relative;	
+}
+
+.menuStyleName .menuStyleNameButton {
+	outline: 0px solid #c00;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 13px;
+	height: 13px;
+	float: left;
+	margin: 0px 10px 0 0;
+	border-radius: 3px;
+	/*color: rgb(42,42,42);*/
+	/*background-color: rgb(210,210,210);*/
+
+	background-color: rgb(43,43,43);
+	/*color: rgb(240,240,240);*/
+}
+
+.butResetStyle {
+	/*float: right;*/
+	/*margin-right: 10px;*/
+	position: absolute;
+	top: 7px;
+	right: 19px;
+	background-color: rgb(35,35,35);
+	color: rgb(190,190,190);
+	padding: 4px 5px 4px 5px;
+	border-radius: 2px;
+	margin-top: -4px;
+	cursor: pointer;
+}
+
+.butResetStyle:hover {
+	background-color: rgb(45,45,45);
+}
+
+/*параметры сторон*/
+.menuValueRowSide {
+	padding-bottom: 1px;
+}
+
+.menuValueRowSide:last-child {
+	padding: 0;
+}
+
+.menuValueRowSideCenter {
+
+}
+
+.menuOneStyle .menuValueSideTop, .menuOneStyle .menuValueSideBottom {
+	margin: 0 auto;
+	float: none;
+	display: block;
+}
+
+.menuOneStyle  .menuValueSideLeft {
+	float: left;
+}
+
+.menuOneStyle  .menuValueSideRight {
+	float: right;
+}
+/*общие*****************************************************************************************/
+/*для input*/
+.menuOneStyle select {
+	color: rgb(147,160,147);
+	background-color: rgb(27,27,27);
+	/*box-shadow: inset 0 10px 10px 0 rgb(78,78,78);*/
+	border: 1px solid rgb(70,70,70);
+	border-radius: 2px;
+	padding: 4px 0 2px 0;
+	margin: -1px 7px 0 0px;
+	font-size: 12px;
+	cursor: pointer;
+	/*width: 115px;*/
+	float: left;
+}
+
+.menuOneStyle option {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.menuOneStyle input {
+	font-size: 12px;
+	float: left;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+	padding: 4px 5px 3px 5px;
+	display: block;
+	border-radius: 3px;
+}
+
+.selectBlockButton input[type="button"] {
+	width: 122px;
+}
+
+.inputBlock input, .valueColorValBlock input {
+	padding: 2px 0 0 1px;
+	text-align: center;
+}
+
+.menuOneStyle input, .menuOneStyle button, .inputUnitBlock {
+	background-color: rgb(27,27,27);
+	color: rgb(152,152,152);
+}
+
+.menuOneStyle button {
+	border: 1px solid rgb(44,47,53);
+}
+
+.menuOneStyle input[isfield="true"] {
+	/*width: 122px;*/
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+
+.menuOneStyle textarea {
+	width: 134px;
+	max-width: 134px;
+	height: 50px;
+	padding: 5px;
+	float: left;
+	background-color: rgb(34,34,34);
+	border: 1px solid rgb(30,30,30);
+	display: block;
+	color: rgb(230,230,230);
+	font-size: 13px;
+	font-size: Verdana;
+}
+
+/*кнопки выбора значения*******************/
+.menuBlockValue {
+	outline: 0px solid #c00;
+	float: left;
+	border-radius: 2px;
+	border: 1px solid rgb(35,35,35);
+}
+
+.menuBlockValueTwoElm[class] {
+	width: 99%;
+}
+
+.menuBlockValueTwoElm[class] > .menuButValue[class] {
+	width: 50%;
+    box-sizing: border-box;
+}
+
+.menuButValue {
+	float: left;
+	/*margin-left: 3;*/
+	background-color: rgb(75,75,75);
+	border-right: 1px solid rgb(42,42,42);
+	cursor: pointer;
+	padding: 2px;
+
+	background-color: rgb(80,80,80);
+}
+
+.menuButValueText {
+	color: rgb(220,220,220);
+	padding: 6px 6.5px 4px 6.5px;
+	text-align: center;
+	font-size: 11px;
+	min-width: 22px;
+}
+
+.menuButValue span {
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin: 2px;
+}
+
+.menuButValue[chosen="true"] {
+	background-color: rgb(53,53,53);
+
+	background-color: rgb(60,60,60)
+}
+
+.menuButValue[chosen="true"]:not([toggle="true"]) {
+	cursor: default;
+}
+
+.menuButValue:first-child {
+	border-radius: 1px 0 0 1px;
+}
+
+.menuButValue:last-child {
+	border-right: none;
+	border-radius: 0 1px 1px 0;
+}
+
+.menuButValue[value-none="true"] span {
+	background-position: -50px 3px;
+}
+
+
+.menuGridMargin .menuBlockValue {
+	margin-left: 7px;
+}
+
+/*выравнивание*/
+.butGeometryAlign {
+	width: 42px;
+}
+
+.butGeometryAlign > span {
+	display: block;
+	margin: 1px auto 2px auto;
+}
+/**********************************************************************************************/
+/*блок инпут*/
+.inputBlock {
+	outline: 0px solid #c00;
+	position: relative;
+	float: left;
+	color: rgb(55,55,55);
+	background-color: rgb(27,27,27);
+	border: 1px solid;
+	border-radius: 3px;
+	box-sizing: box-border;
+}
+
+.inputBlock input {
+	padding: 7px 0 2px 0;
+	border: none;
+	width: 18px;
+	border-radius: 2px 0 0 2px;
+	/*text-align: right;*/
+}
+
+.scrollBlock .inputBlock input {
+	width: 22px;
+}
+
+.inputAddedElement {
+	outline: 0px solid #ccc;
+	width: 10px;
+	height: inherit;
+	float: left;
+	background-color: rgb(40,40,40);
+	border-radius: 0 2px 2px 0;
+	/*display: none;*/
+}
+
+.inputListArrows {
+
+}
+
+.inputArrow {
+	border-left: 1px solid;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.inputArrow:hover {
+	background-color: rgb(60,60,60);
+}
+
+.inputArrowUp {
+	background-position: -3px -17px;
+	border-bottom: 1px solid;
+	height: 14px;
+}
+
+.inputArrowDown {
+	height: 10px;
+	background-position: -20px -17px;
+}
+
+/**единицы***************/
+.inputUnitBlock {
+	position: relative;
+	height: 21px;
+	float: left;
+	text-align: center;
+}
+
+.inputUnitCurrent {
+	padding-bottom: 4px;
+	border-radius: 2px;
+	width: 16px;
+	margin: 6px 2px 0 0;
+	cursor: pointer;
+}
+
+.inputUnitCurrent[value="auto"] {
+	width: 10px;
+}
+
+.inputUnitCurrent:hover {
+	background-color: rgba(60,60,60, 0.8);
+}
+
+.inputUnitBlock:hover .inputUnitCurrent, .inputUnitBlock[show="true"] .inputUnitCurrent {
+	background-color: rgb(60,60,60);	
+	border-radius: 2px 2px 0 0;
+}
+
+.inputUnitList {
+	position: absolute;
+	top: 21px; right: 1px;
+	z-index: 980;
+	width: 29px;
+	background-color: rgb(60,60,60);
+	display: none;
+	border-radius: 2px 0 2px 2px;
+}
+
+.inputUnitBlock[show="true"] {
+	color: rgb(220,220,220);
+}
+
+.inputUnitBlock[show="true"] .inputUnitList {
+	display: block;
+	border: 1px solid rgb(39,39,39);
+	border-top: none;
+}
+
+.inputUnitItem {
+	text-align: left;
+	/*font-size: 12px;*/
+	border-bottom: 1px solid rgb(45,45,45);
+	padding: 3px 4px;
+	cursor: pointer;
+}
+
+.inputUnitItem:hover {
+	background-color: rgb(50,50,50);
+}
+
+.inputUnitItem:last-child {
+	border-bottom: none;
+	/*padding-bottom: 3px;*/
+}
+/*********************************************************************************************/
+/*скролл*************/
+.scrollBlock {
+	outline: 0px solid #c00;
+	float: left;
+	padding-bottom: 3px;
+}
+
+
+.menuStyleItemValue .scrollBlock .inputBlock {
+	margin-top: -2px;
+}
+
+.scroll {
+	width: 79px;
+	border-radius: 5px;
+	margin: 7px 10px 0 3px;
+	float: left;
+	border-top: 3px solid rgb(0,0,0);
+	border-bottom: 0px solid rgb(80,80,80); 
+	position: relative;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 4px rgb(26,26,26);
+}
+
+.scrollButton {
+	position: absolute;
+	top: -8px; left: 0;
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background-color: rgb(209,209,209);
+	cursor: pointer;
+}
+
+.menuBg .scrollBlock input, .menuText .scrollBlock input {
+	width: 22px;
+}
+/*цвет*/
+.menuSectionItemColor {
+	outline: 0px solid #c00;
+	float: left;
+}
+
+.menuSectionItemColor .valueColorValBlock input {
+	width: 48px;
+	margin-top: 2px;
+	text-align: center;
+}
+
+.menuSectionItemColor .valueColorValBlock span {
+	float: left;
+	padding-right: 2px;
+}
+
+.menuOneStyle .colorpickerField {
+	width: 40px;
+	color: transparent;
+	margin-top: 0px;
+}
+
+.menuOneStyle .colorpickerField:focus {
+	box-shadow: none;
+}
+
+
+.setColorTransparent {
+	margin: 2px 0 0 3%;
+	display: none;
+}
+
+.menuOneStyle .colorpickerField {
+	width: 38px;
+	color: transparent;
+	margin-top: 0px;
+	height: 17px;
+}
+
+.valueColorValBlock input {
+	width: 81px;
+	margin-top: -1px;
+	padding: 4px 0 3px 0;
+	text-align: center;
+}
+
+.valueColorValBlock span {
+	float: left;
+	padding-right: 2px;
+}
+/*кнопки*/
+.rightMenuBut {
+	border: 1px solid rgb(41,40,41);
+	background-color: rgb(210,210,210);
+	color: rgb(30,30,30);
+	padding: 4px 4px 3px 4px;
+	border-radius: 3px;
+	cursor: pointer;
+	font-size: 11px;
+	float: left;
+
+	background: rgb(80,80,80);
+    color: rgb(220,220,220);
+}
+
+/*геометрия*********************************************************************************************/
+.menuGeometry {
+
+}
+
+.menuGeometryPropertyExtendedContent {
+	margin-top: 5px;
+}
+
+.menuText .menuGeometryPropertyExtendedContent {
+	/*margin-top: 10px;*/
+}
+
+.menuText .menuGeometryPropertyExtendedContent .menuStyleItemRow:first-child {
+	margin-top: 0px;
+}
+
+.menuText .menuGeometryPropertyExtendedContent .menuStyleItemRow {
+	margin-top: 10px;
+}
+
+.menuGeometryPropertyExtendedBut {
+	color: rgba(62,156,227, 0.6);
+	float: right;
+	margin: 7px auto 7px auto;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px dashed;
+}
+
+.menuGeometryPropertyExtendedBut {
+	display: none;
+}
+
+.menuGeometryPropertyExtended[data-type="general"] .menuGeometryPropertyExtendedContent {
+	display: none;
+}
+
+.menuGeometryPropertyExtended[data-type="general"] .menuGeometryPropertyExtendedBut[data-type="extended"] {
+	display: block;
+}
+
+.menuGeometryPropertyExtended[data-type="extended"] .menuGeometryPropertyExtendedBut[data-type="general"] {
+	display: block;
+}
+
+.menuGeometryPropertyExtendedButWrap {
+	padding-right: 10px; 
+	display: none;
+}
+
+.menuGeometryPropertyExtended[data-type="general"] .menuGeometryPropertyExtendedButWrap[data-type="extended"],
+.menuGeometryPropertyExtended[data-type="extended"] .menuGeometryPropertyExtendedButWrap[data-type="general"] {
+	display: block;
+}
+
+.selectGeometryPosition input[type="button"] {
+	width: 122px;
+} 
+
+.menuGeometry .menuOneParam {
+	width: 105px;
+	float: left;
+}
+
+.menuGeometry .menuOneParam:first-child {
+	margin-right: 13px;
+}
+
+.menuGeometry .menuOneParamValue {
+	float: right;
+}
+
+
+.menuOneParam input {
+	/*width: 24px;*/
+	
+}
+.menuGeometry input {
+	width: 27px;
+}
+
+.menuOneParamName, .menuOneParamValue {
+	float: left;
+}
+
+.menuOneParamName {
+	
+}
+
+.menuOneParamValue {
+
+}
+
+/*вертикальное расположение параметров*/
+.menuGeometry .menuValueRowSide {
+	outline: 0px solid;
+	width: 72px;
+}
+
+.menuGeometry .menuValueRowSide input {
+	width: 23px;
+}
+
+.menuOneParamVertical {
+	margin-left: 10px;
+}
+
+.menuOneParamVertical .menuOneParamName {
+	padding-bottom: 10px;
+}
+/*пропорция и расположение*********************************************************************/
+.menuHeight {
+	float: right;
+}
+
+.inputBlock {
+	position: relative;
+}
+
+.inputBlock[data-no-activite="true"] {
+	opacity: 0.6;
+}
+
+.inputBlock[data-no-activite="true"] > .menuPropertyNoActivite {
+	display: block;
+}
+
+.menuPropertyNoActivite {
+	position: absolute;
+	top: 0; left: 0;
+	right: 0; bottom: 0;
+	z-index: 80;
+	cursor: default;
+	display: none;
+}
+
+.menuPositionContent, .menuProportionContent {
+	width: 225px;
+}
+
+.menuPosition .menuStyleItemLabel {
+	float: left;
+}
+
+.menuPosition .menuOneParam[side="top"], .menuPosition .menuOneParam[side="bottom"] {
+	margin-right: 13px;
+}
+
+/*стороны position*/
+.menuPosition .menuOneParam {
+	float: none;
+	padding-bottom: 4px;
+}
+
+.menuPositionSideBlock {
+	/*outline: 1px solid;*/
+	float: left;
+	width: 45px;
+	margin: 2px 6px 0 -9px;
+} 
+
+.menuPosition .menuPositionContent {
+	/*outline: 1px solid;*/
+	float: left;
+	width: 103px;
+}
+
+/******/
+
+
+.menuPositionSideBlock {
+	float: left;
+	
+}
+
+
+.menuPositionSideRow:first-child {
+	margin-bottom: 3px;
+}
+
+.menuPositionSideRow .menuPositionSide:first-child {
+	margin-right: 3px;
+}
+
+.menuPositionSide {
+	width: 17px;
+	height: 17px;
+	background-color: rgb(200,200,200);
+	float: left;
+	cursor: pointer;
+	position: relative;
+	border-radius: 2px;
+}
+
+.menuPositionSide:last-child {
+	margin-right: 0;
+}
+
+.menuPositionSide[chosen="true"] {
+	/*background: rgb(210,210,210);*/
+}
+
+.menuPositionSide:hover .menuPositionSidePoint,  
+.menuPositionSide[chosen="true"] .menuPositionSidePoint {
+	background-color: rgb(36,95,205);
+}
+
+.menuPositionSidePoint {
+	position: absolute;
+	width: 9px;
+	height: 9px;
+	background: rgb(30,30,30);
+}
+
+.menuPositionSidePoint[side="t-l"] {
+	top: 0; left: 0;
+	border-radius: 0 0 1px 0;
+}
+
+.menuPositionSidePoint[side="t-r"] {
+	top: 0; right: 0;
+	border-radius: 0 0 0 1px;
+}
+
+.menuPositionSidePoint[side="b-l"] {
+	bottom: 0; left: 0;
+	border-radius: 0 1px 0 0;
+}
+
+.menuPositionSidePoint[side="b-r"] {
+	bottom: 0; right: 0;
+	border-radius: 1px 0 0 0;
+}
+
+
+.menuPositionSide:last-child {
+	margin-right: 0;
+}
+
+/*margin**************************************************************************************/
+.menuPositionContent:last-child {
+	margin-top: 5px;
+}
+/*padding*/
+
+/*выравнивание*/
+.butGeometryFloat {
+	width: 25px;
+}
+
+.butGeometryAlignNone {
+	margin-left: 9px;
+	float: right;
+	margin-left: 0;
+}
+
+.butGeometryAlignNone .menuButValueText {
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+.butGeometryAlign[value='left'] span {
+	background-position: 0px -61px;
+	width: 19px;
+}
+
+.butGeometryAlign[value='center'] span {
+	background-position: -24px -61px;
+	width: 24px;
+}
+
+.butGeometryAlign[value='right'] span {
+	background-position: -50px -61px;
+	width: 19px;
+}
+/*текст************************************************************************************************/
+.menuText {
+
+}
+
+.menuTextFont .menuStyleItemLabel {
+	/*width: 71px;*/
+}
+
+input.valueTextButton {
+	padding: 1px 7px 0px 7px;
+	text-align: left;
+	color: rgb(200,200,200)
+}
+
+.menuText .selectBlockButton input {
+	text-align: left;
+	/*padding: 0 0 0 5px;*/
+} 
+
+.menuText .butFamily {
+	
+}
+
+.menuText .butFamily .selectBlockButton input {
+	width: 122px;
+}
+
+.menuText .butFamily .optionBlock {
+	font-size: 12px;
+}
+
+/*размер текста*/
+.inputBlockTextSize {
+	float: right;
+}
+
+.menuText .butSize .selectBlockButton input {
+	width: 25px;
+}
+
+.menuText .butSize .optionBlock {
+	width: 63px;
+}
+
+/*меж строчный интервал*/
+.textLineHeight {
+	float: right;
+}
+
+.textLineHeight .optionBlock {
+	width: 55px;
+}
+
+.textLineHeight input[type="button"] {
+	width: 24px;
+}
+
+/*.menuTextProperty .menuStyleItemRow {
+	margin-top: 5px;
+}*/
+
+/*цвет*/
+.menuText .butTextColor {
+	float: right;
+}
+
+.menuTextItemColor .butTextColor {
+	margin-top: 6px;
+}
+
+/*text-align*/
+.blockValueTextAlign {
+	/*border-color: rgb(70,70,70);*/
+}
+
+/****/
+
+.blockValueTextStyle, .blockValueTextAlign {
+	float: right;
+}
+
+.menuButTextAlign {
+	padding-left: 7px;
+	padding-right: 7px;
+}
+
+
+/*****/
+
+.menuButTextAlign[value="left"] span {
+	background-position: -126px 2px;
+}
+
+.menuButTextAlign[value="center"] span {	
+	background-position: -155px 2px;
+}
+
+.menuButTextAlign[value="right"] span {
+	background-position: -183px 2px;
+}
+
+.menuButTextAlign[value="justify"] span {
+	background-position: -212px 2px;
+}
+/*стили*/
+.menuTextStyle {
+	/*margin-top: 7px;*/
+}
+
+.menuTextStyle .menuButValue[chosen="true"] {
+	cursor: pointer;
+}
+
+.menuButTextStyle span {
+	background: none;
+	text-align: center;
+	padding: 0 1px;
+	font-size: 12px;
+	margin-top: 5px;
+	/*margin-top: 3px;*/
+	/*margin-bottom: 1px;*/
+
+	margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.menuButTextStyle {
+	padding: 5px 15px 2px 14px;
+}
+
+.menuButTextStyle[class] span {
+	margin: 0;
+}
+
+.menuButTextStyle[value="bold"] span {
+	font-weight: bold;
+}
+
+.menuButTextStyle[value="italic"] span {
+	font-style: italic;
+	/*font-weight: bold;*/
+}
+
+.menuButTextStyle[value="underline"] span {
+	text-decoration: underline;
+}
+
+.menuButTextStyle[value="line-through"] span {
+	text-decoration: line-through;
+}
+/*фон цвета*/
+
+.butAddFont {
+	margin: 8px 0 3px 0;
+	padding: 7px 0 6px 0;
+	text-align: center;
+	background-color: rgb(36,95,157);
+	/*color: rgb(250,250,250);*/
+	border-radius: 2px; 
+	cursor: pointer;
+
+	background-color: rgb(35,35,35);
+	border: 1px solid rgb(80,80,80);
+}
+
+.butAddFont:hover {
+	background-color: rgb(44,44,44);
+}
+
+/*размер*/
+.menuStyleTextSize .inputBlock {
+	float: right;
+}
+
+.menuStyleTextSize .inputBlock input[type="text"] {
+	/*width: 23px;*/
+}
+
+.menuTextItemBlock {
+	/*outline: 1px solid;*/
+	width: 68px;
+	float: left;
+}
+
+.menuTextItemIcon {
+	width: 16px;
+	margin-top: 6px;
+	float: left;
+}
+
+.menuTextItemSize .menuTextItemIcon {
+	width: 16px;
+}
+
+.menuTextItemColor .menuTextItemIcon {
+	width: 19px;
+}
+
+.menuTextItemHeight {
+
+}
+
+/*bg*******************************************************************************************/
+.menuListBgBlock {
+	margin-right: 13px;
+}
+/*вверхняя часть*/
+.listBgTop {
+	height: 20px;
+}
+
+.bgTopLabel {
+	float: left;
+}
+
+.butAddBg {
+	color: rgb(73,133,243);
+}
+
+.bgTopButAdd {
+	float: right;
+	border-bottom: 1px dashed;
+	cursor: pointer;
+}
+
+.bgTopButAdd:hover {
+	color: rgb(102,151,243);
+}
+/*список фонов*/
+.menuListBg {
+	margin-top: 4px;
+}
+
+.menuBgItem, .menuBgItemNone {
+	height: 23px;
+	background-color: rgb(30,30,30);
+	margin-bottom: 6px;
+	border-radius: 3px;
+	cursor: pointer;
+	border: 1px solid transparent;
+}
+
+.menuBgItemNone {
+	height: auto;
+	padding: 8px 0 7px 0;
+	text-align: center;
+	float: none;
+}
+
+.menuBgImageSelf {
+	max-height: 70px;
+}
+
+.bgItemName { 
+	/*outline: 1px solid;*/
+	padding: 5px 0 0 5px;
+	float: left;
+	width: 155px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.menuBgItem:hover {
+	border: 1px solid rgb(50,50,50);
+}
+
+.bgItemButTop {
+	float: left;
+	width: 17px;
+	height: 20px;
+	margin: 4px 0 0 3px;	
+	background: url(/img/editor/arrow-top.png?id890=89) 0 0 no-repeat;
+	background-size: 100%;
+}
+
+.bgItemButTop:hover {
+	background-image: url(/img/editor/arrow-top-h.png);
+}
+
+.menuListBgBlock:not([data-type="bg"]) .bgItemButTop {
+	display: none;
+}
+
+.bgItemButDelete {
+	float: right;
+	width: 16px;
+	height: 20px;
+	margin: 4px 5px 0 0;
+	background: url(/img/editor/delete-white-2.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+
+.bgItemButDelete:hover {
+	background-image: url(/img/editor/delete-white-h.png);
+}
+/*bg image*****************************************************************************************/
+.menuBgType {
+	display: none;
+}
+
+.rightMenuBg .scrollBlock {
+	width: 135px;
+}
+
+.rightMenuBg .scroll {
+	width: 92px;
+}
+
+.scrollOpacity {
+	float: right;
+}
+
+.scrollOpacity .scroll {
+	width: 40px;
+}
+/*изменение bg-image*/
+.valueBgImageBlock { /*оболочка для input*/
+	position: relative;
+}
+
+.valueBgImageBlock .valueBgImage {
+	padding-top: 5px;
+	padding-bottom: 4px;
+}
+
+.valueBgImageMask {/*маска для input*/
+	position: absolute;
+	top:0; left: 0;
+	width: 100%;
+	height: 100%;
+	cursor: default;
+	z-index: 90;
+}
+
+.rightMenuSectionItem .valueBgImage {
+	text-align: left;
+	padding-left: 8px;
+	position: relative;
+}
+
+.butBgImageBlock { /*блок с кнопками*/
+	width: 150px;
+	padding-top: 7px;
+}
+
+.butBgImage {
+	float: left;
+} 
+
+.butBgImageChange {/*изменить картинку*/
+	margin-right: 15px;
+}
+
+.butBgImageDelete[status="false"] { /*удалить картинку*/
+	opacity: 0.7;
+	cursor: default;
+}
+
+/*размер bg*/
+.scrollBlockBgSize {
+	width: 105px;
+}
+
+.butSetAutoSizeBg {
+	float: left;
+	padding: 2px 4px 2px 4px;
+	margin: 0 5px 0 0px;
+	color: rgb(40,40,40);
+	background-color: rgb(230,230,230);
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.butSetAutoSizeBg[status="false"] {
+	opacity: 0.7;
+	cursor: default;
+}
+
+.rightMenuSectionItemBgSize .scrollBlockBgSize {
+	float: right;
+	width: auto;
+}
+
+.scrollBlockBgSize .scrollBgSize {
+	width: 60px;
+}
+/*позиция bg*/
+.valueBgPositionBlock {
+	outline: 0px solid #c00;
+	float: left;
+	width: 41px;
+}
+
+.valueBgPositionBlock .valueBgPosition {
+	width: 11px;
+	height: 11px;
+}
+
+.menuBgPositionNotStandart {
+	float: right;
+	width: 100px;
+}
+
+.menuBgPositionTop {
+	margin-bottom: 3px;
+}
+
+.menuBgPositionNotStandart .menuOneParam {
+	width: 100%;
+}
+
+.menuBgPositionNotStandart .menuOneParamValue {
+	float: right;
+}
+/*позиция */
+.valueBgPositionBlock .valueBgPosition, .valueBgGradientTypeBlock .valueBgGradientType, .bgGradientTypeItem  {
+	display: block;
+	border-radius: 2px;
+	background-color: rgb(210,210,210);
+	color: transparent;
+	cursor: pointer;
+	padding: 0;
+	margin: 0 2px 2px 0;
+	border: none;
+	float: left;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType {
+	margin: 0 0 0 4px;
+}
+
+.valueBgPositionBlock .valueBgPosition[chosen="true"], .valueBgGradientTypeBlock .valueBgGradientType[status="true"] {
+	background-color: rgb(80,80,80);
+	cursor: default;
+}
+
+/*повторение*/
+/***/
+.blockValueBgRepeat {
+	/*float: right;*/
+}
+
+.menuButValue[value="repeat"] span {
+	background-position: 1px 1px;
+}
+
+.menuButValue[value="repeat-x"] span {
+	background-position: -19px 6px;
+}
+
+.menuButValue[value="repeat-y"] span {
+	background-position: -34px 0px;
+}
+
+.menuButValue[value="none"] span {
+	
+}
+
+/*размер*/
+.menuStyleBgSize .inputBlock input {
+	width: 30px;
+}
+/*градиент**************************************************************************************/
+.menuGradientColorEnd {
+	margin-top: 4px;
+}
+
+/*направление градиента*/
+.valueBgGradientTypeBlock {
+	outline: 0px solid;
+	float: right;
+	/*width: 130px;*/
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType, .bgGradientTypeItem {
+	width: 14px;
+	height: 14px;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType {
+	/*background-image: url(/img/rightIcon/arrow_type_gr.png);
+	background-size: 130px;
+	background-repeat: no-repeat;*/
+}
+
+.bgGradientTypeItem {
+	cursor: default;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="top_left"] {
+	background-position: -342px -81px;
+}
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="top_left"][chosen="true"] {
+	background-position: -342px -97px;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="top"] {
+	background-position: -358px -81px;
+}
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="top"][chosen="true"] {
+	background-position: -358px -97px;
+}	
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="top_right"] {
+	background-position: -373px -81px;
+}
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="top_right"][chosen="true"] {
+	background-position: -373px -97px;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="left"] {
+	background-position: -324px -81px;
+}
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="left"][chosen="true"] {
+	background-position: -324px -97px;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="right"] {
+	background-position: -254px -81px;
+}
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="right"][chosen="true"] {
+	background-position: -254px -97px;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="bottom_left"] {
+	background-position: -304px -81px;
+}	
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="bottom_left"][chosen="true"] {
+	background-position: -304px -97px;
+}	
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="bottom"] {
+	background-position: -271px -81px;
+}	
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="bottom"][chosen="true"] {
+	background-position: -271px -97px;
+}
+
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="bottom_right"] {
+	background-position: -287px -81px;
+}	
+.valueBgGradientTypeBlock .valueBgGradientType[arrow="bottom_right"][chosen="true"] {
+	background-position: -287px -97px;
+}
+
+.valueBgGradientType[chosen="true"] {
+	background-color: rgb(36,94,202);
+}
+
+/*переключения режима*******/
+.gradientColorToggle { /*кнопка переключения*/
+	position: absolute;
+	top: 41px; 
+	right: 14px;
+	width: 144px;
+	height: 21px;
+	border-radius: 2px;
+	cursor: pointer;
+	z-index: 880;
+	background-color: rgb(60,60,60);
+	font-size: 30px;
+}
+
+.gradientColorToggle span {
+	background-position: -261px -1px;
+	width: 15px;
+	height: 15px;
+	display: block;
+	margin: 4px auto 0 auto;
+}
+
+.gradientColorToggle[type="special"] {
+	background-color: rgb(70,70,70);
+}
+
+.gradientColorToggle[type="special"] span {
+	background-position: -278px -1px;
+}
+/*затемнения*/
+.menuGradientBlackout { /*блок не дающий нажать на кгопку выбора цвета*/
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 680;
+	background-color: rgba(40,40,40,0.5);
+	display: block;
+}
+
+.menuGradientColor[chosen="true"] .menuGradientBlackout {
+	display: none;
+}
+
+.menuGradientColor {
+	/*margin-top: 38px;*/
+}
+/*.menuGradientColor input[type="text"] {
+	width: 55px;
+}
+
+.menuGradientColor .inputBlock {
+	margin-left: 10px;
+}*/
+
+/*видео фон***************************************/
+.menuBgVideo .rightMenuBut:first-child {
+	margin-right: 10px;
+}
+
+.menuBgVideo .rightMenuBut {
+	background-color: rgb(80,80,80);
+	color: rgb(230,230,230);
+	margin: 0 0 0 8px;
+}
+
+.menuBgVideo .rightMenuBut:hover {
+	background-color: rgb(100,100,100);
+}
+
+.menuBgVideo .valueBgImageBlock {
+	float: left;
+	width: 73px;
+}
+
+.butEditBgVideoSrc[class] {
+	width: 143px;
+	margin-left: 0;
+	padding: 5px 0 4px 0;
+	text-align: center;
+}
+
+/*бордер***********************************************************************************************/
+.menuBorder .valueBorderStyle {
+	/*width: 90px; */
+}
+
+.menuBorder .valueBorderWidth {
+	width: 40px;
+	margin: 0;
+}
+
+.menuStyleItemBorderStyle {
+	width: 149px;
+	margin-left: -3px;
+}
+
+/*стиль*/
+.menuValueBorderStyle {
+	margin-bottom: 4px;
+	/*margin-right: 5px;*/
+	/*width: 50px;*/
+	width: 51px;
+	float: right;
+}
+
+.menuValueBorderStyle .menuButValue:nth-child(1),
+.menuValueBorderStyle .menuButValue:nth-child(2) {
+	border-bottom: 1px solid rgb(50,50,50);
+}
+
+.menuValueBorderWidth {
+	margin-top: 13px;
+	/*margin-right: 4px;*/
+	/*float: right;*/
+	float: left;
+}
+
+.menuButValue[value="solid"] span {
+	background-position: -70px 3px;
+}
+
+.menuButValue[value="dashed"] span {
+	background-position: -91px 3px;
+}
+
+.menuButValue[value="dotted"] span {
+	background-position: -110px 3px;
+}
+
+.borderStyleLeftBlock {
+	float: right;
+	width: 105px;
+}
+
+.menuBorder .butBorderColor { 
+	float: right;
+}
+/*hover border scroll*/
+.menuBorder .scrollBlock {
+	outline: 0px solid #c00;
+
+}
+
+.menuBorder .menuSectionItemRow .scroll {
+	width: 100px;
+}
+
+/*радиус*/
+.menuBorderSide .scrollBlock {
+	float: right;
+	width: 150px;
+}
+
+.menuBorder .scroll {
+	width: 49px; 
+}
+
+.menuBorderAll img {
+	
+}
+
+.menuBorderRadiusSide {
+	display: none;
+}
+
+.menuBorderRadius .scrollBlock {
+	float: right;
+	margin-right: 13px;
+}
+
+.menuBorderRadius .scrollBlock {
+	/*width: 139px;*/
+}
+
+.borderRariusImg {
+	/*outline: 1px solid;*/
+	width: 23px;
+	height: 23px;
+	float: left;
+	margin: -2px 8px 0 0;
+	cursor: pointer;
+}
+
+.borderRariusImg[type="all"] {
+	background-position: -371px -1px;
+}
+
+.borderRariusImg[type="tl"] {
+	background-position: -448px -1px;
+}
+
+.borderRariusImg[type="tr"] {
+	background-position: -474px -1px;
+}
+
+.borderRariusImg[type="bl"] {
+	background-position: -397px -1px;
+}
+
+.borderRariusImg[type="br"] {
+	background-position: -422px -1px;
+}
+/*стороны border*/ 
+.handBorder {
+	outline: 0px solid;
+	margin: 8px 0px 0 0;
+	float: left;
+}
+
+.menuValueItemBorderStyle {
+	width: 150px;
+	margin-left: -5px;
+}
+
+.menuBorder .menuValueRowSideCenter {
+	width: 38px;
+	padding: 1px 0 1px 0;
+}
+
+
+.handBorder input {
+	display: none;
+}
+
+.handBorderBlock {
+	outline: 0px solid #c00;
+	float: left;
+	width: 230px;
+	margin-top: 10px;
+}
+
+.handBorderItem {
+	outline: 0px solid #cc0;
+	margin-right: 12px;
+}
+
+.handBorderItem:last-child {
+	margin-right: 0;
+}
+
+
+.handBorderItem span {
+	display: block;
+	float: left;
+	margin-right: 2px;
+}
+
+.handBorder .checkBox {
+	
+}
+
+.menuValueSideRowCenter {
+
+}
+
+/*Трансформация****************************************************************************************/
+
+.menuTransformListTabs {
+
+}
+
+.menuTransformTab {
+	float: left;
+	width: 24%;
+	text-align: center;
+	background-color: rgb(50,50,50); 
+	padding: 6px 0 5px 0;
+	border-left: 1px solid rgb(70,70,70);
+	cursor: pointer;
+}
+
+.menuTransformTab:first-child {
+	border-left: none;
+}
+
+.menuTransformTab[data-chosen="true"] {
+	background-color: rgb(30,30,30);
+	cursor: default;
+}
+
+.menuTransformBlock {
+	padding: 20px 0 0px 0;
+}
+
+.menuTransformBlock {
+	display: none;
+}
+
+.menuTransformListBlock[data-type="translate"] .menuTransformBlock[data-type="translate"],
+.menuTransformListBlock[data-type="scale"] .menuTransformBlock[data-type="scale"],
+.menuTransformListBlock[data-type="rotate"] .menuTransformBlock[data-type="rotate"],
+.menuTransformListBlock[data-type="skew"] .menuTransformBlock[data-type="skew"] {
+	display: block;
+}
+
+
+/*другие*****************************************************************************************/
+.zindexExtremum {
+	margin-right: 13px;
+}
+
+.menuOther .valueZindex {
+	width: 45px;
+}
+/******************************************************************************************/
+/*SEO*/
+.menuSiteIcon {
+	float: left;
+	display: block;
+	width: 60px;
+	margin-right: 12px;
+}
+
+.memuButEditSiteIcon {
+
+}
+
+
+/*Page Setting*/
+.rightMenuButPageCodeEdit {
+	margin-right: 10px;	
+} 
+
+
+
+
+
+
+
+

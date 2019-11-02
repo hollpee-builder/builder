@@ -1,0 +1,408 @@
+
+.clear {
+	clear: both;
+}
+
+/*notification*******************************************************************************/
+
+.notification {
+	position: fixed;
+	top: 20px;
+	padding: 17px 15px 12px 48px;
+	z-index: 9999999;
+	opacity: 0;
+	border-radius: 4px;
+	background-color: rgb(53,53,53);
+	color: rgb(230,230,230);
+}
+
+.notification[position="right"] {
+	left: 5%;
+}
+
+.notification[position="center"] {
+	left: 45%;
+}
+
+.notification[position="left"] {
+	right: 5%;
+}
+
+.notification-label {
+	font-size: 12px;
+	text-align: center;
+	font-family: Verdana;
+	color: rgb(240,240,240);
+}
+
+.notification[data-type="ok"] {
+	padding-left: 45px;
+	border: 1px solid rgb(65,178,72);
+}
+
+.notification[data-type="error"] {
+	border: 1px solid rgb(240,29,49);
+}
+
+.notification[data-type="ok"] .notification-img {
+	position: absolute;
+	left: 11px;
+	top: 12px;
+	width: 21px;
+}
+
+.notification[data-type="error"] .notification-img {
+	position: absolute;
+	left: 6px;
+	top: 6px;
+	width: 35px;
+}
+
+/*tip**************************************************************************************/
+
+.tip-block {
+	position: absolute;
+	top: 0; left: 0;
+	z-index: 99998;
+	text-align: center;
+	font-size: 12px;
+	font-family: Verdana;
+	color: rgb(240,240,240);
+	background-color: rgb(0,98,199);
+	border-radius: 3px;
+	opacity: 0;
+}
+
+.tip-text {
+	padding: 8px 10px 7px 10px;
+	color: rgb(240,240,240);
+	font-size: 12px;
+}
+
+
+.tip-arrow {
+	position: absolute;
+	color: rgb(0,98,199);
+}
+
+.tip-arrow[type="bottom"] {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 11px solid;
+	top: -10px;
+}
+
+.tip-arrow[type="right"] {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 11px solid;
+	left: -10px;
+}
+
+.tip-arrow[type="left"] {
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-left: 11px solid;
+	right: -10px;
+}
+
+.tip-arrow[type="top"] {
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-top: 11px solid;
+	bottom: -10px;
+}
+
+/*modal************************************************************************************/
+.modal-wrap, .blackout {
+	top: 0; 
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.modal-wrap {
+	position: fixed;
+	z-index: 99997;
+	overflow-y: auto;
+	overflow-x: hidden;
+	padding: 0 10px 20px 10px;
+}
+
+.h-modal-block-cont {
+	text-align: left;
+}
+
+#modalLoading .h-modal-block-cont {
+	background: transparent;	
+}
+
+.blackout {
+	position: absolute;
+	opacity: 0.3;
+	background-color: #000;
+	z-index: -1;
+}
+
+.blackout[data-opacity="false"] {
+	opacity: 0;
+}
+
+.h-modal-block {
+	position: relative;
+	margin: 0 auto;
+	background-color: rgb(255,255,255);
+	border-radius: 2px;
+	border: 1px solid rgb(204,204,204);
+	color: rgb(51,51,51);
+	font-family: Verdana;
+}
+
+.h-modal-block-head, .h-modal-block-footer {
+	background-color: rgb(242,242,242);
+}
+
+/*заголовок*/
+.h-modal-block-head {
+	outline: 0px solid #c00;
+	border-radius: 5px 5px 0 0;
+	height: 45px;
+	position: relative;
+	border-bottom: 1px solid rgb(220,220,220);
+}
+
+.h-modal-block-title {
+	float: left;
+	padding: 13px 0 0 15px;
+}
+
+.h-modal-block-title, .h-modal-block-title > * {
+	font-size: 18px;
+}
+
+/**блок с кнопками header*************/
+.h-modal-block-head-buttom {
+	padding: 7px 10px 0 0;
+}
+
+.modal-head-buttom-item {
+	outline: 0px solid;
+	float: right;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+.modal-head-close {
+	margin-left: 10px;
+	width: 17px; 
+	height: 17px;
+	margin-top: 4px;
+}
+
+.modal-head-close > img {
+	width: 100%;
+}
+
+/*nav*/
+
+.modal-nav {
+	background-color: rgb(234,234,234);
+	padding: 3px 4px 0 4px;
+	border-bottom: 1px solid rgb(191,191,191);
+}
+
+.modal-nav-item {
+	float: left;
+	padding: 7px 15px 4px 15px;
+	font-size: 12px;
+	border-radius: 4px 4px 0 0;
+	cursor: pointer;
+	margin: 2px 5px 0 0;
+	background-color: rgb(250,250,250);
+	color: rgb(89,89,89);
+	border: 1px solid rgb(191,191,191);
+	border-bottom: none;
+}
+
+.modal-nav-item-act {
+	background-color: rgb(248,248,248);
+	cursor: default;
+	color: inherit;
+	position: relative;
+	padding-bottom: 5px;
+	margin-bottom: -2px;
+}
+
+/*content*/
+
+.h-modal-block-cont {
+	position: relative;
+	padding: 15px;
+	overflow: auto;
+}
+
+.h-modal-block-cont input, 
+.h-modal-block-cont textarea,
+.h-modal-block-cont select {
+	width: 100%;
+	padding: 7px 10px 5px 10px;
+	margin: 10px 0;
+	box-sizing: border-box;
+	font-size: 15px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 3px;
+}
+
+.h-modal-block-cont select {
+	background-color: rgb(240,240,240);
+	cursor: pointer;
+}
+
+.h-modal-block-cont input[type="checkbox"] {
+	width: auto;
+}
+
+.h-modal-block-item {
+	border: 1px solid transparent;
+}
+
+.h-modal-block-item:hover {
+	background-color: rgba(0,0,0,0.2);
+	border-color: rgb(140,140,140);
+}
+
+.h-modal-block-item[note="true"] {
+	background-color: rgba(0,0,0,0.5);
+	border-color: transparent;
+	color: rgb(255,255,255);
+}
+
+/**modal loading************************************************************************************/
+
+#modalLoading {
+	background-color: rgba(0,0,0,0.8);
+	color: rgb(200,200,200);
+	box-shadow: none;
+	border: none;
+	padding: 40px 0 28px 0; 
+}
+
+.modal-loading-image {
+	margin: 0 auto;
+	display: block;
+	width: 180px;
+}
+
+.modal-loading-label {
+	text-align: center;
+	margin-top: 20px;
+	font-family: Verdana;
+	font-size: 14px;
+}
+
+#modalLoading .h-modal-block-cont {
+	padding-top: 0;
+	padding-bottom: 0;
+	overflow: visible;
+}
+
+
+/*confirm delete**********************************************************************************************/
+
+#confirmationDelete .h-modal-block-cont {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+/*button************************************************************************************/
+
+.h-modal-block-footer {
+	border-top: 1px solid rgb(220,220,220);
+}
+
+.h-modal-block-buttton {	
+	outline: 0px solid #c00;
+	padding: 10px 0 8px 0;
+	margin-right: -10px;
+	float: right;
+}
+
+.hollpee-but-block {
+	padding: 6px 17px 5px 17px;
+	border-radius: 2px;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	margin-right: 20px;
+	color: rgb(242,255,230);
+}
+
+.hollpee-but-block:visited {
+	color: rgb(242,255,230);
+}
+
+.hollpee-but-block[status="false"] {
+	opacity: 0.6;
+	cursor: default;
+}
+
+
+.hollpee-but-block[no_active] {
+	opacity: 0.6;
+	cursor: default;
+}
+/*********************************************************************************************/
+.hollpee-but-buy {
+	background-color: rgb(254,133,0);
+	background: linear-gradient(to top, rgb(223,73,2), rgb(254,133,0));
+}
+
+
+.hollpee-but-ok {
+	background-color: rgb(61,97,137);
+}
+
+.hollpee-but-add {
+	background-color: rgb(52,154,47); 
+	float: left;
+}
+
+.hollpee-but-cancel {
+	background: rgb(255,255,255);
+	border: 1px solid rgb(208,206,208);
+	color: rgb(90,90,90);
+	border-radius: 3px;
+}
+
+.hollpee-but-delete {
+	background: rgb(208,55,41);
+}
+
+.hollpee-but-instruction {
+	background-color: rgb(78,176,78); 
+}
+
+.hollpee-but-edit {
+	background-color: rgb(184,88,90); 
+	background: linear-gradient(to top, rgb(59,119,59), rgb(92,184,92));
+}
+
+.text-in-but {
+	width: inherit;
+	height: inherit;
+	display: table-cell;
+	vertical-align: middle;
+	font-size: 13px;
+	text-align: center;
+	font-family: Verdana;
+	padding: 1px 0;
+	background: none;
+}
+
+/********************************************************************************************/
+.error-label {
+	margin-top: 5px;
+	font-size: 14px;
+	color: rgb(255,0,6);
+}

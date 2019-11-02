@@ -1,0 +1,435 @@
+.listAddButSites {
+	float: right;
+}
+
+.butTop {
+	float: left;
+}
+
+.butTop, a.butTop {
+	border-radius: 2px;
+	font-size: 13px;
+	color: rgb(230,230,230);
+	cursor: pointer;
+	display: block;
+	padding: 10px 20px 8px 20px;
+	box-sizing: border-box;
+	border: 1px solid;
+}
+
+a.butAddSite {
+    color: #fff;
+    background-color: #5c90d2;
+    border-color: #5c90d2;
+}
+
+.butUploadStyle {
+    margin-left: 20px;
+    color: #545454;
+    border-color: #e9e9e9;
+    color: rgb(240,240,240);
+    border-radius: 2px;
+    background: rgb(120,120,120);
+}
+
+.butAddSite:hover, .butUploadStyle:hover {
+	opacity: 0.8;
+}
+
+/**************************************************************************************/
+
+.listSites {
+	position: relative;
+	z-index: 1;
+}
+
+.siteBlock {
+	width: 273px;
+	background: #fff;
+	float: left;
+	margin: 0 27px 45px 0;
+}
+
+.siteAvatarWrap {
+	overflow: hidden;
+	height: 170px;
+	position: relative;
+}
+
+.siteAvatar {
+	width: 100%;
+}
+
+.siteButEdit, .siteAvatarBlackout {
+	z-index: 10;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.siteAvatarBlackout {
+	background: rgba(0,0,0,0.5);
+}
+
+.siteButEdit {
+	z-index: 15;
+	opacity: 0;
+	background: rgba(0,0,0,0.5);
+}
+
+.siteButEdit:hover {
+	opacity: 1;
+}
+
+.siteButEditText {
+	display: block;
+	border-bottom: 1px dashed;
+	color: rgb(41,127,255);
+	width: 120px;
+	margin: 70px auto 0 auto;
+	text-align: center;
+}
+
+.siteBlockBottom {
+	padding: 10px 15px 20px 15px;
+	border-top: 1px solid rgb(220,220,220);
+
+	border: 1px solid rgb(230,230,230);
+}
+
+/*name*/
+.siteName {
+	font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-bottom: 1px dashed;
+    min-width: 20px;
+	color: rgb(69,140,207);
+	float: left;
+}
+
+.siteBlockName {
+	max-width: 210px;
+	padding-right: 10px;
+}
+
+/*nav*/
+.siteBlockBut {
+	margin-top: 25px;
+}
+
+.siteBut {
+	display: block;
+	float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 17px;
+    cursor: pointer;
+}
+
+.siteBut > img {
+	width: 100%;
+}
+
+/*info*/
+.siteInfo {
+	margin-top: 20px;
+	color: rgb(110,110,110);
+	font-size: 15px;
+}
+
+.siteInfoTypeAccess {
+	float: right;
+	/*margin-top: -3px;*/
+	font-size: 14px;
+}
+
+.siteInfoTypeAccess[data-type="private"] {
+	color: rgb(205,88,82);
+}
+
+/*no site*/
+
+.noSiteBlock {
+	width: 440px;
+	padding: 40px 20px;
+	margin: 50px auto;
+	border: 1px solid rgb(230,230,230);
+	background: #fff;
+	text-align: center;
+}
+
+.noSiteLabel {
+	font-size: 18px;
+}
+
+.noSiteBut {
+	display: block;
+	padding: 11px 20px 9px 20px;
+	border-radius: 3px;
+	width: 250px;
+	margin: 15px auto 0 auto;
+}
+
+/**********************************************************************************************/
+/*скачивание cтраницы*******************************************************************************************/
+#modalDownloadSite .typeFormatItemLabel {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.typeFormatItem {
+	width: 230px;
+	float: left;
+	border-left: 1px solid rgb(200,200,200);
+	padding: 0 20px;
+}
+
+.typeFormatItem:first-child {
+	border: none;
+}
+
+*[data-no-active="true"] {
+	opacity: 0.5;
+}
+
+.typeFormatItemDescription {
+	height: 115px;
+}
+
+
+.butDownloadCms[class] {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.typeFormatWp {
+	width: 270px;
+}
+
+.typeFormatCMSHollpee .butBlock {
+	margin: 0 0 0 10px;
+	float: left;	
+}
+
+.typeFormatCMSHollpee .butBlock:first-child {
+	margin-left: 0px;
+}
+
+.butDownloadHtmlLabel {
+	margin-top: -29px;
+	margin-bottom: 10px;
+}
+/*hlp*/
+/*hlp*/
+
+.typeFormatCMSHollpee {
+	width: 330px;
+}
+
+.typeFormatCMSHollpee .butBlock {
+	margin: 0 0 0 10px;
+	float: left;	
+}
+
+.typeFormatCMSHollpee .butBlock:first-child {
+	margin-left: 0px;
+}
+
+/********************************************************************************************/
+/*список категорий**********************************************************************************************/
+.sectionSitesTop {
+	background: rgb(240,240,240);
+	border: 1px solid rgb(235,235,235);
+	padding: 20px 15px;
+	margin-bottom: 40px;
+	border-radius: 2px;
+}
+
+.projectSection {
+	/*width: 270px;
+	padding: 12px 0 12px 0;
+	border: 1px solid rgb(220,220,220);
+	border-radius: 3px;
+	background-color: rgb(60,60,60);
+	font-size: 14px;*/
+	float: left;
+}
+
+.projectTitle {
+	text-align: center;
+	
+	/*background-color: rgb(70,70,70);*/
+	/*border: 1px solid rgb(70,70,70);*/
+	/*border-radius: 3px 3px 0 0;*/
+	color: rgb(250,250,250);
+	display: none;
+}
+
+.listProject {
+	padding: 8px 10px 7px 10px;
+	float: left;
+	width: 240px;
+	background: rgb(230,230,230);
+	border: 1px solid rgb(220,220,220);
+	border-radius: 2px;
+	font-size: 15px;
+	/*color: rgb()*/
+	cursor: pointer;
+	color: rgb(70,70,70);
+}
+
+a.projectItem {
+	margin-bottom: 10px;
+	cursor: pointer;
+	color: rgb(210,210,210);
+	display: block;
+}
+
+a.projectItemAll {
+	border-bottom: 1px dashed rgb(150,150,150);
+	padding-bottom: 9px;
+}
+
+a.projectItem:last-child {
+	margin-bottom: 0;
+}
+
+.projectItemLabel {
+	width: 80%;
+	float:left;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+a.projectItem[selected="true"] {
+	color: rgb(0,148,255);
+	/*font-weight: bold;*/
+	font-style: italic;
+}
+
+.projectItemLabel:hover {
+	color: rgb(0,148,255);
+}
+
+.projectItemCount {
+	float: right;
+	padding: 2px 7px 1px 7px;
+	border-radius: 4px;
+	background-color: rgb(35,35,35);
+	color: rgb(250,250,250);
+}
+
+a.projectItem[selected="true"] .projectItemCount {
+	background-color: rgb(41,127,255);
+}
+/*кнопки ***********/
+.listButProject {
+	float: left;
+	margin-left: 10px;
+}
+
+.butProject {
+	font-size: 13px;
+	border-radius: 2px;
+	text-align: center;
+	padding: 10px 15px 9px 15px;
+	cursor: pointer;
+
+	/*background-color: rgb(80,80,80);*/
+	color: rgb(70,70,70);
+	background: rgb(240,240,240);
+	border: 1px solid rgb(220,220,220);
+
+	float: left;
+	margin-left: 15px;
+}
+
+.butCreateProject {
+	float: left;
+	margin-left: 10px;
+}
+
+.butCreateProject:hover, .butEditProject:hover {
+	opacity: 0.8;
+}
+
+.butEditProject {
+	float: right;
+	margin-right: 10px;
+	min-width: 81px;
+}
+
+.butEditProject[noactivity="true"] {
+	cursor: default;
+	opacity: 0.6;
+}
+
+/*модальные окна для работы с проектами*/
+#subCreateProject {
+	display: none;
+}
+/*модальное - передвижение сайта***************************************************************************************/
+#modalMoveSite {
+
+}
+
+#modalMoveLabel {
+	font-size: 17px;
+	margin-top: 10px;
+}
+
+#modalMoveSite #selectProject {
+	margin: 15px 0 5px 0;
+	font-size: 15px;
+	width: 404px;
+	background-color: rgb(245,245,245);
+	color: rgb(50,50,50);
+	padding: 6px 10px 4px 10px;
+	border-radius: 3px;
+	cursor: pointer;
+	border: 1px solid rgb(220, 220, 220);
+}
+
+#selectProject: {
+	cursor: pointer;
+}
+
+
+/********************************************************************/
+
+.tutorialSecton {
+	width: 1050px;
+	margin: 100px auto 100px auto;
+	clear: both;
+}
+
+.tutorialBlock {
+	float: right;
+	width: 470px;
+}
+
+.tutorialBlock:first-child {
+	float: left;
+}
+
+.tutorialVideo {
+	display: block;
+	width: 420px;
+	height: 241px;
+	margin: 10px auto;
+}
+
+.tutorialLabel {
+	font-size: 20px;
+	text-align: center;
+}
+
+.tutorialTime {
+	text-align: center;
+	opacity: 0.8;
+	margin-top: 5px;
+}

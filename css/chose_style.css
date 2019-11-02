@@ -1,0 +1,286 @@
+.choseStyleSection {
+	padding: 0px 0 20px 0;
+}
+
+/*.selectTypeSite {
+	display: none;
+}*/
+
+/*******************************************************************************************/
+.selectTypeSite {
+	/*outline: 0px solid #ccc;*/
+	margin: 5px auto 0 auto;
+	width: 240px;
+	/*margin-left: 36px;*/
+}
+
+.typeSiteItem {	
+	float: left;
+	padding: 7px 20px 5px 20px;
+	background-color: rgb(230,230,230);
+	border: 1px solid rgb(190,190,190);
+	border-radius: 4px;
+	float: left;
+	cursor: pointer;
+	font-size: 15px;
+	
+	background-color: rgb(45,45,45);
+	color: rgb(240,240,240);
+}
+
+.typeSiteItem[type="site"] {
+	float: right;
+}
+
+.typeSiteItem[chosen="true"] {
+	background-color: rgb(70,134,191);
+	color: rgb(240,240,240);
+} 
+
+/*********************************************************************************************/
+/*блок выбора стиля****************************************************************************/
+.listSelectStyleBlock {
+	padding-top: 25px; 
+}
+
+.itemStyleBlock {
+	
+}
+
+.styleSection {
+	display: none;
+}
+
+.listSelectStyleBlock[type="lp"] .styleSection[type="lp"],
+.listSelectStyleBlock[type="site"] .styleSection[type="site"] {
+	display: block;
+}
+
+.navStyle {
+	float: left;
+	width: 15%;
+}
+.selectStyleBlock {
+	float: right;
+	width: 80%;
+}
+
+.navStyleItem {
+	font-size: 14px;
+	padding: 7px 10px 8px 10px;
+	margin-bottom: 15px;
+	background-color: rgb(240,240,240);
+	/*color: rgb(240,240,240);*/
+	border: 1px solid rgb(150,150,150);
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.navStyleItem:hover:not([data-chosen="true"]) {
+	opacity: 0.8;
+}
+
+.navStyleItem[data-chosen="true"] {
+	background-color: rgb(70,134,191);
+	cursor: default;
+	background-color: rgb(80,80,80);
+	color: rgb(240,240,240);
+}
+
+.itemStyleBlock {
+	position: relative;
+	width: 31%;
+	/*width: 23%;*/
+	float: left;
+	margin: 0 3% 40px 0;
+	/*margin: 0 1% 25px 1%;*/
+	border: 1px solid rgb(220,220,220);
+	border-radius: 3px;
+
+}
+
+.itemStyleBlock:nth-child(3n) {
+	margin-right: 0;
+}
+
+.itemStyleBlock:nth-child(3n) {
+	/*clear: both;*/
+}
+
+.blockImgStylePage {
+	outline: 0px solid #c00;
+	position: relative;
+	width: 100%;
+	margin: auto;
+	border-radius: 7px;
+	position: relative;
+	display: block;
+}
+
+.imgStylePage {
+	border-radius: 4px;
+	width: 100%;
+	height: 230px;
+	cursor: pointer;	
+	overflow: hidden;
+}
+
+.imgStylePage > img {
+	width: 100%;
+}
+/*******************************************************************************************/
+.selectStyleItemChose {
+	cursor: pointer;
+}
+
+.selectStyleItemChose input {
+	outline: 0px solid #c00;
+	cursor: pointer;
+	margin-right: 10px;
+	display: none;
+
+}
+
+.selectStyleItemLabel {
+	outline: 0px solid #c00;
+	cursor: pointer;
+	text-align: center;
+	margin-top: 7px;
+	/*padding: 4px 0 3px 0; 
+	*/
+	height: 45px;
+	display: none;
+}
+
+.selectStyleItemLabel span {
+	padding: 4px 5px 3px 5px; 
+	display: block;
+	border-radius: 7px;
+}
+
+.selectStyleItemActive {
+	box-shadow: none;
+	background-color: rgb(51,160,244);
+	color: rgb(240,240,240);
+}
+
+
+/*кнопка**************************************************************************************/
+.styleBlockButton {
+	position: absolute;
+	top: 0; left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 3px;
+	background-color: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.selectStyleItem:hover .styleBlockButton {
+	display: block;
+}
+
+.styleItemBut {
+	padding: 9px 15px 7px 15px;
+	border-radius: 3px;
+	font-size: 14px;
+	cursor: pointer;	
+	margin: 0 auto;
+	width: 160px;
+	text-align: center;
+	display: block;
+}
+
+.styleItemOk {
+	color: rgb(243,242,255);
+	background-color: rgb(61,97,137);
+	margin-top: 30%;
+}	
+
+.styleItemOk:hover {
+	background-color: rgb(84,132,187);
+}
+
+a.styleItemShow {
+	margin-top: 15px;
+	/*color: rgb(243,242,255);*/
+	/*background-color: rgb(52,154,47);*/
+	background-color: rgb(100,100,100);
+	color: rgb(240,240,240);
+}
+
+a.styleItemShow:hover {
+	/*background-color: rgb(76,154,72);*/
+	background-color: rgb(80,80,80);
+}
+/*название***********************************************************************************/
+.choseStyleNameSetion { 
+	padding: 7px 0;
+}
+
+.nameStyle {
+	width: 393px;
+	padding: 7px 12px 4px 12px;
+	font-size: 17px;
+	border: 1px solid rgb(200,200,200);
+	border-radius: 2px;
+	margin: 10px 0 7px 0;
+}
+
+.styleItemButSave {
+	margin: 12px 0 0 0;
+	font-size: 17px;
+	width: auto;
+	float: left;
+}
+
+.blockError {
+	margin: 5px 0px 0 0px;
+}
+
+/********************************************************************************/
+
+/*****/
+.choseStyleBlockTypeAccess {
+	margin: 10px 0;
+}
+
+.choseStyleBlockTypeAccessLalbel {
+
+}
+
+.choseStyleListButAccess {
+	margin: 10px 0;
+}
+
+.butChosenTypeAccess {
+	float: left;
+	padding: 6px 10px 5px 10px;
+	color: rgb(240,240,240);
+	background-color: rgb(70,70,70);
+	font-size: 14px;
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.butChosenTypeAccess[data-type="free"] {
+	border-radius: 3px 0 0 3px;
+}
+
+.butChosenTypeAccess[data-type="private"] {
+	border-radius: 0 3px 3px 0;	
+}
+
+.butChosenTypeAccess[data-chosen="true"] {
+	background-color: rgba(55,83,205, 0.8);
+	cursor: default;
+}
+
+.butChosenTypeAccessTutorial {
+	float: left;
+	margin: 7px 0 0 30px;
+	color: rgb(0,160,205);
+	border-bottom: 1px dashed;
+	cursor: pointer;
+}

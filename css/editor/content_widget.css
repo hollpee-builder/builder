@@ -1,0 +1,110 @@
+/*animate*/
+.redactorPageEdit[class]  *[data-hlp-animated-scroll^="bounce"],
+.redactorPageEdit[class]  *[data-hlp-animated-scroll^="fade"],
+.redactorPageEdit[class]  *[data-hlp-animated-scroll^="lightSpeed"],
+.redactorPageEdit[class]  *[data-hlp-animated-scroll^="rotate"] 
+{
+	opacity: 1;
+}
+
+
+/*slider*/
+.hlp-slider-item {
+	display: none;
+}
+
+.contentItem[class] .hlp-slider-item[data-hlp-chosen="true"] {
+	display: block;
+}
+
+body .hlp-slider[class],
+body .hlp-slider-list-item[class],
+body .hlp-slider-item[class] {
+	overflow: visible;
+}
+
+
+.hlp-slider .hlp-slider-bullet[class] {	
+	webkit-transition: all 0ms ease-in-out;
+	transition: all 0ms ease-in-out; 
+}
+
+/* s1 ****************/
+.hlp-slider-s1 .hlp-slider-list-arrow, 
+.hlp-slider-s1 .hlp-slider-bullets {
+	/*display: none;*/
+}
+
+.hlp-slider-s1[class] .hlp-slider-list-arrow {
+	display: block;
+}
+
+.hlp-slider-arrow {
+	position: absolute;
+  	/*top: 50%;*/
+}
+
+/*.hlp-slider-arrow-prev {
+	left: 4px;
+}
+
+.hlp-slider-arrow-next {
+	right: 4px;
+}
+
+.hlp-slider-s1 .hlp-slider-bullet[class] {
+	margin: 0 3px;		
+	display: inline-block;
+	zoom: 1;
+}
+*/
+
+.hlp-slider-arrow-next {
+	position: absolute;
+}
+
+/*tabs******************************************************************************/
+.contentItem[class] .hlp-tabs-item[data-hlp-chosen="true"] {
+	display: block;
+}
+
+/*hover**************************************************************************/
+.hlp-block-hover-heading {
+	margin-top: 70px;
+	margin-bottom: 30px;
+}
+
+/*********************************************************************************/
+/*********************************************************************************/
+/*compare*/
+.hlp-comparison-cmp1-resize-img[class] {
+	width: 50%;
+}
+
+.hlp-comparison-cmp1-resize-img[class] > img {
+	width: 200%;
+}
+
+.hlp-comparison-cmp1-resize-img {
+	z-index: 970;
+}
+
+.hlp-comparison-cmp1 .hlp-comparison-cmp1-label[class] {
+	opacity: 1;
+	z-index: 980;
+	bottom: 21px;
+	text-align: left;
+}
+
+.hlp-comparison-cmp1 .hlp-comparison-cmp1-handle {
+  opacity: 1;
+  z-index: 990;
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+  -moz-transform: translate3d(0, 0, 0) scale(1);
+  -ms-transform: translate3d(0, 0, 0) scale(1);
+  -o-transform: translate3d(0, 0, 0) scale(1);
+  transform: translate3d(0, 0, 0) scale(1);
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
+  -moz-transition: -moz-transform 0.3s 0.7s, opacity 0s 0.7s;
+  transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+}

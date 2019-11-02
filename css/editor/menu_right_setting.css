@@ -1,0 +1,425 @@
+.menuSetting {
+
+}
+
+
+
+
+/**************************************************************************************/
+/*отображение элементов*/
+.menuBlockVisibleElm .menuButValue[chosen="true"] img {
+	cursor: pointer;
+}
+
+.menuFixedVisible .menuFixedPropertyLabel {
+	width: 65px;
+}
+
+.menuFixedPropertyValue .menuButVisible {
+	height: 26px;
+	width: 29px;
+}
+
+.menuFixedPropertyValue .menuBlockVisibleElm, .menuBlockVisibleElm .menuButVisible {
+	border-color: rgb(70,70,70);
+}
+
+.menuButVisible img {
+	display: block;
+	margin: 0 auto;
+}
+
+.menuButVisible img[type="desktop"] {
+	width: 19px;
+	padding-top: 6px;
+}
+
+.menuButVisible img[type="tab_v"] {
+	width: 17px;
+	padding-top: 5px;
+}
+
+.menuButVisible img[type="tab_h"] {
+	width: 17px;
+	padding-top: 6px;
+}
+
+.menuButVisible img[type="mobile_h"] {
+	width: 16px;
+	padding-top: 8px;
+}
+
+.menuButVisible img[type="mobile_v"] {
+	width: 16px;
+	padding-top: 7px;
+}
+
+.selectSettingElmBasicType .option[data-no-change="true"] {
+	display: none;
+}
+
+/*******************************************************************************************/
+/*сетка***************************************************************************************/
+.menuSettingGrid {
+
+}
+
+.menuSettingGrid .menuStyleItemLabel {
+	width: 45px;
+}
+
+.menuSettingGrid .menuStyleItemValue {
+	width: 170px;
+}
+
+.menuCountColumnsValue, .menuColumnsSizeValue {
+	width: 225px;
+	margin-top: 7px;
+}
+
+.menuGridMargin .menuButValueText, .menuGridCountRow .menuButValueText {
+	min-width: 0;
+}
+
+/*заголовки*/
+.menuSettingGrid .menuLabelGrid {
+	padding-bottom: 4px;
+	width: 200px;	
+}
+
+.gridLabelImg {
+	display: inline-block;
+	float: left;
+	width: 19px;
+	margin-right: 5px;
+}
+
+.gridLabelImgDesctop {
+	width: 20px;
+}
+/*.menuLabelGrid img {
+	width: 19px;
+	float: left;
+	margin-right: 5px;
+}*/
+
+.menuLabelGrid span{
+	display: block;
+	margin-top: 3px;
+}
+
+.menuLabelGridDesctop span {
+	margin-top: 2px;
+}	
+
+.menuLabelGridTab span {
+	
+}
+
+.menuLabelGridMobileLandscape span {
+	
+}
+
+.menuLabelGridMobileLandscape span {
+	
+}
+
+/*отступы*/
+.menuSettingGrid .menuButValueText {
+	/*font-size: 12px;*/
+	padding: 6px 10px 5px 10px;
+}
+
+/*для декстопа***********************************************************************/
+/*выбор количество колонок*/
+.menuCountColumnsValue {
+
+}
+
+.menuSettingOptionColumn {
+	background-color: rgb(72,72,72);
+	padding: 3px 5px;
+	border-radius: 2px;
+	float: left;
+	margin-right: 5px;
+	border: 1px solid transparent;
+}
+
+.menuSettingOptionColumn:last-child {
+	margin-right: 0;
+}
+
+.menuSettingOptionColumn[chosen="true"] {
+	background-color: rgb(45,45,45);
+	border-color: rgb(75,75,75);
+}
+
+
+.menuSettingOptionColumn span {
+	cursor: pointer;
+	width: 31px;
+	height: 24px;
+	display: block;
+}
+
+.menuSettingOptionColumn:last-child span {
+	margin-right: 0;
+}
+
+.menuSettingOptionColumn[value="2"] span {
+	background-position: -1px -29px;
+	width: 28px;
+}
+
+.menuSettingOptionColumn[value="3"] span {
+	background-position: -43px -29px;
+	width: 28px;
+}
+
+.menuSettingOptionColumn[value="4"] span {
+	background-position: -84px -29px;
+	width: 29px;
+}
+
+.menuSettingOptionColumn[value="5"] span {
+	background-position: -126px -29px;
+	width: 29px;
+}
+
+.menuSettingOptionColumn[value="6"] span {
+	background-position: -170px -29px;
+	width: 28px;
+}
+
+.menuSettingOptionColumn[row="1"] span {
+	background-position: -285px -28px;
+	width: 28px;
+}
+
+.menuSettingOptionColumn[row="2"] span {
+	background-position: -205px -29px;
+	width: 28px;
+}
+
+.menuSettingOptionColumn[row="3"] span {
+	background-position: -245px -29px;
+	width: 28px;
+}
+
+
+/*размер ячеек*/
+.menuColumnsSizeValue {
+	/*margin-left: 6px;*/
+} 
+
+.blockSizingColumns {
+	height: 24px;
+	border: 3px solid rgb(75,75,75);
+	border-radius: 4px;
+}
+
+.itemSizingColumn {
+	/*background-color: #c00;*/
+	width: ;
+	height: 100%;
+	float: left;
+}
+
+.itemSizingColumn[value="1"] { width: 8.33333%;}
+.itemSizingColumn[value="2"] { width: 16.66666%;}
+.itemSizingColumn[value="3"] { width: 25%;}
+.itemSizingColumn[value="4"] { width: 33.33333%;}
+.itemSizingColumn[value="5"] { width: 41.66666%;}
+.itemSizingColumn[value="6"] { width: 50%;}
+.itemSizingColumn[value="7"] { width: 58.33333%;}
+.itemSizingColumn[value="8"] { width: 66.66666%}
+.itemSizingColumn[value="9"] { width: 75%;}
+.itemSizingColumn[value="10"] { width: 83.33333%;}
+.itemSizingColumn[value="11"] { width: 91.66666%;}
+
+.itemSizingColumn span {
+	display: block;
+	padding: 7px;
+	text-align: center;
+}
+
+/*разделители*/
+.columnsSiziBlockSeparators {
+	position: absolute;
+	top: 0; left: 0px;
+	/*width: 221px;*/
+	width: 100%;
+	height: 100%;
+	padding: 3px;
+	box-sizing: border-box;
+	
+	border: 3px dashed transparent;
+	/*background-color: #cc0;*/
+}
+
+.columnsSiziSeparator {
+	position: absolute;
+	/*top: 1px;*/
+	top: 0px;
+	height: 24px;
+	/*height: 27px;*/
+	width: 4%;
+	background-color: rgb(75,75,75);
+	cursor: col-resize;
+}
+
+.columnsSiziBlockSeparators[move="true"] {
+	border-color: rgb(43,109,181);
+}
+
+.columnsSiziSeparator[value="1"] { left: 6.33333%;}
+.columnsSiziSeparator[value="2"] { left: 14.66666%;}
+.columnsSiziSeparator[value="3"] { left: 23%;}
+.columnsSiziSeparator[value="4"] { left: 31.33333%;}
+.columnsSiziSeparator[value="5"] { left: 39.66666%;}
+.columnsSiziSeparator[value="6"] { left: 48%;}
+.columnsSiziSeparator[value="7"] { left: 56.33333%;}
+.columnsSiziSeparator[value="8"] { left: 64.66666%}
+.columnsSiziSeparator[value="9"] { left: 73%;}
+.columnsSiziSeparator[value="10"] { left: 81.33333%;}
+.columnsSiziSeparator[value="11"] { left: 89.66666%;}
+
+.columnsSiziSeparator span {
+	display: block;
+	height: 100%;
+	width: 3px;
+	margin: 0 auto;	
+	background-color: rgb(0,96,199);
+}
+
+
+/**/
+
+.blockGridNoDesktopSizeWrap {
+	margin: 10px 0;
+}
+
+.blockGridNoDesktopSizeLabel {
+	opacity: 0.6;
+	padding-bottom: 4px;
+}
+
+.blockGridNoDesktopSize {
+	width: 161px;
+}
+
+.blockGridNoDesktopSize[class] .text {
+	padding-top: 1px;
+	padding-bottom: 0px;
+	width: 23px;
+	height: 14px;
+	text-align: center;
+}
+
+/*********************************************************************************/
+.menuBlockValueCountRow[class] {
+	float: right;
+	margin-right: -7px;
+}
+
+/**удаление колонки*************************/
+.butDeleteColumn {
+	padding: 8px 0 7px 0;
+	background-color: rgb(72,72,72);
+	color: rgb(240,240,240);
+	text-align: center;
+	border-radius: 3px;
+	cursor: pointer;
+	
+	margin-right: -6px;
+	width: 168px;
+	float: right;
+}
+
+.butDeleteColumn:hover {
+	background-color: rgb(62,62,62);
+}
+
+/****************************************************************************************/
+/*клик по элементу*************************************************************************************/
+.menuSettingClick {
+
+}
+
+.menuSettingClick .selectBlockButton input[type="button"] {
+	width: 122px;
+}
+
+.valueClickDownloadFile {
+	margin-top: 10px;
+}
+
+/*клик по элементу*************************************************************************************/
+.butExportCodeEdit {
+	
+}
+
+/*****************************************************************************************/
+/*заголовок****************************************************************************************/
+.menuSettingHeading .blockValueHeading {
+	float: right;
+	margin-right: 8px;
+}
+
+.menuButHeading .text {
+	padding-top: 5px;
+	padding-bottom: 4px;
+	height: auto;
+	width: 25px;
+	font-size: 11px;
+	text-align: center;	
+}
+/*****************************************************************************************/
+/*элементы формы****************************************************************************************/
+/*input*/
+.valueInputType {
+
+}
+
+.valueInputRequired .menuButValue {
+	width: 30px;
+	text-align: center;
+}
+
+.settingFormMethod .menuButValue {
+	text-align: center;
+}
+
+/*section************************************************************************************************/
+.menuSettingSection .menuStyleItemLabel {
+	/*margin-right: 11px;*/
+}
+
+.blockValueSection .menuButValueText {
+	/*font-size: 12px;*/
+	width: 26px;
+}
+
+/*template************************************************************************************************/
+
+.settingLabelDesc {
+	margin-bottom: 10px;
+}
+
+/************************************************************************************************/
+/*блог************************************************************************************************/
+
+.valueBlogListCount .menuButValue[class] {
+	width: 20px;
+	padding-left: 5.5px;
+	padding-right: 5.5px;
+}
+
+
+
+
+
+
+
+
+

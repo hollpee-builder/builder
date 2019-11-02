@@ -1,0 +1,28 @@
+h1[data-hlp-id], h2[data-hlp-id], h3[data-hlp-id], 
+h4[data-hlp-id], h5[data-hlp-id], h6[data-hlp-id], 
+p[data-hlp-id], img[data-hlp-id], .hlp-but,
+p > a[data-hlp-id]:not([class]), h1 > a[data-hlp-id]:not([class]),
+h2 > a[data-hlp-id]:not([class]), h3 > a[data-hlp-id]:not([class]),
+h4 > a[data-hlp-id]:not([class]), h5 > a[data-hlp-id]:not([class]),
+h6 > a[data-hlp-id]:not([class]) {
+	outline: 1px dashed rgb(255,0,0);
+	cursor: pointer;
+}
+
+form h1, form h2, form h3, form h4, form h5, form h6, 
+form p, form img {
+	outline: none;
+	cursor: default;
+}
+
+.hlp-site[class] *[data-hlp-adaptive-elm="true"] {
+	outline: 2px dashed rgb(17,167,0);
+}
+
+body .hlp-tabs-item[class] {
+	display: block;
+}
+
+.hlp-adp-title-elm-id {
+	display: none;
+}

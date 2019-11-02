@@ -1,0 +1,469 @@
+body * {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+.page-item-mobile {
+	display: none;
+}
+
+
+/*tab-l*/
+@media screen and (max-width: 1024px), screen and (max-device-width: 1024px) {
+	/*main*/
+	.wrapper .section,
+	body .h-panel-content {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	
+	header nav {
+		float: none;
+		margin: 10px auto 10px auto;
+		clear: both;
+	}
+
+	a.but-page-show-mobile,
+	a.but-page-edit-mobile,
+	.list-lead .lead-data-but {
+		width: 170px;
+		padding: 10px 0 8px 0;
+		text-align: center;
+		margin: 10px auto 0 auto;
+		background-color: rgb(27,128,205);
+		color: rgb(240,240,240);
+		font-size: 14px;
+		display: block;
+		border-radius: 4px;
+		border-bottom: none;
+	}
+	
+	a.but-page-edit-mobile {
+		background-color: rgb(90,90,90);
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	
+	/*list page*/
+	.wrapper .list-page .page-item {
+		height: auto;
+	    padding: 15px 0;
+	}
+	
+	.wrapper .section-site-left, .wrapper .section-right {
+		width: 100%;
+		float: none;
+	}
+
+	.wrapper .section-right {
+		margin-top: 20px;
+	}
+
+	.page-item-desktop {
+		display: none;
+	}
+
+	.page-item-mobile {
+		display: block;
+	}
+
+	.wrapper header .page-item {
+		height: auto;
+		padding-bottom: 15px;
+	}
+
+	.page-file-name-mobile {
+		text-align: center;
+	}
+	
+	/*tutorial*/
+	.wrapper .list-question-section-left,
+	.wrapper .list-question-section-right,
+	.wrapper .question-section {
+		width: 100%;
+		float: none;
+	}
+
+	/*account*/
+	.wrapper .user-property {
+		width: 100%;
+	}
+	
+	/*lead*/
+	.wrapper .list-lead-head {
+		display: none;
+	}
+
+	.wrapper .list-lead td,
+	.wrapper .list-lead th {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+
+	.list-lead th {
+		display: none;
+	}
+
+	.list-lead tr {
+		padding-top: 10px;
+		padding-bottom: 10px;
+		display: block;
+	}
+	
+	.wrapper .list-lead .lead-note {
+		display: block;
+		width: 100%;
+		height: auto;
+		padding: 20px 20px 10px 20px;
+	}
+
+	.wrapper .list-lead .lead-note-canvas {
+		min-height: 40px;
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		border: 1px solid rgb(200,200,200);
+		border-radius: 3px;
+	}
+
+	.wrapper .list-page-item {
+		float: none;
+		clear: both;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.wrapper .list-lead .lead-analytics {
+		display: none;
+	}
+
+	body .lead-data-key,
+	body .lead-data-value {
+		float: none;
+		width: 100%;
+		height: auto;
+	}
+
+	.wrapper .lead-data-item {
+		margin-bottom: 10px;
+	}
+	
+	.sectionLeadDetail[class] .listLectionLeadLeft,
+	.sectionLeadDetail[class] .listLectionLeadRight,
+	.sectionLeadDetail[class] .block,
+	.sectionLeadDetail[class] .leadDataKey,
+	.sectionLeadDetail[class] .leadDataValue {
+		width: 100%;
+	}
+
+	.sectionLeadDetail[class] .leadDataValue {
+		margin-top: 10px;
+	}
+
+	/*editor*/
+	body .h-modal-block-cont[class],
+	#modalSEO .h-modal-block-cont[class] {
+		overflow: visible;
+		height: auto;
+		min-height: auto;
+		max-height: 100%;
+	}
+	
+	.h-modal-block-footer {
+		clear: both;
+	}
+
+	#modalEditFile .h-modal-img-item {
+		width: 25%;
+		margin: 0 0 20px 0;
+	}
+	
+	/*integration*/
+	.list-all-integration .integration-group[class] {
+		width: 100%;
+	}
+
+	/* new interface*/
+	.sectionLeft {
+		position: relative;
+		width: 100%;
+		padding-bottom: 30px;
+	}
+
+	.sectionHeader, .blockEducation, .wrap-but-upload-file[class] {
+		display: none;
+	}
+
+	.sectionMain {
+		padding: 0;
+	}
+
+	.logo {
+		margin: 0 auto;
+		padding-top: 20px;
+		display: block;
+	}
+
+	.leftBlockInfo {
+		text-align: center;
+	}
+	
+	/*nav*/
+	a.navItem, .navItem {
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.navItem span {
+		display: none;
+	}
+	
+	/*site*/
+	.siteBlock[class] {
+		float: none;
+		margin: 0 auto 30px auto;
+		width: 400px;
+	}
+	
+	/*lead*/
+	.filter-but-search, .search-value[class], .hlp-select-filter, .lead-bottom-left > * {
+		width: 100%;
+		float: none;
+		margin-bottom: 10px;
+	}
+
+	.lead-filter-block[class], .lead-filter-block-page {
+		width: 100%;
+	}
+
+	.filter-but-search, .lead-bottom-left > * {
+		text-align: center;
+	}
+
+
+}
+
+/*tab-p*/
+@media screen and (max-width: 799px), screen and (max-device-width: 799px) {
+	
+	.pageStsList[class] {
+		width: 100%;
+		margin-top: 30px;
+	}
+}	
+
+/*mobile-l*/
+@media screen and (max-width: 599px), screen and (max-device-width: 599px), screen and (min-device-width: 600px) and (max-device-width: 760px) and (orientation: landscape) {
+
+	header nav {
+		padding: 20px;
+		padding-bottom: 0;
+	}
+	
+	header .nav-item {
+		margin: 0 0 10px 0;
+		width: 100%;
+		text-align: center;
+	}
+	
+	.wrapper .new-count-lead {
+		top: 0;
+	}
+
+	footer {
+		position: static;
+	}
+
+	.footer-copyright {
+		padding: 5px 0;
+		width: 100%;
+		text-align: center;
+		margin-top: 0;
+	}
+
+	.footer-logo {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/*editor*/
+	body .h-panel-editor {
+		height: auto;
+		padding-bottom: 10px;
+	}
+	
+	.h-panel-editor .h-panel-logo {
+		display: none;
+	}
+
+	.h-panel-editor .h-panel-list-but {
+		margin: 0 auto;
+		float: none;
+	}
+
+	body #modalManagerModal .h-man-modal-name {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	body #modalManagerModal .h-man-modal-list-but {
+		float: none;
+		margin: 10px auto;
+	}
+
+	body #modalSEO .h-seo-img {
+		float: none;
+		margin: 0 auto;
+	}
+	
+	body #modalSEO .h-seo-img-title {
+		width: 100%;
+		float: none;
+		margin: 10px 0 0 0;
+	}
+	
+	/*editor*/
+	#modalEditFile .h-modal-img-item {
+		width: 33%;
+	}
+	
+	/*page detail*/
+	.listSectionListBut[class] > * {
+		width: 70%;
+		float: none;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	/*nav*/
+	.navItem[data-type="integration"], .navItem[data-type="utm"],
+	.navItem[data-type="shorten"], .navItem[data-type="integration"] {
+		/*display: none;*/
+	}
+
+	/*.butMarketer {
+		display: none;
+	}*/
+	
+	.butAddUtm[class], .butConstructUtm[class],
+	.contentBlock[data-type="shorten"] .group-but[class],
+	.contentBlock[data-type="shorten"] .link-group-list-but,
+	.contentBlock[data-type="shorten"] .link-group-cur-name,
+	.contentBlock[data-type="shorten"] .but-link-add,
+	.abtestListBut .butAbtestVariantAdd, 
+	.abtestListBut .butAbtestResetStat,
+	.pageStsListFooter .butResetSts,
+	.utmSettingItem .utmItemName, .utmSettingItem .utmItemToggleBlock,
+	.butAddAdaptiveTitleValue,
+	.modalAdaptiveTitleAddPropertyItem[class] .modalAdaptiveTitleAddPropertyName[class], 
+	.modalAdaptiveTitleAddPropertyItem[class] .modalAdaptiveTitleAddPropertyValue[class] {
+		margin: 0 auto 10px auto;
+		float: none;
+		width: 100%;
+		display: block;
+	}
+
+	.pageStsListFooter .butUtmSetting {
+		margin: 0 auto 10px auto;
+		float: none;
+		width: 100%;
+	}
+
+	.sectionPageContent[class] .abtestItemCell[class],
+	.listUtmItemCell[class],
+	.contentBlock[data-type="shorten"] .table-list-link th, .contentBlock[data-type="shorten"] .table-list-link td,
+	.account-key[class], .account-value[class],
+	.sectionLeadDetail .sectionListStatus th, .sectionLeadDetail .sectionListStatus td,
+	.tableStat[class] .tableRow[class] .tableCell[class],
+	.tableRowDateDetail[class] .tableCell[class],
+	.tableAdaptiveTitle[class] .tableRow[class] .tableCell[class] {
+		width: 100%;
+		text-align: center;
+		display: block;
+	}
+
+	.sectionPageContent[class] .tableRow, .listUtmItem[class],
+	.contentBlock[data-type="shorten"] .table-list-link tr,
+	.account-item[class],
+	.sectionLeadDetail .sectionListStatus tr,
+	.tableStat[class] .tableRow[class],
+	.tableRowDateDetail[class] .tableRow[class],
+	.tableAdaptiveTitle[class] .tableRow[class] {
+		border-bottom: 5px solid rgb(50,50,50);
+		padding-bottom: 10px;
+	}
+
+	.contentBlock[data-type="shorten"] .table-list-link th,
+	.contentBlock[data-type="shorten"] .table-list-link td,
+	.sectionLeadDetail .sectionListStatus th {
+		border-bottom: none;
+	}
+
+	/*page*/ 
+	.butAddAdaptiveTitleValue {
+		text-align: center;
+	}
+
+	/*shorten*/
+	
+	.contentBlock[data-type="shorten"] .but-link-edit,
+	.contentBlock[data-type="shorten"] .but-link-delete {
+		margin: 20px auto;
+		background: rgb(90,90,90);
+		border-radius: 3px;
+		padding: 7px 0;
+		width: 120px;
+		text-align: center;
+	}
+
+	.contentBlock[data-type="shorten"] .but-link-add {
+		margin-top: 20px;
+	}
+
+	/*account*/
+	.contentBlock[data-type="account"] .but-edit-property,
+	.contentBlock[data-type="account"] .account-edit-psw {
+		margin: 0 auto;
+		float: none;
+		width: 80px;
+		text-align: center;
+		display: block;
+	}
+
+	.contentBlock[data-type="account"] .account-edit-psw {
+		width: 150px;
+	}
+}	
+
+/*mobile-p*/
+@media screen and (max-width: 429px), screen and (max-device-width: 429px) {
+	
+	body .h-panel-history {
+		/*float: none;*/
+		/*clear: both;*/
+	}
+
+	body .h-canvas {
+		/*padding-top: 78px;*/
+	}
+	
+	/*editor*/
+	#modalEditFile .hollpee-but-cancel {
+		display: none;
+	}
+
+	#modalEditFile .h-modal-img-item {
+		width: 50%;
+	}
+
+
+}
+
