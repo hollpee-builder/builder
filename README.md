@@ -26,7 +26,9 @@ Hollpee - позволит создавать профессиональные L
 ## Пример настройки для локального веб-сервера http://www.wampserver.com/ru/
 
 Скачайте локальный веб-сервер и установите его.
-Запустите его и настройте версию php 7.3. Перейдите в PHP > PHP Settings и настройте галочки, как на скрине ниже, так же изменитене значение memory_limit, upload_max_filesize, post_max_size.
+Запустите его и настройте версию php = 7.3. 
+
+Перейдите в PHP > PHP Settings и выключите галочки напротив display_errors, так же изменитене значение memory_limit, upload_max_filesize, post_max_size, как указано на скрине ниже.
 
 Файл php.ini(PHP Settings):
 
