@@ -79,7 +79,7 @@ Wampserver -> Your VirtualHosts должны появиться созданны
         
 ![wampmanager.conf](instructions-wamp64/Инструкция-017.jpg)
 
-Теперь если перейти в браузер и открыть сайт http://hollpee.loca должен открыться редактор
+Теперь если перейти в браузер и открыть сайт http://hollpee.local должен открыться редактор
 
 ![Редактор Hollpee builder в браузере](instructions-wamp64/Инструкция-015.jpg)
 
