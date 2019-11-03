@@ -28,27 +28,68 @@ Hollpee - позволит создавать профессиональные L
 Скачайте локальный веб-сервер и установите его.
 Запустите его и настройте версию php = 7.3. 
 
-Перейдите в PHP > PHP Settings и выключите галочки напротив display_errors, так же изменитене значение memory_limit, upload_max_filesize, post_max_size, как указано на скрине ниже.
+Перейдите в Wampserver -> PHP -> PHP Settings и выключите галочки напротив display_errors, так же изменитене значение memory_limit, upload_max_filesize, post_max_size, как указано на скрине ниже.
 
 Файл php.ini(PHP Settings):
 
-![Файл php.ini](/images/hlp-wampserver-002.jpg)
+![Файл php.ini](instructions-wamp64/Инструкция-002.jpg)
 
-Убедитесь, что был установлен модуль sqlite3, для этого кликните по PHP > PHP extensions > sqlite3. Должна стоять галочка напротив sqlite3
+Убедитесь, что был установлен модуль sqlite3, для этого кликните по Wampserver -> PHP -> PHP extensions -> sqlite3. Должна стоять галочка напротив sqlite3
 
-![sqlite3](/images/hlp-wampserver-006.jpg)
+![sqlite3](instructions-wamp64/Инструкция-004.jpg)
 
-Кликните на кнопку "www direcotry" и удалите от туда все стандартные файлы, после этого загрузите сюда файлы редактора.
+Кликните на кнопку Wampserver -> www direcotry и создайте там папку внутри которой будет находится сервис. Для примера создайте папку "builder" в ней будет находиться сервис. Так же можете создать папку "helpdesk" в ней будет находиться база знаний. В итоге у вас внутри папки "C:\wamp64\www" должно находиться следующее:
 
-![Содержимое папки www](/images/hlp-wampserver-0015.jpg)
+![www direcotry](instructions-wamp64/Инструкция-009.jpg)
 
-Теперь если перейти в браузер и открыть сайт http://localhost должен открыться редактор
+![Содержимое папки www](instructions-wamp64/Инструкция-005.jpg)
 
-![Редактор Hollpee builder в браузере](/images/hlp-wampserver-004.jpg)
+Теперь откройте папку "builder" и загрузите туда все файлы сервиса, должно получиться следующее:
+
+![Содержимое папки builder](instructions-wamp64/Инструкция-010.jpg)
+
+Аналогично можете сделать с папкой helpdesk, только внутрь нее нужно поместить базу знаний.
+[База знаний редактора Hollpee builde](https://github.com/hollpee-builder/helpdesk)
+
+Теперь если запустить Wampserver -> Your VirtualHosts -> Your VirtialHost Management.
+
+![Menu Your VirtialHost Management](instructions-wamp64/Инструкция-008.jpg)
+
+То перед вами откроется менеджер настройки виртуальных хостов. Тут можно указать предпочитаемый домен, при переходе на который должен открыться сервис. Например это будет "hollpee.local" и так же необходимо указать полный путь к папке с сервисом. В данном примере это "C:\wamp64\www\builder", послде ввода данных, как на скрине ниже вам нужно нажать на кнопку "Start the creation of the VirtialHost"
+
+![Your VirtialHost Management](instructions-wamp64/Инструкция-013.jpg)
+
+![Your VirtialHost Management](instructions-wamp64/Инструкция-006.jpg)
+
+Аналогично с Базой знаний
+
+![Your VirtialHost Management](instructions-wamp64/Инструкция-011.jpg)
+
+![Your VirtialHost Management](instructions-wamp64/Инструкция-012.jpg)
+
+Теперь вам необходимо перезагрузить программу Wampserver. Для этого закройте ее и снова откройте. После этого у вас в меню 
+Wampserver -> Your VirtualHosts должны появиться созданные виртуальные хосты
+
+![Список виртуальных хостов](instructions-wamp64/Инструкция-016.jpg)
+
+Последняя настройка для этой программы. Откройте файл "C:\wamp64\wampmanager.conf". И отредактируйте строчку с словом navigator вначале строки, в ней будет указан путь к браузеру IE, вам нужно заменить его на Chrome:
+Это нужно для того, чтобы в Wampserver по умолчанию использовался браузер Chrome
+        
+        navigator ="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+        
+![wampmanager.conf](instructions-wamp64/Инструкция-017.jpg)
+
+Теперь если перейти в браузер и открыть сайт http://hollpee.loca должен открыться редактор
+
+![Редактор Hollpee builder в браузере](instructions-wamp64/Инструкция-015.jpg)
+
+Аналогично с Базой знаний, если открыть http://helpdesk.local
+
+![База знаний в браузере](instructions-wamp64/Инструкция-014.jpg)
 
 Версии установленных программ:
 
-![Версии установленных программ](/images/hlp-wampserver-001.jpg)
+![Версии установленных программ](instructions-wamp64/Инструкция-001.jpg)
 
 
 ## УСТАНОВКА LINUX/UNIX:
@@ -105,4 +146,5 @@ Hollpee - позволит создавать профессиональные L
 ## Если у вас не загружается внутренний формат
 Внутренние форматы сделанные до 2019-11-02 13:00 не будут загружаться в сервисе. Для того, чтобы их загрузить вам необходимо 
 разархивировать архив. После этого у вас дожна появиться папка с названием вашего архива, зайдите в нее и в ней вы должны увидеть файлы и папки: file, fonts, images, avatar.png, hollpee_meta.txt, site.txt и так далее. Выберите все эти файлы и создайте zip ахив. После нужно изменить расширение с .zip на .hollpee. Теперь этот файл должен загрузиться в сервисе.
+
 
