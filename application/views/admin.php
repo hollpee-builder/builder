@@ -46,7 +46,7 @@
 					<span></span>
 					Сайты
 				</a>
-				<a href="https://helpdesk.local" target="_blank" class="navItem navTutorial">
+				<a href="https://hollpee.zendesk.com/hc/ru" target="_blank" class="navItem navTutorial">
 					<span></span>
 					База знаний
 				</a>

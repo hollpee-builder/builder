@@ -259,11 +259,12 @@ abstract class FormatPage {
 
 		foreach ($files as $name => $file)
 		{
-		    if (!$file->isDir())
-		    {
-		        $filePath = $file->getRealPath();
-		        $relativePath = substr($filePath, strlen($pathDirProject) + 1);
+		    $filePath = $file->getRealPath();
+		    $relativePath = substr($filePath, strlen($pathDirProject) + 1);
+		    if (!$file->isDir()) {
 		        $zip->addFile($filePath, $relativePath);
+		    } else {
+		    	$zip->addEmptyDir($relativePath);
 		    }
 		}
 
