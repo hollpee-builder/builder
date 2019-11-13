@@ -21,10 +21,10 @@ function File() {
 	* Максимальное количество Mb
 	*
 	*/	
-	this.maxSizeFileLpf = 50;
-	this.maxSizeFileVideo = 2;
-	this.maxSizeFileImage = 2;
-	this.maxSizeFileFont = 1;
+	this.maxSizeFileLpf = 500;
+	this.maxSizeFileVideo = 200;
+	this.maxSizeFileImage = 200;
+	this.maxSizeFileFont = 100;
 
 	/**
 	* Создает кнопку для загрузки файла
