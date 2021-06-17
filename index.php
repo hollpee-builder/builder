@@ -1,4 +1,4 @@
-<?php  
+<?php
 ob_start();
 
 //подключаем константы
@@ -38,7 +38,7 @@ $list_path = array(
 					);
 
 //подключение файла
-function __autoload($class)
+function autoload_register($class)
 {
 	global $list_path;
 
@@ -53,8 +53,10 @@ function __autoload($class)
 			$status_break = 1;
 			break;
 		}
-	}		
+	}
 }
+
+spl_autoload_register('autoload_register');
 
 // создаем объект
 $front = FrontController::getInstance();

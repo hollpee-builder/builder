@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="<?php echo Url::get('/css/main/modal.css') ?>" >
 	<link rel="stylesheet" href="<?php echo Url::get('/css/main/support.css') ?>" >
 	<link rel="stylesheet"  href="<?php echo Url::get('/css/admin.css') ?>">
-	
+
 	<script type="text/javascript" src="<?php echo Url::get('/js/main/jquery.js') ?>"></script>
-	
+
 	<script type="text/javascript" src="<?php echo Url::get(FILE_LANGUAGES_MAIN) ?>" ></script>
 	<script type="text/javascript" src="<?php echo Url::get(FILE_LANGUAGES_JS) ?>" ></script>
 
@@ -22,7 +22,7 @@
 	<script type="text/javascript" src="<?php echo Url::get('/js/admin.js') ?>"></script>
 	<script type="text/javascript" src="<?php echo Url::get('/js/education.js') ?>"></script>
 	<?php echo $stylesheet ?>
-	
+
 	<script type="text/javascript">
 		var DOMAIN_HOSTING="<?php echo DOMAIN_HOSTING; ?>";
 	</script>
@@ -39,7 +39,7 @@
 				<img src="/img/logo.png" alt="" class="logo">
 			</div>
 
-			
+
 
 			<div class="blockNav">
 				<a href="/" class="navItem navSite">
@@ -54,9 +54,9 @@
 					<span></span>
 					CMS
 				</a>
-			
+
 			</div>
-			
+
 		</div>
 		<div class="sectionHeader">
 			<div class="headerLeft">
@@ -82,8 +82,8 @@
 		<div class="sectionMain">
 			<div class="cotentTopBlock">
 				<div class="contentTitleBlock">
-					<span class="contentTitle"><?php echo $titleContent; ?></span> 
-					<span class="contentTitleDesc"><?php echo $titleContentDesc; ?></span>
+					<span class="contentTitle"><?php echo $titleContent; ?></span>
+					<span class="contentTitleDesc"><?php echo !empty($titleContentDesc) ? $titleContentDesc : ''; ?></span>
 				</div>
 				<div class="topBlockBut">
 					<a href="/choseStyle" target="_blank" class="butTop btn butAddSite">Добавить сайт</a>

@@ -2,7 +2,7 @@
 	<div class="projectSection">
 		<select class="listProject">
 			<option value="">Все</option>
-			<?php  
+			<?php
 				foreach ($listProject['list_project'] as $project) {
 					$projectId = $project['project_id'];
 					if ($selectedProject == $projectId) {
@@ -22,13 +22,13 @@
 			<div class="butProject butCreateProject">
 				<?php echo Resource::$page_site_project_but_create; ?>
 			</div>
-			<div class="butProject butEditProject" noactivity="<?php echo $statusProjectAll ?>">
+			<div class="butProject butEditProject" noactivity="<?php echo !empty($statusProjectAll) ? $statusProjectAll : ''; ?>">
 				<?php echo Resource::$page_site_project_but_edit; ?>
 			</div>
 			<div class="clear"></div>
 		</div>
 
-		
+
 		<div class="clear"></div>
 	</div>
 
@@ -42,8 +42,8 @@
 
 
 <div class="listSites" >
-	<?php  
-		
+	<?php
+
 		$listPagesHtml = '';
 		// выводим список сайтов
 		foreach ($listSites as $site) {
@@ -61,7 +61,7 @@
 			$siteIdShowing = $site['cms_site_id'];
 			if (!$siteIdShowing) $siteIdShowing = $site_id;
 			/*********************/
-			
+
 
 		// #######################################################################
 			$listPagesHtml .= '
@@ -122,8 +122,8 @@
 			';
 		}
 	?>
-	
-	
+
+
 	<div class="clear"></div>
 </div>
 
