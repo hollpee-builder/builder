@@ -1,4 +1,4 @@
-<?php 
+<?php
 /**
 * Добавление новой страницы
 *
@@ -7,17 +7,17 @@
 class ChoseStyleController extends AdminController implements IController {
 	private $siteType;
 	private $pathStyle;
- 
+
 	/**
 	* Контроллер отдает страницу
 	*
-	* @return 	html 	страница 
+	* @return 	html 	страница
 	* @uses 	AttachChoseStyle::getPagesGroup() 	/application/models/atach/AttachChoseStyle.php 	сформировывает страницу 'выбо стиля'
 	*/
 	function indexAction()
-	{	
+	{
 		//получить страницы
-		$listSites = $this->getListStyle();	
+		$listSites = $this->getListStyle();
 		$error = '';
 		$paramChoseStyle = array(	'error'=>$error,//ошибка
 									'listSites'=>$listSites);//выбор стилей
@@ -26,8 +26,8 @@ class ChoseStyleController extends AdminController implements IController {
 		$stylesheet = '	<link rel="stylesheet" href="'.Url::get('/css/chose_style.css').'">
 						<script type="text/javascript" src="'.Url::get('/js/chose_style_even.js').'"> </script>';
 		$titleContent = Resource::$page_chosenstyle_title;
-		
-		$param = array(	'content'=>$content, 
+
+		$param = array(	'content'=>$content,
 						'stylesheet'=>$stylesheet,
 						'titleContent'=>$titleContent,
 						'type'=>'site',
@@ -53,12 +53,12 @@ class ChoseStyleController extends AdminController implements IController {
 
 		foreach ($listType as $styleType) {
 			$pathType = $_SERVER['DOCUMENT_ROOT'].'/site/style/'.$styleType.'/';
-			$dir = opendir($pathType);
-			while ($folder = readdir($dir)) {
+			$dir = @opendir($pathType);
+			while ($folder = @readdir($dir)) {
 				if ($folder == '.' || $folder == '..') continue;
 				$listStyle[$styleType][$folder] = 'avatar.png';
 			}
-			closedir($dir);
+			@closedir($dir);
 		}
 
 		return $listStyle;
@@ -76,7 +76,7 @@ class ChoseStyleController extends AdminController implements IController {
 	public function getSitesCategoryAction()
 	{
 		$category = Clear::leaveNumber($_POST['category']);
-		echo $this->objAttach->getSitesCategory($category);	
+		echo $this->objAttach->getSitesCategory($category);
 	}
 
 /*****************************************************************************************/
@@ -87,7 +87,7 @@ class ChoseStyleController extends AdminController implements IController {
 	*
 	*/
 	public function addStyleSiteAction()
-	{		
+	{
 		// параметры стиля
 		$paramsSite = array();
 		$paramsSite['profile_id'] = $this->user_id;
@@ -98,7 +98,7 @@ class ChoseStyleController extends AdminController implements IController {
 		// создаем сайт
 		$siteObj = new Site();
 		$newSiteId = $siteObj->addStyleSite($paramsSite);
-		
+
 		if ($newSiteId) {
 			// перенаправляем на страницу редактора
 			$editorHref = '/editor/?site='.$newSiteId;
@@ -146,13 +146,13 @@ class ChoseStyleController extends AdminController implements IController {
 	{
 		$styleId = Clear::leaveNumber($_GET['style_id']);
 		$styleType = $this->getSiteType($_GET['style_type']);
-		
+
 		$styleName = Clear::leaveLettersAndNumber($_GET['style_name']);
 
 		$pathStyle = $_SERVER['DOCUMENT_ROOT'].'/site/style/'.$styleType.'/'.$styleId;
 		$this->pathStyle = $pathStyle;
 		$siteString = file_get_contents($pathStyle.'/site.txt');
-		
+
 		$projectId = $_SESSION['project'];
 		$paramsProject = array('profile_id'=>$this->user_id, 'project_id'=>$projectId);
 		$isProjectExists = DbSite::getInstance()->isProjectExists($paramsProject);
@@ -168,7 +168,7 @@ class ChoseStyleController extends AdminController implements IController {
 		$site['style_id'] = $styleId;
 		$site['style_name'] = $styleName;
 		$site['type'] = $styleType;
-		
+
 		$siteCode = json_decode($siteString, true);
 		unset($siteCode['profile_id']);
 		unset($siteCode['project_id']);
@@ -185,13 +185,13 @@ class ChoseStyleController extends AdminController implements IController {
 /*******************************************************************************************/
 	/**
 	* Просмотр
-	* 
-	* @return 	html 	отдает сраницу 	
+	*
+	* @return 	html 	отдает сраницу
 	*
 	* @uses 	DbStyle::getStyleSite()  /application/models/db/DbStyle.php 	выбирает с бд определенную страницу
 	*/
 	public function showAction()
-	{		
+	{
 		// id страницы
 		$styleId = Clear::leaveNumber($_GET['id']);
 		$styleType = $this->getSiteType($_GET['type']);
@@ -200,14 +200,14 @@ class ChoseStyleController extends AdminController implements IController {
 
 		// нету страницы
 		if (!file_exists($pathStyle)) {
-			header("Location: /error404"); 
+			header("Location: /error404");
 			exit;
 		}
 
 		$pathFileShow = $pathStyle.'/show.txt';
-		
+
 		/***************/
-		// если нет файла show, создаем его 
+		// если нет файла show, создаем его
 		if (!file_exists($pathFileShow)) {
 			$pathFileSite = $pathStyle.'/site.txt';
 			$fileSite = file_get_contents($pathFileSite);
@@ -219,11 +219,11 @@ class ChoseStyleController extends AdminController implements IController {
 
 		$fullSite = file_get_contents($pathFileShow);
 		$fullSite = json_decode($fullSite, true);
-		
+
 		// добавляем фрифты
 		$font = DbUserProfile::getInstance()->getFont(array('profile_id'=>$this->user_id));
 		$fullSite["font"] = $font;
-		
+
 		$fullSite = json_encode($fullSite, true);
 		$content = '<div class="dataJson" style="display:none;">'.$fullSite.'</div>
 					<div class="content"></div>';
@@ -243,8 +243,8 @@ class ChoseStyleController extends AdminController implements IController {
 
 		echo $result;
 	}
-/************************************************************************************/	
-	
+/************************************************************************************/
+
 
 	/**
 	* Отдает тип сайта
@@ -255,7 +255,7 @@ class ChoseStyleController extends AdminController implements IController {
 	function getSiteType($type)
 	{
 		if ($type == 'mlp') $siteType = 'mlp';
-		else if ($type == 'longreads') $siteType = 'longreads'; 
+		else if ($type == 'longreads') $siteType = 'longreads';
 		else $siteType = 'lp';
 
 		return $siteType;

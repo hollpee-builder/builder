@@ -1,4 +1,8 @@
-<?php  
+<?php
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+
 ob_start();
 
 //подключаем константы
@@ -38,7 +42,7 @@ $list_path = array(
 					);
 
 //подключение файла
-function __autoload($class)
+function autoload_register($class)
 {
 	global $list_path;
 
@@ -53,8 +57,10 @@ function __autoload($class)
 			$status_break = 1;
 			break;
 		}
-	}		
+	}
 }
+
+spl_autoload_register('autoload_register');
 
 // создаем объект
 $front = FrontController::getInstance();

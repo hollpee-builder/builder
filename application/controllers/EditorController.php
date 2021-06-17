@@ -1,4 +1,4 @@
-<?php  
+<?php
 /**
 * Редактирование стриницы
 *
@@ -19,13 +19,13 @@ class EditorController extends AdminController implements IController {
 
 	/**
 	* Отдает редактор с редактируемой страницей
-	* 
+	*
 	* @uses 	DbUserPage::getPageInfo() 		/application/modal/db/user/DbUserPage.php 	получить информацию о странице
 	* @uses 	DbUserPage::getPageOptionAll()	/application/modal/db/user/DbUserPage.php 	получить html варианта  страниц (desctop и mobile)
 	* @uses 	this::objSite 					доступ к бд
 	*/
 	function indexAction()
-	{	
+	{
 		$siteId = Clear::leaveNumber($_GET['site']);
 
 		/***********/
@@ -33,7 +33,7 @@ class EditorController extends AdminController implements IController {
 		$folderFilesPath = $_SERVER['DOCUMENT_ROOT'].'/user/'.$this->user_id.'/'.$siteId.'/file/files';
 		if (!file_exists($folderFilesPath)) mkdir($folderFilesPath);
 		/***********/
-		
+
 		$paramsSite = array('profile_id'=>$this->user_id, 'site_id'=>$siteId);
 		$isExistsSite = DbSiteEditor::getInstance()->isExistsSite($paramsSite);
 
@@ -70,21 +70,21 @@ class EditorController extends AdminController implements IController {
 		// полностью сайт
 		$fullSite = $this->getFullSite($siteId);
 		$fullSite['type_access'] = $siteInfo['type_access'];
-		
+
 		// данные пользователя
 		$paramsData = array("profile_id"=>$this->user_id);
 		$userData = DbUserProfile::getInstance()->getData($paramsData);
-		
+
 		$siteId = $fullSite['site_id'];
 
 		$params = array('profile_id'=>$this->user_id, 'site_id'=>$siteId);
 		$projectId = $siteInfo['project_id'];
 
-		// переводим в json 
+		// переводим в json
 		unset($fullSite['project_id']);
 		$fullSite = json_encode($fullSite, true);
 		$userData = $userData[0]["data"];
-		
+
 		$exitHref = '/sites/?project='.$projectId;// href show
 		$showId = $siteId;
 		$showHref = '/show?id='.$showId;
@@ -94,7 +94,7 @@ class EditorController extends AdminController implements IController {
 
 		$params = array(
 			'jsonSite'=>$fullSite,
-			'jsonUser'=>$userData, 
+			'jsonUser'=>$userData,
 			'exitHref'=>$exitHref,
 			'showHref'=>$showHref,
 			'sitePublished'=>$sitePublished,
@@ -113,20 +113,20 @@ class EditorController extends AdminController implements IController {
 	protected function getFullSite($siteId)
 	{
 		$params = array('profile_id'=>$this->user_id, 'site_id'=>$siteId);
-		
+
 		//получаем полностью сайт
 		$fullSite = $this->objSite->getFullSite($params);
 		// нету сайта
 		if (!$fullSite["site_id"]) exit;
 
 		$projectId = $fullSite['project_id'];
-		
+
 		// преобразуем массив чтобы ключом к страницы был его id
 		$listPages = $fullSite["pages"];
 		$fullSite["pages"] = array();
 		foreach ($listPages as $pageData) {
 			$fullSite["pages"][$pageData["page_id"]] = $pageData;
-		} 
+		}
 
 		return $fullSite;
 	}
@@ -138,7 +138,7 @@ class EditorController extends AdminController implements IController {
 	*
 	*/
 	function saveAction()
-	{	
+	{
 		$site = htmlspecialchars_decode(urldecode($_POST['site']));
 		$siteId = Clear::leaveNumber($_POST['site_id']);
 		$res = $this->objSite->saveSite($this->user_id, $siteId, $site);
@@ -153,12 +153,12 @@ class EditorController extends AdminController implements IController {
 	*/
 	public function saveSiteAvatarAction()
 	{
-		$avatarData = base64_decode($_POST['data']); 
-		$siteId = Clear::leaveNumber($_POST['site_id']); 
+		$avatarData = base64_decode($_POST['data']);
+		$siteId = Clear::leaveNumber($_POST['site_id']);
 
 		$imgPath = $_SERVER['DOCUMENT_ROOT'] . '/user/' . $this->user_id . '/' . $siteId . '/avatar.png';
-		
-		file_put_contents($imgPath, $avatarData); 
+
+		file_put_contents($imgPath, $avatarData);
 
 		echo $imgPath;
 	}
@@ -166,12 +166,12 @@ class EditorController extends AdminController implements IController {
 /************************************************************************************/
 /***изображения*************************************************************************/
 	/**
-	* отдаем картинки определеной категории 
+	* отдаем картинки определеной категории
 	* AJAX
  	*
  	* @see 		ajax
 	*/
-	public function getFileHolAction() 
+	public function getFileHolAction()
 	{
 		$fileType = $this->getFileType();
 		$siteId = Clear::leaveNumber($_POST['site']);
@@ -180,7 +180,7 @@ class EditorController extends AdminController implements IController {
 		$result = $this->getImgDir($path);
 		//получить картинки категории
 		echo json_encode($result, true);
-		
+
 	}
 
 	private function getRootFilePath($fileType, $siteId)
@@ -190,7 +190,7 @@ class EditorController extends AdminController implements IController {
 		return $path;
 	}
 
-	protected function getImgDir($path, $folder = '') 
+	protected function getImgDir($path, $folder = '')
 	{
 		$path_full = $_SERVER['DOCUMENT_ROOT'] . '/' . $path;
 
@@ -218,7 +218,7 @@ class EditorController extends AdminController implements IController {
 					if (is_dir($file_path_full)) {
 						$listChildFolder = $this->getImgDir($file_path, $nameFile);
 						$list = array_merge($list, $listChildFolder);
-					}					
+					}
 				}
 			}
 			//закрываем директорию
@@ -236,7 +236,7 @@ class EditorController extends AdminController implements IController {
 		$path_full = $_SERVER['DOCUMENT_ROOT'] .'/'. $file_path;
 
 		//разрешение файла
-		$screen = getimagesize($path_full);
+		$screen = @getimagesize($path_full);
 		$type = is_dir($path_full) ? 'dir' : 'file';
 
 
@@ -264,7 +264,7 @@ class EditorController extends AdminController implements IController {
 	private function getFileType()
 	{
 		$fileType =  $_POST['file_type'];
-		
+
 		if ($fileType == "video") $fileType = "file";
 		else $fileType = "img";
 
@@ -272,15 +272,15 @@ class EditorController extends AdminController implements IController {
 	}
 
 /*********************************************************************************/
-	
+
 	/**
 	* Сохраняет шрифт
 	*
-	* 
+	*
 	*/
 	public function uploadFontsAction()
 	{
-		//данные 
+		//данные
 		$file = $_POST['content'];
 
 		// имя
@@ -289,7 +289,7 @@ class EditorController extends AdminController implements IController {
 		$fileNameMain = preg_replace('/\./', '', $fileNameMain);
 		$fileFolder = $fileNameMain;
 		$fileName = $fileNameMain . '.ttf';
-		
+
 
 		// создаем папку для шрифта
 		$siteId = Clear::leaveNumber($_POST['site_id']);
@@ -308,14 +308,14 @@ class EditorController extends AdminController implements IController {
 		// сохраняем
 		$fileObj = new File();
 		$fontName = $fileObj->save($fileName, $file, $pathFolder);
-		
+
 		// преобразовываем в другие форматы
 		$fontPath = $fullPathFolder . '/' . $fileFolder;
 		system('ttf2woff '.$fontPath.'.ttf '.$fontPath.'.woff > /dev/null');
 		system('ttf2svg '.$fontPath.'.ttf '.$fullPathFolder.' > /dev/null');
 
 		echo $fontName;
-	}	
+	}
 
 	/**
 	* Удаление шрифта
@@ -350,20 +350,20 @@ class EditorController extends AdminController implements IController {
 
 		$fullSite = DbSiteEditor::getInstance()->getFullSite($params);
 		$fullSite['font'] = json_decode($_POST['font'], true);
-		DbSiteEditor::getInstance()->saveSite($this->user_id, $siteId, $fullSite); 
+		DbSiteEditor::getInstance()->saveSite($this->user_id, $siteId, $fullSite);
 	}
 /*************************************************************************************************/
-	
+
 	/**
 	* Сохраняет  картинку
 	* AJAX
-	* 
+	*
 	*/
 	public function saveFileHolAction()
-	{					
+	{
 		$folderUser = '/user/'.$this->user_id;
 
-		//данные 
+		//данные
 		$file = $_POST['content'];
 		if (!$file) exit;
 
@@ -376,11 +376,11 @@ class EditorController extends AdminController implements IController {
 		else $fileType = "img";
 
 		$pathRoot = $this->getRootFilePath($fileType, $siteId);
-		
+
 		$pathFolder = $pathRoot.'/'.$folder;
 		$fileObj = new File();
 		$fileName = $fileObj->save($fileName, $file, $pathFolder);
-		
+
 		$newImgProperty = $this->getPropertyImg($pathFolder.'/'.$fileName, $folder, $fileName);
 		echo json_encode($newImgProperty, true);
 	}
@@ -407,7 +407,7 @@ class EditorController extends AdminController implements IController {
 
 	/**
 	* Сохраняем фаил
-	* 
+	*
 	* @see  this.saveFileAction()
 	*/
 	private function saveFile($imgPath, $imgData, $pathFolder, $fileName)
@@ -424,7 +424,7 @@ class EditorController extends AdminController implements IController {
 	* @see 	$this->saveFileAction()
 	*/
 	private function getNewImagePath($pathFolder, $fileName)
-	{	
+	{
 		$imageProperty = array();
 		preg_match_all("|^([\w\-\.]+)\.([\w]+)$|i", $fileName, $imageProperty);
 		$name = $imageProperty[1][0];
@@ -436,7 +436,7 @@ class EditorController extends AdminController implements IController {
 			$imgPath = $pathFolder.'/'.$nameNum.'.'.$unit;
 			if (!file_exists($imgPath)) break;
 		}
-	
+
 		return $imgPath;
 	}
 
@@ -461,7 +461,7 @@ class EditorController extends AdminController implements IController {
 	{
 		$fileName = ConvertStr::ruToEn($_POST['name']);
 		$fileName = preg_replace("/\.\./", '', $fileName);
-		
+
 		$folder = $_POST['folder'];
 		$folder = preg_replace("|\/|", '___flsh___', $folder);
 		$folder = ConvertStr::ruToEn($folder);
@@ -476,10 +476,10 @@ class EditorController extends AdminController implements IController {
 		$folderPath = $pathRoot.'/'.$folder.'/'.$fileName;
 
 		return array(
-			'path' => $folderPath, 
-			'file_name' => $fileName, 
+			'path' => $folderPath,
+			'file_name' => $fileName,
 			'folder' => $folder);
-	} 
+	}
 
 	/**
 	* Переместить картинку
@@ -499,7 +499,7 @@ class EditorController extends AdminController implements IController {
 		// заменяем бд
 		if ($usedImage) {
 			$usedImage = json_decode($usedImage, true);
-			
+
 			$res = DbSiteEditor::getInstance()->moveImage($usedImage, $oldSrc, $newSrc, $profileId);
 			if (!$res) return false;
 		}
@@ -526,16 +526,16 @@ class EditorController extends AdminController implements IController {
 		// создаем папку
 		if (!file_exists($folderPathFull)) {
 			mkdir($folderPathFull);
-			
+
 			$newFolderProperty = $this->getPropertyImg($folderPath, $folder, $fileName);
 			echo json_encode($newFolderProperty);
 		}
 	}
 
 /********************************************************************************************/
-	
+
 	/**
-	* Сохранение данных пользователя 
+	* Сохранение данных пользователя
 	*
 	*
 	*/
@@ -554,12 +554,12 @@ class EditorController extends AdminController implements IController {
 	private function saveDataUser($userData)
 	{
 		// $userData = json_encode(json_decode($userData, true), true);
-		
+
 		// сохраняем данные позователя
 		$paramsUser = array('profile_id'=>$this->user_id, 'data'=>$userData);
 		DbUserProfile::getInstance()->saveData($paramsUser);
-	} 
-	
+	}
+
 /**********************************************************************************/
 /**********************************************************************************/
 /**********************************************************************************/
@@ -578,13 +578,13 @@ class EditorController extends AdminController implements IController {
 	private function isTemplateModeDeveloperReplace()
 	{
 		/*************/
-		// if ($this->isTemplateModeDeveloper()) return true; 
+		// if ($this->isTemplateModeDeveloper()) return true;
 		/*************/
 
 
 		return false;
 	}
-	
+
 	private function getTemplateFolderPath()
 	{
 		$templateFolderPath = $_SERVER['DOCUMENT_ROOT'].'/user';
@@ -610,12 +610,12 @@ class EditorController extends AdminController implements IController {
 		if (!$this->isTemplateModeDeveloper()) {
 			$this->saveDataUser($_POST['user']);
 		}
-		/*************/	
+		/*************/
 
 		// данные
 		$newTemplateId = Clear::leaveLettersAndNumber($_POST['new_id']);
 		$listImg = json_decode($_POST['list_img'], true);
-		
+
 		// пути
 		$templateFolderPath = $this->getTemplateFolderPath();
 		if (!file_exists($templateFolderPath)) mkdir($templateFolderPath);
@@ -645,12 +645,12 @@ class EditorController extends AdminController implements IController {
 	{
 		// получаем шаблоны пользователя
 		$paramsGet = array('profile_id'=>$this->user_id);
-		
+
 		$templateFolderPath = $this->getTemplateFolderPath();
 		$userCodeFolderPath = $templateFolderPath.'/0_code';
-		
+
 		if (!file_exists($userCodeFolderPath)) mkdir($userCodeFolderPath);
-		
+
 		/*********/
 		/******/
 		$this->saveNewTemplateCode($userCodeFolderPath, $newTemplate, $newTemplateId);
@@ -672,23 +672,23 @@ class EditorController extends AdminController implements IController {
 	{
 		// создаем папку
 		if (!file_exists($templatePath)) mkdir($templatePath);
-		
+
 		// копируем изображение
 		foreach ($listImg as $imgSrc) {
 			$imgSrc = preg_replace('/\.\./', '', $imgSrc);
-			$imgPathOrg = $_SERVER['DOCUMENT_ROOT'] . '/' . $imgSrc; 
-			
-			$imgName = array(); 
+			$imgPathOrg = $_SERVER['DOCUMENT_ROOT'] . '/' . $imgSrc;
+
+			$imgName = array();
 			preg_match_all('/[^\/]+$/', $imgSrc, $imgName);
 			$imgPathNew = $templatePath . '/' . $imgName[0][0];
-			
+
 			copy($imgPathOrg, $imgPathNew);
 		}
 	}
 
 	/**
 	* Сохраняем папку для шаблона
-	* 
+	*
 	*
 	*/
 	private function saveNewTemplateFolder($siteId, $newTemplateId, $folder)
@@ -712,7 +712,7 @@ class EditorController extends AdminController implements IController {
 
 	/**
 	* Копируем файлы шаблона
-	* 
+	*
 	*
 	*/
 	private function copyTemplateFolder($rootTemplatePath, $templateId, $siteId, $folder)
@@ -748,7 +748,7 @@ class EditorController extends AdminController implements IController {
 	public function saveTemplateAvatarAction()
 	{
 		$templateId = Clear::leaveLettersAndNumber($_POST['template_id']);
-		$avatarData = base64_decode($_POST['data']); 
+		$avatarData = base64_decode($_POST['data']);
 		$pathRoot = $_SERVER['DOCUMENT_ROOT'];
 
 		$imgName = 'avatar_' . $templateId . '.png';
@@ -757,7 +757,7 @@ class EditorController extends AdminController implements IController {
 		$avatarFolderPath = $templateFolderPath . '/0_avatar';
 		if (!file_exists($avatarFolderPath)) mkdir($avatarFolderPath);
 		$imgPath = $avatarFolderPath . '/' . $imgName;
-		
+
 		file_put_contents($imgPath, $avatarData);
 
 		echo $imgPath;
@@ -768,13 +768,13 @@ class EditorController extends AdminController implements IController {
 	/**
 	* Добавление шаблона на страницу
 	*
-	* 
+	*
 	*/
 	public function addTemplateAction()
 	{
 		$templateId = Clear::leaveLettersAndNumber($_POST['template_id']);
 		$siteId = Clear::leaveNumber($_POST['site_id']);
-		$folderType = $_POST['folder_type']; 
+		$folderType = $_POST['folder_type'];
 
 		$typeAccess = preg_replace('/\.\./', '', $_POST['type_access']);
 		$isStdType = $typeAccess != "my";
@@ -787,7 +787,7 @@ class EditorController extends AdminController implements IController {
 		$rootTemplatePath = $_SERVER['DOCUMENT_ROOT'].'/user/'.$userId.'/0_template';
 		$pathTemplate = $rootTemplatePath . '/' . $templateId;
 
-		// получаем путь изображений 
+		// получаем путь изображений
 		$folderName = ConvertStr::ruToEn($_POST['template_name']);
 		$fileObj = new File();
 		$pathSiteImg = $rootPath . '/' . $siteId . '/img';
@@ -799,7 +799,7 @@ class EditorController extends AdminController implements IController {
 
 		if (file_exists($userCodeFolderPath)) {
 			$template = file_get_contents($userCodeFolderPath);
-		// это времено пока все шаблоны, не уберутся с bd 
+		// это времено пока все шаблоны, не уберутся с bd
 		} else {
 			$params = array('profile_id' => $this->user_id);
 			$listTemplate = DbUserProfile::getInstance()->getTemplate($params);
@@ -810,7 +810,7 @@ class EditorController extends AdminController implements IController {
 		// копируем изображения и файлы
 		if (!$isStdType) {
 			$this->copyImgAddTemplate($pathTemplate, $pathSiteImgNew);
-			$this->copyTemplateFolder($rootTemplatePath, $templateId, $siteId, $_POST['folder']);	
+			$this->copyTemplateFolder($rootTemplatePath, $templateId, $siteId, $_POST['folder']);
 		}
 
 		$res = array('template' => $template, 'folder_name' => $folderName);
@@ -828,7 +828,7 @@ class EditorController extends AdminController implements IController {
 			}
 		};
 		closedir($dir);
-		
+
 		if ($isExistsImg) {
 			// копируем изображения
 			mkdir($pathSiteImgNew);
@@ -839,7 +839,7 @@ class EditorController extends AdminController implements IController {
 	/**
 	* Удаление шаблона
 	*
-	* 
+	*
 	*/
 	public function deleteTemplateAction()
 	{
